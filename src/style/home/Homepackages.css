@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
+  /* change */
   align-items: center;
   gap: 10px;
   overflow: hidden;
