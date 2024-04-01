@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/layout/Footer.css";
+import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 const footer = () => {
   return (
@@ -112,15 +113,15 @@ const footer = () => {
             <ul>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to ="/Privacypolicy" className="a">
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to="/Termsofconditions" className="a">
                   Term of Conditions
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
