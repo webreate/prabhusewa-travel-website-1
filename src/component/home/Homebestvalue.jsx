@@ -35,7 +35,7 @@ const Homebestvalue = () => {
                   </p>
                 </div>
               </Slide>
-//ss
+
               <Slide>
                 <div className="card">
                   <div className="image-box">
