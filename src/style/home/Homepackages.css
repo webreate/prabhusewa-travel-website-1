@@ -1,138 +1,128 @@
+@import "../../assest/constant/Constant.css";
 .home-packages-container {
   width: 100%;
-  height: 900px;
-  background-color: #112742;
+  height: 56.25rem;
+  background-color: var(--primary-darkBlue);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* change */
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   overflow: hidden;
 }
 
 .text-container {
   width: 50%;
   height: auto;
-  /* background-color: rgb(156, 225, 156); */
 }
 .text-container h1 {
   text-align: center;
-  font: normal normal medium 60px/0px Roboto;
+  font: normal normal medium 3.75rem/0px Roboto;
   letter-spacing: 0px;
-  color: #ffc436;
+  color: var(--primary-yellow);
   opacity: 1;
 }
 .text-container p {
   text-align: center;
-  font: normal normal normal 16px/20px Roboto;
+  font: normal normal normal 1rem/20px Roboto;
   letter-spacing: 0px;
-  color: #cccccc;
+  color: var(--primary-lightgray);
   opacity: 1;
 }
 
 .main-container {
   width: 90%;
   height: 95vh;
-  /* background-color: red; */
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
   /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr)); */
-  gap: 12px;
+  gap: 0.75rem;
 }
 .hpac-card {
-  width: 280px;
-  height: 340px;
-  background-color: white;
+  width: 17.5rem;
+  height: 21.25rem;
+  background-color: var(--primary-white);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  gap: 2px;
-  border-radius: 8px;
+  gap: 0.125rem;
+  border-radius: 0.5rem;
 }
 .card-image {
   width: 100%;
-  height: 200px;
-  /* background-color: gray; */
+  height: 12.5rem;
 }
 .image {
-  width: 280px;
-  height: 200px;
+  width: 17.5rem;
+  height: 12.5rem;
   object-fit: cover;
   position: absolute;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 .over-text-icon {
   width: 100%;
-  height: 200px;
-  /* background-color: pink; */
+  height: 12.5rem;
   position: relative;
   display: flex;
   justify-content: end;
 }
 .over-box {
-  width: 130px;
-  height: 200px;
-  /* background-color: rgb(165, 165, 221); */
+  width: 8.125rem;
+  height: 12.5rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: space-evenly;
   align-items: end;
 }
 .price-box {
-  width: 130px;
-  height: 40px;
-  background-color: #ffc436;
+  width: 8.125rem;
+  height: 2.5rem;
+  background-color: var(--primary-yellow);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .round-box {
-  width: 50px;
-  height: 50px;
-  background-color: #337ccf;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: var(--primary-lightBlue);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   cursor: pointer;
 }
 .icon-hear {
-  height: 40px;
-  width: 40px;
-  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--primary-white);
 }
 .card-footer-text {
-  width: 270px;
+  width: 16.875rem;
   height: auto;
-  /* background-color: pink; */
 }
 .header-text {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
-  margin-top: -5px;
+  margin-top: -0.313rem;
 }
 .header-text p {
-  font: normal normal bold 20px / px Roboto;
+  font: normal normal bold 1.25rem / px Roboto;
   letter-spacing: 0px;
-  color: #337ccf;
+  color: var(--primary-lightBlue);
   opacity: 1;
 }
 .para-box {
   width: 100%;
-  height: 55px;
-  /* background-color: green; */
-  margin-top: -20px;
+  height: 3.438rem;
+  margin-top: -1.25rem;
 }
 .para-box p {
-  font: normal normal normal 14px/19px Roboto;
+  font: normal normal normal 0.875rem/1.188rem Roboto;
   letter-spacing: 0px;
   color: #707070;
   opacity: 1;
@@ -144,19 +134,18 @@
   justify-content: space-between;
 }
 .star {
-  width: 100px;
-  height: 40px;
+  width: 6.25rem;
+  height: 2.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: green; */
 }
 .btn {
-  width: 100px;
-  height: 40px;
-  background: #ffc436 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 5px;
+  width: 6.25rem;
+  height: 2.5rem;
+  background: var(--primary-yellow) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.188rem 0.375rem var(--primary-opacity-black);
+  border-radius: 0.313rem;
   opacity: 1;
   cursor: pointer;
   border: none;
