@@ -1,7 +1,10 @@
 import React from "react";
+import "../assest/constant/Constant.css";
 import Header from "../component/layout/Header";
 import HomeHero from "../component/home/HomeHero";
-import "./ContactUs.css";
+import "../style/Contact/ContactUs.css";
+import Allpackegeshero from "../component/allpackeges/Allpackegeshero";
+
 import Tel from "../assest/ContactIcons/Tel.png";
 import contact from "../assest/ContactIcons/contact.png";
 import Footer from "../component/layout/footer";
@@ -13,7 +16,7 @@ const ContactPage = () => {
   return (
     <div className="Globle-Container">
       <Header />
-      <HomeHero className="contact-cover" />
+      <Allpackegeshero />
       <div className="contact-container">
         <div className="contact-heading">
           <h2>Leave Us Your Info</h2>

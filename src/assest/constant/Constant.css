@@ -1,14 +1,15 @@
 :root {
-    --primary-white: #ffffff;
-    --primary-yellow:#ffc436;
+    --primary-white: #F9F9F9;
+    --primary-yellow:#FFC436;
     --primary-lightYellow:#dfa00a4d;
     --primary-blue:#3a5c86;
     --primary-opacity-black:#00000029;
-    --primary-black: #000000;
+    --primary-black: #050505;
     --primary-boxshadowC:#cec8c859;
     --primary-darkBlue:#112742;
     --primary-gray:#707070;
     --primary-lightBlue:#337ccf;
     --primary-lightgray: #cccccc;
+    --primary-red:#FF0000;
   }
  
