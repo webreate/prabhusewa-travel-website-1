@@ -4,16 +4,20 @@ import HomeHero from "../component/home/HomeHero";
 import HomeSlideImage from "../component/home/HomeSlideImage";
 import Homebestvalue from "../component/home/Homebestvalue";
 import Homepackages from "../component/home/Homepackages";
-// import Footer from "../component/layout/footer";
+import Trip from "../component/home/Trip";
+import Hometestimonials from "../component/home/Hometestimonials";
+import Footer from "../component/layout/footer";
 const Home = () => {
   return (
     <>
       <Header />
       <HomeHero />
       <HomeSlideImage />
-      <Homebestvalue/>
-      <Homepackages/>
-      {/* <Footer/> */}
+      <Homebestvalue />
+      <Homepackages />
+      <Trip />
+      <Hometestimonials/>
+      <Footer/>
     </>
   );
 };
