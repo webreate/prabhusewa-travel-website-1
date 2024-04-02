@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/layout/Footer.css";
+import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 const footer = () => {
   return (
@@ -37,41 +38,41 @@ const footer = () => {
           </div>
 
           <div className="container2">
-            <h3 className="container-name">Company</h3>
+            <h3 className="container-name">Main Link</h3>
             <ul>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
-                  About us
+                  Home
                 </a>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
-                  Hotels
+                  About Us
                 </a>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
-                  List of property
+                  Pakage
                 </a>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
-                  jobs
+                  Gallery
                 </a>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
-                  Partnership
+                  Contact Us
                 </a>
               </li>
             </ul>
           </div>
-          <div className="container2">
+          {/* <div className="container2">
             <h3 className="container-name">Explor</h3>
             <ul>
               <li>
@@ -105,30 +106,30 @@ const footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="container">
-            <h3 className="container-name">policies</h3>
+            <h3 className="container-name">Quick Links</h3>
             <ul>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to ="/Privacypolicy" className="a">
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to="/Termsofconditions" className="a">
                   Term of Conditions
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
-                  cookies
+                  Blog
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
                 <a href="/" className="a">
                   Content and Guidelines reporting Content
@@ -139,7 +140,7 @@ const footer = () => {
                 <a href="/" className="a">
                   Help
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

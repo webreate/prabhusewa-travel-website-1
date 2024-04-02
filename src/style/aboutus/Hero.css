@@ -1,0 +1,91 @@
+
+.Aboutus-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.Image-container {
+  width: 100%;
+  height: 20rem;
+  position: absolute;
+  overflow: hidden;
+}
+.Aboutus-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+.overtext-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  background: transparent
+    linear-gradient(
+      319deg,
+      var(--primary-darkBlue) 0%,
+      #03080d73 42%,
+      #112742 100%
+    )
+    0% 0% no-repeat padding-box;
+  border: 0.063rem solid var(--primary-gray);
+  opacity: 1;
+}
+.serch-container {
+  width: 100%;
+  height: 4.375rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.Input-container {
+  width: 15.625rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.125rem solid var(--primary-yellow);
+  margin-right: 1.25rem;
+}
+.serch-icon {
+  font-size: 1.563rem;
+  color: var(--primary-yellow);
+}
+.serch-input {
+  width: 14.375rem;
+  height: 1.875rem;
+  outline: 0;
+  color: var(--primary-white);
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+}
+.serch-input::placeholder {
+  color: var(--primary-white);
+  opacity: 1; /* Firefox */
+}
+.text-aboutus-container {
+  width: 100%;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-aboutus {
+  width: 50%;
+  height: auto;
+}
+.text-aboutus h1 {
+  text-align: center;
+  font: normal normal normal 6.25rem/0rem Roboto;
+  letter-spacing: 0rem;
+  color: var(--primary-yellow);
+  opacity: 100%;
+}
+.text-aboutus p {
+  text-align: center;
+  font: normal normal medium 1.25rem/0rem Roboto;
+  letter-spacing: 0rem;
+  color: var(--primary-white);
+  opacity: 100%;
+}
