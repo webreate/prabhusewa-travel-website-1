@@ -34,9 +34,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <a href="/" className="a">
+                <Link to="/AboutUs" className="a">
                   About us
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
