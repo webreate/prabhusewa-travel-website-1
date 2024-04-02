@@ -1,0 +1,102 @@
+@import "../../assest//constant//Constant.css";
+.Testimonials-container {
+  width: 100%;
+  height: 60vh;
+}
+.Testimonials-image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  position: absolute;
+}
+.testimonials {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  top: 0;
+  background-color: var(--primary-opacity-black);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.test-text {
+  width: 40%;
+  height: auto;
+}
+.test-text h1 {
+  text-align: left;
+  font: normal normal bold 5rem/5.625rem Roboto;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: var(--primary-white);
+}
+.test-text h1 span {
+  color: var(--primary-yellow);
+}
+.testimonials-cards {
+  width: 31.25rem;
+  height: 25rem;
+  background-color: var(--primary-white);
+  border-radius: 0.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* card */
+.sub-testimonials-cards {
+  width: 28.75rem;
+  height: 22.5rem;
+}
+.sub-testimonials-cards img {
+  width: 6.625rem;
+  height: 6.625rem;
+  box-shadow: 0px 0.188rem 0.375rem var(--primary-opacity-black);
+  opacity: 1;
+  border-radius: 100%;
+}
+.sub-testimonials-cards h1 {
+  text-align: left;
+  font: normal normal bold 1.75rem/0px Roboto;
+  letter-spacing: 0px;
+  color: var(--primary-lightBlue);
+  opacity: 1;
+}
+.sub-testimonials-cards .m-p {
+  text-align: left;
+  font: normal normal normal 1rem/2.188rem Roboto;
+  letter-spacing: 0px;
+  color: var(--primary-lightBlue);
+  opacity: 1;
+}
+.sub-testimonials-cards .p-p {
+  color: var(--primary-gray);
+  opacity: 1;
+}
+.button-star {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.star {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 0.125rem;
+}
+.star-icon {
+  color: var(--primary-yellow);
+  opacity: 1;
+  font-size: 1.563rem;
+}
+.button-star button {
+  width: 7.563rem;
+  height: 2.188rem;
+  background: var(--primary-yellow) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.188rem 0.375rem #00000029;
+  border-radius: 0.313rem;
+  opacity: 1;
+  border: none;
+  cursor: pointer;
+}

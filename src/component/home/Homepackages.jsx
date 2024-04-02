@@ -14,7 +14,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "left",
     },
     {
       Image:
@@ -25,7 +24,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "left",
     },
     {
       Image:
@@ -36,7 +34,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "left",
     },
     {
       Image:
@@ -47,7 +44,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "left",
     },
     {
       Image:
@@ -58,7 +54,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "right",
     },
     {
       Image:
@@ -69,7 +64,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "right",
     },
     {
       Image:
@@ -80,7 +74,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "right",
     },
     {
       Image:
@@ -91,7 +84,6 @@ const Homepackages = () => {
       paragraf:
         " Around 275 kms has to be covered on the 5th day and the buswill depart from Uttarkashi at 6 am.",
       rating: "5",
-      animation_direction: "right",
     },
   ];
 
@@ -110,7 +102,7 @@ const Homepackages = () => {
           {Packagesdeta.map((res, index) => {
             return (
               <>
-                <Slide direction={res.animation_direction}>
+                <Slide direction="left">
                   <div className="hpac-card" key={index}>
                     <div className="card-image">
                       <img className="image" src={res.Image} alt="temple" />
