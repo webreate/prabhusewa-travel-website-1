@@ -1,22 +1,42 @@
 import React from "react";
 import "../assest/constant/Constant.css";
 import Header from "../component/layout/Header";
-import HomeHero from "../component/home/HomeHero";
 import "../style/Contact/ContactUs.css";
-import Allpackegeshero from "../component/allpackeges/Allpackegeshero";
-
 import Tel from "../assest/ContactIcons/Tel.png";
 import contact from "../assest/ContactIcons/contact.png";
 import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
-import { IoIosArrowRoundForward } from "react-icons/io";
-<IoIosArrowRoundForward className="arr-icon" />;
+import CoverImg from "../assest/CoverPageImg/Cover.png";
+
+import { Fade, Bounce } from "react-awesome-reveal";
 
 const ContactPage = () => {
   return (
     <div className="Globle-Container">
       <Header />
-      <Allpackegeshero />
+
+      <div className="Allpackeges-container">
+        <div className="image-container">
+          <img className="allpackeges-image" src={CoverImg} />
+        </div>
+        <div className="over-text-container">
+          <div className="text-packeges-container">
+            <div className="text-packges">
+              <Bounce>
+                <h1>Contact Information</h1>
+              </Bounce>
+
+              <Fade className="fade">
+                <p className="packages-para">
+                  Have questions or need assistance? Feel free to reach out
+                  through our "Contact Us" page. We're here to provide prompt
+                  and friendly support to enhance your travel experience.
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="contact-container">
         <div className="contact-heading">
           <h2>Leave Us Your Info</h2>
@@ -24,10 +44,10 @@ const ContactPage = () => {
 
         <div className="Container">
           <div className="form-container">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Doloremque, unde! Adipisci deserunt, eveniet cumque quas nam
-              expedita tenetur vero repellat?
+            <p className="form-para">
+              Have questions or need assistance? Feel free to reach out through
+              our "Contact Us" page. We're here to provide prompt and friendly
+              support to enhance your travel experience.
             </p>
             <form action="#" method="POST" className="form-inputs">
               <label htmlFor="Full Name">Full Name</label> <br />
@@ -75,6 +95,7 @@ const ContactPage = () => {
           <div className="map-container">
             <div className="map">
               <iframe
+                className="map-1"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.5936754184027!2d78.008421!3d30.305626999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b0dc5b66fdf%3A0xe66e55ad8e0609a8!2sWEBREATE!5e0!3m2!1sen!2sin!4v1711856491594!5m2!1sen!2sin"
                 width="550"
                 height="430"
