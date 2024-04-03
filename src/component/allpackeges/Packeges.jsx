@@ -10,7 +10,7 @@ const Packeges = () => {
       PkgName: "Serene Uttarakhand Sojourn",
       Day: "2 Day",
       Paragraf:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ex!",
+        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...!",
       delay: 1,
     },
     {
@@ -20,7 +20,7 @@ const Packeges = () => {
       PkgName: "Himalayan Heights Expedition",
       Day: "14 Day",
       Paragraf:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ex!",
+        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...!",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const Packeges = () => {
       PkgName: "Uttarakhand Unveiled Escapade",
       Day: "3 Day",
       Paragraf:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ex!",
+        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const Packeges = () => {
       PkgName: "Uttarakhand Utopia Tour",
       Day: "10 Day",
       Paragraf:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ex!",
+        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const Packeges = () => {
       PkgName: "Himalayan Heights Expedition",
       Day: "6 Day",
       Paragraf:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ex!",
+        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
     {
       id: 6,
@@ -56,7 +56,7 @@ const Packeges = () => {
       PkgName: "Himalayan Heights Expedition",
       Day: "16 Day",
       Paragraf:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ex!",
+        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
   ];
 

@@ -32,10 +32,7 @@ const Aboutus = () => {
 
               <Fade>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                  dolorum vel facilis non at, accusantium, necessitatibus
-                  doloribus perferendis similique recusandae earum consectetur
-                  est enim temporibus.
+                Uncover the myriad wonders of Uttarakhand with us—where every peak tells a story, every valley whispers tranquility, and every corner holds an adventure. Join us in exploring the soul-stirring landscapes, vibrant cultures, and untamed beauty that make every visit an unforgettable journey. Your Uttarakhand odyssey begins here!
                 </p>
               </Fade>
             </div>

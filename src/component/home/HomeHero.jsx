@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/home/HomeHero.css";
-import { IoSearchSharp } from "react-icons/io5";
+// import { IoSearchSharp } from "react-icons/io5";
 import { Fade, Bounce } from "react-awesome-reveal";
 const HomeHero = () => {
   return (
@@ -13,7 +13,7 @@ const HomeHero = () => {
         />
 
         <div className="Homehero-text-container">
-          <div className="homehero-ser">
+          {/* <div className="homehero-ser">
             <div className="homehero-input-container">
               <IoSearchSharp className="hh-ser-icon" />
               <input
@@ -22,7 +22,7 @@ const HomeHero = () => {
                 placeholder="What your want to search"
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="homehero-text-c">
             <div className="text-h">

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../style/layout/Header.css";
 import { Link } from "react-router-dom";
+import headerimg from "../../assest/ContactIcons/Layer_1.png";
+import Form from "../popupform/Form";
 // import contactus from "../../pages/ContactUs";
 const Header = () => {
-
   // let lastScrolltop = 0;
   // let navbaar = document.getElementsByClassName(".header-container");
-  
+
   // window.addEventListener("scroll", () => {
   //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   //   if (scrollTop > lastScrolltop) {
@@ -18,11 +19,13 @@ const Header = () => {
   //   console.log(scrollTop)
   // });
 
+  const [form, setform] = useState(false);
+
   return (
     <>
       <div className="header-container" id="navbar">
         <div className="header-name">
-          <h1>Chardham Yatra</h1>
+          <img className="H-name" src={headerimg} alt="icon" />
         </div>
 
         <div className="Header-link-button">
@@ -40,31 +43,34 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
-                  Packages
+                  pakages
                 </Link>
               </li>
               <li>
-                <Link to={"/contactus"} className="a">
+                <Link to="/Gallery" className="a">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/contactus" className="a">
                   ContactUs
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="/" className="a">
-                 Gallery
+                  login
                 </a>
-              </li>
-              <li>
-                <Link to="/" className="a">
-                  Contact us
-                </Link>
               </li>
               {/* <li>
                 <Link to="/" className="a">
                   Signup
-                </Link>
+                </a>
               </li> */}
               <li>
-                <button className="header-button">Book now</button>
+                <button className="header-button" onClick={() => setform(true)}>
+                  Book now
+                </button>
+                {setform && <Form />}
               </li>
             </ul>
           </nav>
