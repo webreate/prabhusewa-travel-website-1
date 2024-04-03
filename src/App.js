@@ -7,6 +7,7 @@ import Termsofconditions from "./pages/Termsofconditions.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from "./pages/ContactUs.jsx";
+
 function App() {
   return (
     <>

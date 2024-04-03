@@ -15,7 +15,7 @@ const Hometestimonials = () => {
                    <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="user"/>
                    <h1>RoBert Albert</h1>
                    <p className="m-p">Member of the Chardham</p>
-                   <p className="p-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                   <p className="p-p"> As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!</p>
                    <div className="button-star">
                       <div className="star">
                          <IoIosStar className="star-icon"/>
