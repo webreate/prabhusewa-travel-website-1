@@ -25,7 +25,9 @@ const Header = () => {
     <>
       <div className="header-container" id="navbar">
         <div className="header-name">
-          <img className="H-name" src={headerimg} alt="icon" />
+          <Link to="/">
+            <img className="H-name" src={headerimg} alt="icon" />
+          </Link>
         </div>
 
         <div className="Header-link-button">
@@ -43,7 +45,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
-                  pakages
+                  Packages
                 </Link>
               </li>
               <li>
@@ -53,7 +55,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/contactus" className="a">
-                  ContactUs
+                  Contact Us
                 </Link>
               </li>
               {/* <li>

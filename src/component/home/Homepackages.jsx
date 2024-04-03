@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/home/Homepackages.css";
 import { FaRegHeart } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+// import { FaStar } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 const Homepackages = () => {
   const Packagesdeta = [
@@ -91,7 +91,7 @@ const Homepackages = () => {
     <>
       <div className="home-packages-container">
         <div className="text-container">
-          <h1>Our Tour Packages</h1>
+          <h1>Our Packages</h1>
           {/* <p>
             We are one of the best tour companies in India where we only think
             for your comfort. Since we are there in the market for a longer time
@@ -127,10 +127,10 @@ const Homepackages = () => {
                         <p>{res.paragraf}</p>
                       </div>
                       <div className="tar-btn">
-                        <div className="star">
+                        {/* <div className="star">
                           <p>Rating {res.rating}</p>
                           <FaStar style={{ color: "yellow" }} />
-                        </div>
+                        </div> */}
                         <button className="btn">Book Now</button>
                       </div>
                     </div>

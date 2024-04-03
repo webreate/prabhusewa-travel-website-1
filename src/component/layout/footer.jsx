@@ -38,77 +38,44 @@ const footer = () => {
           </div>
 
           <div className="container2">
-            <h3 className="container-name">Main Link</h3>
+            <h3 className="container-name">Main Links</h3>
             <ul>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to="/" className="a">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to="/AboutUs" className="a">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Pakage
-                </a>
+                <Link to="/Allpackeges" className="a">
+                  Packages
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to="/Gallery" className="a">
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
+                <Link to="/contactus" className="a">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
-          {/* <div className="container2">
-            <h3 className="container-name">Explor</h3>
-            <ul>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Explore Travel
-                </a>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Hotels
-                </a>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Holiday Packages
-                </a>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  All Accommdations Type
-                </a>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div> */}
 
-          <div className="container">
+         
+
+          <div className="container3">
             <h3 className="container-name">Quick Links</h3>
             <ul>
               <li>
@@ -144,12 +111,20 @@ const footer = () => {
             </ul>
           </div>
 
-          <div className="container-gradients">
-              <div className="gradients"></div>
-              <div className="gradients"></div>
-              <div className="gradients"></div>
-              <div className="gradients"></div>
+          <div className="container-sub">
+            <h3 className="subscrib-text">Subscribe News Latter</h3>
+             <div className="inpute-box">
+                <input className="input-new-latter" type="email" placeholder="Enter you Email "/>
+                <button className="new-latter-button">Subscribe</button>
+             </div>
+           
           </div>
+          {/* <div className="container-gradients">
+              <div className="gradients"></div>
+              <div className="gradients"></div>
+              <div className="gradients"></div>
+              <div className="gradients"></div>
+          </div> */}
 
         </div>
         <div className="footer-last">
