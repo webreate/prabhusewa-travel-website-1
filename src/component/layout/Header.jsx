@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../style/layout/Header.css";
 import { Link } from "react-router-dom";
+import headerimg from "../../assest/ContactIcons/Layer_1.png"
+import Form from "../popupform/Form";
 // import contactus from "../../pages/ContactUs";
 const Header = () => {
 
@@ -18,11 +20,13 @@ const Header = () => {
   //   console.log(scrollTop)
   // });
 
+  const [form , setform] = useState(false)
+
   return (
     <>
       <div className="header-container" id="navbar">
         <div className="header-name">
-          <h1>Chardham Yatra</h1>
+          <img  className="H-name" src={ headerimg}/>
         </div>
 
         <div className="Header-link-button">
@@ -40,20 +44,20 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
-                  pakage
+                  pakages
                 </Link>
               </li>
               <li>
-                <Link to={"/contactus"} className="a">
+                <Link to="/Gallery" className="a">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/contactus" className="a">
                   ContactUs
                 </Link>
               </li>
-              <li>
-                <a href="/" className="a">
-                  Helicopter Ticket
-                </a>
-              </li>
-              <li>
+              {/* <li>
                 <a href="/" className="a">
                   login
                 </a>
@@ -62,9 +66,10 @@ const Header = () => {
                 <a href="/" className="a">
                   Signup
                 </a>
-              </li>
+              </li> */}
               <li>
-                <button className="header-button">Book now</button>
+                <button className="header-button" onClick={() => setform(true)}>Book now</button>
+                 {setform && <Form />}
               </li>
             </ul>
           </nav>
