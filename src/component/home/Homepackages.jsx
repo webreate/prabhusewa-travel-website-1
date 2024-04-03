@@ -91,12 +91,12 @@ const Homepackages = () => {
     <>
       <div className="home-packages-container">
         <div className="text-container">
-          <h1>Chardham Tour Packages</h1>
-          <p>
+          <h1>Our Tour Packages</h1>
+          {/* <p>
             We are one of the best tour companies in India where we only think
             for your comfort. Since we are there in the market for a longer time
             we no need to prove our service. We have many different types of
-          </p>
+          </p> */}
         </div>
         <div className="main-container">
           {Packagesdeta.map((res, index) => {
