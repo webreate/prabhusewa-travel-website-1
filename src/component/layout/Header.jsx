@@ -39,24 +39,24 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
-                  pakage
+                  Packages
                 </Link>
               </li>
               <li>
-                <a href="/" className="a">
-                  Helicopter Ticket
-                </a>
+                <Link to="/" className="a">
+                 Gallery
+                </Link>
               </li>
               <li>
-                <a href="/" className="a">
-                  login
-                </a>
+                <Link to="/" className="a">
+                  Contact us
+                </Link>
               </li>
-              <li>
-                <a href="/" className="a">
+              {/* <li>
+                <Link to="/" className="a">
                   Signup
-                </a>
-              </li>
+                </Link>
+              </li> */}
               <li>
                 <button className="header-button">Book now</button>
               </li>
