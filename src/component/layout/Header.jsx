@@ -1,6 +1,7 @@
 import React from "react";
 import "../../style/layout/Header.css";
 import { Link } from "react-router-dom";
+// import contactus from "../../pages/ContactUs";
 const Header = () => {
 
   // let lastScrolltop = 0;
@@ -33,9 +34,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <a href="/" className="a">
+                <Link to="/AboutUs" className="a">
                   About us
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
@@ -43,9 +44,14 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="a">
-                 Gallery
+                <Link to={"/contactus"} className="a">
+                  ContactUs
                 </Link>
+              </li>
+              <li>
+                <a href="/" className="a">
+                 Gallery
+                </a>
               </li>
               <li>
                 <Link to="/" className="a">
