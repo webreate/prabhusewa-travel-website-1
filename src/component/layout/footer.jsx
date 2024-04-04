@@ -113,8 +113,10 @@ const footer = () => {
 
           <div className="container-sub">
             <h3 className="subscrib-text">Subscribe News Latter</h3>
-             <div className="inpute-box">
-                <input className="input-new-latter" type="email" placeholder="Enter you Email "/>
+             <div className="inpute-box-new-latter">
+                <div className="in-b">
+                   <input className="input-new-latter" type="email" placeholder="Enter you Email "/>
+                </div>
                 <button className="new-latter-button">Subscribe</button>
              </div>
            

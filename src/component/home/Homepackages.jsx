@@ -92,11 +92,7 @@ const Homepackages = () => {
       <div className="home-packages-container">
         <div className="text-container">
           <h1>Our Packages</h1>
-          {/* <p>
-            We are one of the best tour companies in India where we only think
-            for your comfort. Since we are there in the market for a longer time
-            we no need to prove our service. We have many different types of
-          </p> */}
+        
         </div>
         <div className="main-container">
           {Packagesdeta.map((res, index) => {
@@ -127,10 +123,7 @@ const Homepackages = () => {
                         <p>{res.paragraf}</p>
                       </div>
                       <div className="tar-btn">
-                        {/* <div className="star">
-                          <p>Rating {res.rating}</p>
-                          <FaStar style={{ color: "yellow" }} />
-                        </div> */}
+                    
                         <button className="btn">Book Now</button>
                       </div>
                     </div>
