@@ -1,14 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../../style/layout/Header.css";
 import { Link } from "react-router-dom";
-import headerimg from "../../assest/ContactIcons/Layer_1.png"
+import headerimg from "../../assest/ContactIcons/Layer_1.png";
 import Form from "../popupform/Form";
 // import contactus from "../../pages/ContactUs";
 const Header = () => {
-
   // let lastScrolltop = 0;
   // let navbaar = document.getElementsByClassName(".header-container");
-  
+
   // window.addEventListener("scroll", () => {
   //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   //   if (scrollTop > lastScrolltop) {
@@ -20,13 +19,13 @@ const Header = () => {
   //   console.log(scrollTop)
   // });
 
-  const [form , setform] = useState(false)
+  const [form, setform] = useState(false);
 
   return (
     <>
       <div className="header-container" id="navbar">
         <div className="header-name">
-          <img  className="H-name" src={ headerimg}/>
+          <img className="H-name" src={headerimg} />
         </div>
 
         <div className="Header-link-button">
@@ -68,8 +67,10 @@ const Header = () => {
                 </a>
               </li> */}
               <li>
-                <button className="header-button" onClick={() => setform(true)}>Book now</button>
-                 {setform && <Form />}
+                <button className="header-button" onClick={() => setform(true)}>
+                  Book now
+                </button>
+                {setform && <Form />}
               </li>
             </ul>
           </nav>
