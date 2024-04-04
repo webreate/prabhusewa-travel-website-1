@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/home/HomeHero.css";
-import { IoSearchSharp } from "react-icons/io5";
+// import { IoSearchSharp } from "react-icons/io5";
 import { Fade, Bounce } from "react-awesome-reveal";
 const HomeHero = () => {
   return (
@@ -13,17 +13,6 @@ const HomeHero = () => {
         />
 
         <div className="Homehero-text-container">
-          <div className="homehero-ser">
-            <div className="homehero-input-container">
-              <IoSearchSharp className="hh-ser-icon" />
-              <input
-                className="herohome-ser-inp"
-                type="search"
-                placeholder="What your want to search"
-              />
-            </div>
-          </div>
-
           <div className="homehero-text-c">
             <div className="text-h">
               <Fade>
@@ -34,11 +23,13 @@ const HomeHero = () => {
                 <h1 className="text-h1">The Yatra To MahaDev</h1>
               </Bounce>
 
-              <Fade>
-                <p className="homehero-last-p">
-                  ChardhamYtra 2024 Tour Packages
-                </p>
-              </Fade>
+              <div className="para-con">
+                <Fade>
+                  <p className="homehero-last-p">
+                    ChardhamYtra 2024 Tour Packages
+                  </p>
+                </Fade>
+              </div>
             </div>
           </div>
         </div>

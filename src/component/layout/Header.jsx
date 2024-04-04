@@ -21,11 +21,17 @@ const Header = () => {
 
   const [form, setform] = useState(false);
 
+  const crossClick = () => {
+    setform(false);
+  };
+
   return (
     <>
       <div className="header-container" id="navbar">
         <div className="header-name">
-          <img className="H-name" src={headerimg} />
+          <Link to="/">
+            <img className="H-name" src={headerimg} alt="icon" />
+          </Link>
         </div>
 
         <div className="Header-link-button">
@@ -43,7 +49,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/Allpackeges" className="a">
-                  pakages
+                  Packages
                 </Link>
               </li>
               <li>
@@ -53,7 +59,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/contactus" className="a">
-                  ContactUs
+                  Contact Us
                 </Link>
               </li>
               {/* <li>
@@ -61,8 +67,8 @@ const Header = () => {
                   login
                 </a>
               </li>
-              <li>
-                <a href="/" className="a">
+              {/* <li>
+                <Link to="/" className="a">
                   Signup
                 </a>
               </li> */}
@@ -70,7 +76,7 @@ const Header = () => {
                 <button className="header-button" onClick={() => setform(true)}>
                   Book now
                 </button>
-                {setform && <Form />}
+                <Form show={form} cross={crossClick}></Form>
               </li>
             </ul>
           </nav>

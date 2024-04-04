@@ -14,7 +14,6 @@ const ContactPage = () => {
   return (
     <div className="Globle-Container">
       <Header />
-
       <div className="Allpackeges-container">
         <div className="image-container">
           <img className="allpackeges-image" src={CoverImg} />

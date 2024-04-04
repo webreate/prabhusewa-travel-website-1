@@ -1,9 +1,11 @@
 :root {
     --primary-white: #f9f9f9;
     --primary-yellow:#ffc436;
+    --primary-darkYellow:#DFA00A;
     --primary-lightYellow:#dfa00a4d;
     --primary-blue:#3a5c86;
     --primary-opacity-black:#00000029;
+
     --primary-black: #050505;
     --primary-boxshadowC:#cec8c859;
     --primary-darkBlue:#112742;
@@ -12,4 +14,4 @@
     --primary-lightgray: #cccccc;
     --primary-red:#FF0000;
   }
- 
+ /* lightyello and lightgray use in packages page card section remove this color and use yellow opacity use */
