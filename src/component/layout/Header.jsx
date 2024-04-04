@@ -11,12 +11,12 @@ const Header = () => {
   // window.addEventListener("scroll", () => {
   //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   //   if (scrollTop > lastScrolltop) {
-  //     navbaar.style.marginTop = "-3.125rem";
+  //     navbaar.style.top = "-3.125rem";
   //   } else {
-  //     navbaar.style.marginTop = "0rem";
+  //     navbaar.style.top = "0rem";
   //   }
   //   lastScrolltop = scrollTop;
-  //   console.log(scrollTop)
+  //   // console.log(scrollTop)
   // });
 
   const [form, setform] = useState(false);
