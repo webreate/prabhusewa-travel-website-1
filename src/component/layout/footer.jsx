@@ -3,6 +3,11 @@ import "../../style/layout/Footer.css";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 const footer = () => {
+
+
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <div className="footer-container">
@@ -80,13 +85,13 @@ const footer = () => {
             <ul>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to ="/Privacypolicy" className="a">
+                <Link to ="/Privacypolicy" className="a" onClick={()=>scrollToTop()}>
                   Privacy
                 </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/Termsofconditions" className="a">
+                <Link to="/Termsofconditions" className="a"  onClick={()=>scrollToTop()}>
                   Term of Conditions
                 </Link>
               </li>
