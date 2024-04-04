@@ -3,6 +3,11 @@ import "../../style/layout/Footer.css";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 const footer = () => {
+
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   return (
     <>
       <div className="footer-container">
@@ -73,20 +78,20 @@ const footer = () => {
             </ul>
           </div>
 
-         
+
 
           <div className="container3">
             <h3 className="container-name">Quick Links</h3>
             <ul>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to ="/Privacypolicy" className="a">
+                <Link to="/Privacypolicy" className="a" onClick={() => scrollToTop()}>
                   Privacy
                 </Link>
               </li>
               <li>
                 <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/Termsofconditions" className="a">
+                <Link to="/Termsofconditions" className="a" onClick={() => scrollToTop()}>
                   Term of Conditions
                 </Link>
               </li>
@@ -113,13 +118,13 @@ const footer = () => {
 
           <div className="container-sub">
             <h3 className="subscrib-text">Subscribe News Latter</h3>
-             <div className="inpute-box-new-latter">
-                <div className="in-b">
-                   <input className="input-new-latter" type="email" placeholder="Enter you Email "/>
-                </div>
-                <button className="new-latter-button">Subscribe</button>
-             </div>
-           
+            <div className="inpute-box-new-latter">
+              <div className="in-b">
+                <input className="input-new-latter" type="email" placeholder="Enter you Email " />
+              </div>
+              <button className="new-latter-button">Subscribe</button>
+            </div>
+
           </div>
           {/* <div className="container-gradients">
               <div className="gradients"></div>
@@ -130,8 +135,8 @@ const footer = () => {
 
         </div>
         <div className="footer-last">
-            <p>Copyright to Chardham@2024</p>
-            <p>Powered By Webreate</p>
+          <p>Copyright to Chardham@2024</p>
+          <p>Powered By Webreate</p>
         </div>
       </div>
     </>
