@@ -1,175 +1,4 @@
-
-/* @media only screen and (min-width:) */
 /* Media query for screens with a minimum width of 1600px */
-/* 
-
-@media only screen and (min-width: 414px) {
-  .Container {
-    padding: 20px;
-   
-  }
-
-  .form-container,
-  .map-container {
-    width: 100%;
-  }
-
-  label {
-    margin-bottom: 8px;
-  }
-
-
-  .map-1 {
-    width: 100%;
-  }
-
-  .box {
-    margin: 0px 10px;
-    width: 45%;
-  }
-
-  .form-inputs {
-    font-size: 90%;
-    padding: 20px;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-}*/
-/* /*  */
-
-@media only screen and (min-width: 768px) {
-  .Container {
-    padding: 30px;
-    
-    /* flex-wrap: wrap; */
-  }
-  .Globle-Container{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    /* flex-wrap:wrap; */
-  }
-
-  .form-container,
-  .map-container {
-    width: 40%;
-  }
-
-  label {
-    margin-bottom: 10px;
-  }
-
-  .map-1 {
-    width: 100%;
-  }
-  
-  .boxes{
-    /* flex-wrap: wrap; */
-    height: 35.5rem;
-    background-color: aquamarine;
-  }
-
-  .box {
-    margin: 0px 20px;
-    width: 20%;
-  }
-
-  .anchor-box{
-    font-size:0.8rem;
-  }
-
-  .box-para{
-    font-size:12px;
-  }
-
-  .form-inputs {
-    font-size: 100%;
-    padding: 25px;
-  }
-
-  input,
-  textarea {
-    margin-top: 20px;
-    margin-bottom: 7px;
-  }
-}  
-/* 
-@media only screen and (min-width: 1024px) {
-  .Container {
-    padding: 30px;
-  }
-
-  .form-container,
-  .map-container {
-    width: 40%;
-  }
-
-  label {
-    margin-bottom: 10px;
-  }
-
-  .map-1 {
-    width: 100%;
-  }
-
-  .box {
-    margin: 0px 20px;
-    width: 20%;
-  }
-
-  .form-inputs {
-    font-size: 100%;
-    padding: 25px;
-  }
-
-  input,
-  textarea {
-    margin-top: 20px;
-    margin-bottom: 7px;
-  }
-} */
-
-/* @media only screen and (min-width: 1280px) {
-  .Container {
-    padding: 30px;
-  }
-
-  .form-container,
-  .map-container {
-    width: 40%;
-  }
-
-  label {
-    margin-bottom: 10px;
-  }
-
-  .map-1 {
-    width: 100%;
-  }
-
-  .box {
-    margin: 0px 20px;
-    width: 20%;
-  }
-
-  .form-inputs {
-    font-size: 100%;
-    padding: 25px;
-  }
-
-  input,
-  textarea {
-    margin-top: 20px;
-    margin-bottom: 7px;
-  }
-} */
-
-
 @media only screen and (min-width: 1600px) {
   .Container {
     padding: 30px;
@@ -248,8 +77,6 @@
   position: absolute;
   overflow: hidden;
 }
-
-
 .allpackeges-image {
   width: 100%;
   height:auto;
@@ -259,7 +86,11 @@
 }
 
 .text-packges{
+  height: 180px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   /* margin: 70px 0px; */
   margin-bottom: -150px;
  
@@ -363,7 +194,6 @@ textarea:focus{
 .map-container{
   width: 50%;
   padding: 24px;
-
   .map{
     margin-top: 12px;
   }
@@ -377,7 +207,6 @@ textarea:focus{
 
 
 .boxes {
-
   margin-bottom: 30px;
   height: 12.5rem;
   width: 100%;
@@ -430,6 +259,5 @@ textarea:focus{
 }
 
 .box:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-

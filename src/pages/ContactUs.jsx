@@ -22,7 +22,7 @@ const ContactPage = () => {
           <div className="text-packeges-container">
             <div className="text-packges">
               <Bounce>
-                <h1>Contact Information</h1>
+                <h1>Contact Us</h1>
               </Bounce>
 
               <Fade className="fade">
