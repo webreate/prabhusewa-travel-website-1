@@ -1,6 +1,12 @@
 import React from "react";
 import "../../style/Allpackeges/Packeges.css";
 import { Slide } from "react-awesome-reveal";
+import { HiArrowSmRight } from "react-icons/hi";
+
+import { HiArrowSmLeft } from "react-icons/hi";
+
+
+
 const Packeges = () => {
   const PakageDeta = [
     {
@@ -58,16 +64,17 @@ const Packeges = () => {
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
+   
   ];
 
   return (
     <>
       <div className="packeges-container">
-        <img
+        {/* <img
           className="bg-packeges-image"
           src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="temple"
-        />
+        /> */}
         <div className="packeges-container-main">
           <div className="package-text-box">
             <h1>List of all the package for tour</h1>
@@ -115,7 +122,8 @@ const Packeges = () => {
           <div className="more-button">
             <div className="sub-button">
               <Slide direction="right">
-                <button className="button-btn">View More</button>
+                <button className="button-btn1"> <HiArrowSmLeft className="icon-btn"/></button>
+                <button className="button-btn1"><HiArrowSmRight className="icon-btn"/></button>
               </Slide>
             </div>
           </div>
@@ -126,3 +134,5 @@ const Packeges = () => {
 };
 
 export default Packeges;
+
+//https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS%20TRAVEL

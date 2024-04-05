@@ -17,7 +17,7 @@ const ContactPage = () => {
 
       <div className="Allpackeges-container">
         <div className="image-container">
-          <img className="allpackeges-image" src={CoverImg} />
+          <img className="allpackeges-image" src={CoverImg} alt="" />
         </div>
         <div className="over-text-container">
           <div className="text-packeges-container">

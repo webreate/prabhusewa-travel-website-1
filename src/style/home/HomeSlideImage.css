@@ -24,6 +24,7 @@
   gap: 0.625rem;
   align-items: center;
   animation: slide 20s linear infinite; /* Adjust duration as needed */
+  /* background-color: red; */
 }
 .HomeImageslider-container::-webkit-scrollbar {
   display: none;
@@ -31,14 +32,15 @@
 .slider:hover {
   animation-play-state: paused;
 }
-@keyframes slide {
+
+/* @keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(calc(-450px * 9));
   }
-}
+} */
 
 
 /* Styles for screens smaller than 16 inches
