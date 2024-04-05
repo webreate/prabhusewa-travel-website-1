@@ -1,74 +1,6 @@
-/* Media query for screens with a minimum width of 1600px */
-@media only screen and (min-width: 1600px) {
-  .Container {
-    padding: 30px;
-  }
-
-  .form-container,
-  .map-container {
-    width: 40%;
-  }
-
-  label{
-    margin-bottom: 10px;
-  }
-
-  
-
-  .map-1{
-    width: 100%;
-  }
-
-  .box {
-   margin: 0px 20px;
-    width: 20%;
-  }
-  .form-inputs {
-    font-size: 100%; 
-    padding: 25px; 
-  }
-  input,textarea{
-    margin-top: 20px;
-    margin-bottom: 7px;
-  }
-}
-
-/* Media query for screens with a minimum width of 1900px */
-@media only screen and (min-width: 1900px) {
-  .Container {
-    padding: 40px;
-  }
-
-  .form-container,
-  .map-container {
-    width: 35%;
-  }
-  
-  .map-1{
-    width: 100%;
-  }
-  /* .boxes {
-    gap: 50px;
-  } */
-
-  .box {
-    margin: 0px 18px;
-    width: 15%;
-  }
-  .form-inputs {
-    font-size: 110%; 
-    padding: 30px; 
-  }
-
-  input,textarea{
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-}
 
 
 /* CSS FOR NORMAL SCREEN */
-
 
 .Globle-Container{
   width: 100%;
@@ -207,8 +139,6 @@ textarea:focus{
   }
 
 }
-
-
 .boxes {
   margin-bottom: 30px;
   /* margin-top: 20px; */
@@ -264,4 +194,73 @@ textarea:focus{
 
 .box:hover {
   transform: scale(1.1);
+}
+
+
+/* Media query for screens with a minimum width of 1600px */
+@media only screen and (min-width: 1600px) {
+  .Container {
+    padding: 30px;
+  }
+
+  .form-container,
+  .map-container {
+    width: 40%;
+  }
+
+  label{
+    margin-bottom: 10px;
+  }
+
+  
+
+  .map-1{
+    width: 100%;
+  }
+
+  .box {
+   margin: 0px 20px;
+    width: 20%;
+  }
+  .form-inputs {
+    font-size: 100%; 
+    padding: 25px; 
+  }
+  input,textarea{
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+}
+
+/* Media query for screens with a minimum width of 1900px */
+@media only screen and (min-width: 1900px) {
+  .Container {
+    padding: 40px;
+  }
+
+  .form-container,
+  .map-container {
+    width: 35%;
+  }
+  
+  .map-1{
+    width: 100%;
+  }
+  /* .boxes {
+    gap: 50px;
+  } */
+
+  .box {
+    margin: 0px 18px;
+    width: 15%;
+  }
+  .form-inputs {
+    font-size: 110%; 
+    padding: 30px; 
+  }
+
+  input,textarea{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }

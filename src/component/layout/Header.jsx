@@ -33,7 +33,6 @@ const Header = () => {
             <img className="H-name" src={headerimg} alt="icon" />
           </Link>
         </div>
-
         <div className="Header-link-button">
           <nav>
             <ul>

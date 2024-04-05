@@ -2,7 +2,7 @@
  .globle{
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position:fixed;
   /* background-color: red; */
   top: 0px;
   bottom: 0px;

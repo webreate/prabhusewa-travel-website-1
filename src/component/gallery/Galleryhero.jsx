@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/gallery/Galleryhero.css"
+import "../../style/gallery/Galleryhero.css";
 import { IoSearchSharp } from "react-icons/io5";
 import { Fade, Bounce } from "react-awesome-reveal";
 const Galleryhero = () => {
@@ -32,7 +32,12 @@ const Galleryhero = () => {
 
               <Fade>
                 <p>
-                Uncover the myriad wonders of Uttarakhand with us—where every peak tells a story, every valley whispers tranquility, and every corner holds an adventure. Join us in exploring the soul-stirring landscapes, vibrant cultures, and untamed beauty that make every visit an unforgettable journey. Your Uttarakhand odyssey begins here!
+                  Uncover the myriad wonders of Uttarakhand with us—where every
+                  peak tells a story, every valley whispers tranquility, and
+                  every corner holds an adventure. Join us in exploring the
+                  soul-stirring landscapes, vibrant cultures, and untamed beauty
+                  that make every visit an unforgettable journey. Your
+                  Uttarakhand odyssey begins here!
                 </p>
               </Fade>
             </div>

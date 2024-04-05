@@ -6,36 +6,18 @@ import Tel from "../assest/ContactIcons/Tel.png";
 import contact from "../assest/ContactIcons/contact.png";
 import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
-import CoverImg from "../assest/CoverPageImg/Cover.png";
-
-import { Fade, Bounce } from "react-awesome-reveal";
+// import CoverImg from "../assest/CoverPageImg/Cover.png";
+import Data from "../component/HeroSection/HeroData.json";
+import HeroSection from "../component/HeroSection/HeroSection";
+// import { Fade, Bounce } from "react-awesome-reveal";
 
 const ContactPage = () => {
+  const homeData = Data.find((item) => item.id === 1);
+  // console.log(homeData);
   return (
     <div className="Globle-Container">
       <Header />
-      <div className="Allpackeges-container">
-        <div className="image-container">
-          <img className="allpackeges-image" src={CoverImg} />
-        </div>
-        <div className="over-text-container">
-          <div className="text-packeges-container">
-            <div className="text-packges">
-              <Bounce>
-                <h1>Contact Us</h1>
-              </Bounce>
-
-              <Fade className="fade">
-                <p className="packages-para">
-                  Have questions or need assistance? Feel free to reach out
-                  through our "Contact Us" page. We're here to provide prompt
-                  and friendly support to enhance your travel experience.
-                </p>
-              </Fade>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection {...homeData} />;
       <div className="contact-container">
         <div className="contact-heading">
           <h2>Leave Us Your Info</h2>

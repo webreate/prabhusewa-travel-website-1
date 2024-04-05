@@ -1,0 +1,23 @@
+.section{
+
+  height: 300px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.data-heading{
+  font-size: 80px;
+  color: var(--primary-yellow);
+}
+.data-para{
+  width: 70%;
+  color: var(--primary-white);
+  position: absolute;
+  top: 40%;
+
+}
