@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../style/Allpackeges/Packeges.css";
 import { Slide } from "react-awesome-reveal";
 import { HiArrowSmRight } from "react-icons/hi";
@@ -8,13 +8,22 @@ import { HiArrowSmLeft } from "react-icons/hi";
 
 
 const Packeges = () => {
+   
+  // useEffect(()=>{
+  //   fetch('https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS TRAVEL')
+  //   .then(res=>res.json())
+  //   .then(deta=>{
+  //     console.log(deta)
+  //   })
+  // })
+
+
   const PakageDeta = [
     {
       id: 1,
       Image:
         "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "Serene Uttarakhand Sojourn",
-      Day: "2 Day",
+      PkgName: "CAMPING GROUP TRAVEL",
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...!",
       delay: 1,
@@ -23,8 +32,7 @@ const Packeges = () => {
       id: 2,
       Image:
         "https://plus.unsplash.com/premium_photo-1663088722056-f399c902c6ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "Himalayan Heights Expedition",
-      Day: "14 Day",
+      PkgName: "VACATION RELIGIOUS TRAVEL",
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...!",
     },
@@ -32,8 +40,7 @@ const Packeges = () => {
       id: 3,
       Image:
         "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "Uttarakhand Unveiled Escapade",
-      Day: "3 Day",
+      PkgName: "VACATION RELIGIOUS TRAVEL",
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
@@ -41,8 +48,7 @@ const Packeges = () => {
       id: 4,
       Image:
         "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "Uttarakhand Utopia Tour",
-      Day: "10 Day",
+      PkgName: "CAMPING GROUP TRAVEL",
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
@@ -50,8 +56,7 @@ const Packeges = () => {
       id: 5,
       Image:
         "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "Himalayan Heights Expedition",
-      Day: "6 Day",
+      PkgName: "VACATION RELIGIOUS TRAVEL",
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
@@ -59,12 +64,11 @@ const Packeges = () => {
       id: 6,
       Image:
         "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "Himalayan Heights Expedition",
-      Day: "16 Day",
+      PkgName: "CAMPING GROUP TRAVEL",
       Paragraf:
         "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
     },
-   
+
   ];
 
   return (
@@ -108,7 +112,7 @@ const Packeges = () => {
                       <div className="text-div">
                         <h1 className="text-1">{res.PkgName}</h1>
                       </div>
-                      <h1 className="day">{res.Day}</h1>
+                      {/* <h1 className="day">{res.Day}</h1> */}
                       <p className="packages-para">{res.Paragraf}</p>
                       <div className="packages-button">
                         <button className="button-btn">View Details</button>
@@ -122,8 +126,8 @@ const Packeges = () => {
           <div className="more-button">
             <div className="sub-button">
               <Slide direction="right">
-                <button className="button-btn1"> <HiArrowSmLeft className="icon-btn"/></button>
-                <button className="button-btn1"><HiArrowSmRight className="icon-btn"/></button>
+                <button className="button-btn1"> <HiArrowSmLeft className="icon-btn" /></button>
+                <button className="button-btn1"><HiArrowSmRight className="icon-btn" /></button>
               </Slide>
             </div>
           </div>
