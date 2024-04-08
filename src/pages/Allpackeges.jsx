@@ -1,7 +1,7 @@
 import React from "react";
 // import Allpackegeshero from "../component/allpackeges/Allpackegeshero";
-import Data from "../component/HeroSection/HeroData.json";
-import HeroSection from "../component/HeroSection/HeroSection";
+import Data from "../component/Shared/HeroSection/HeroData.json";
+import HeroSection from "../component/Shared/HeroSection/HeroSection";
 import Header from "../component/layout/Header";
 import Footer from "../component/layout/footer";
 import Packeges from "../component/allpackeges/Packeges";
@@ -16,5 +16,4 @@ const Allpackeges = () => {
     </>
   );
 };
-
 export default Allpackeges;

@@ -75,7 +75,7 @@ const Form = ({ show, cross }) => {
               />
             </div>
             <div className="form-tag-line-5 line">
-              <input type="date " name="" id="" />
+              <input type="date" name="" id="" />
               <input type="submit" name="button" id="book-btn" />
             </div>
           </form>

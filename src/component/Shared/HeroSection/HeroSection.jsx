@@ -1,6 +1,5 @@
 import React from "react";
-import "./HeroSection.css";
-
+import "../../../style/HeroSection/HeroSection.css";
 const HeroSection = ({ heading, paragraph, background_image }) => {
   // console.log(background_image);
   return (

@@ -7,8 +7,8 @@ import contact from "../assest/ContactIcons/contact.png";
 import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
 // import CoverImg from "../assest/CoverPageImg/Cover.png";
-import Data from "../component/HeroSection/HeroData.json";
-import HeroSection from "../component/HeroSection/HeroSection";
+import Data from "../component/Shared/HeroSection/HeroData.json";
+import HeroSection from "../component/Shared/HeroSection/HeroSection";
 // import { Fade, Bounce } from "react-awesome-reveal";
 
 const ContactPage = () => {
