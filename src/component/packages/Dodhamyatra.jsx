@@ -1,5 +1,8 @@
 import React from 'react'
 import "../../style/packages/Dodhamyatra.css"
+import { Bounce } from "react-awesome-reveal";
+import ReactTypingEffect from "react-typing-effect";
+// Bounce
 const Dodhamyatra = () => {
 
 
@@ -12,12 +15,6 @@ const Dodhamyatra = () => {
             ToolTip.style.display = "none";
         }
     }
-
-
-
-
-
-
 
     return (
         <>
@@ -61,176 +58,72 @@ const Dodhamyatra = () => {
 
                 <div className='dodham-packages-container'>
                     <div className='dodham-card-container'>
+                        <Bounce>
+                            < div className='dodham-card'>
+                                <div className='image-wrapper'>
+                                    <img className='image-dodham' src='https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvbWV8ZW58MHx8MHx8fDA%3D' alt='' />
+                                    <div className='wrapper-container'>
+                                        <div className='day-container'>
+                                            <div className='day-packages-day'>
+                                                <p>Day 1</p>
+                                            </div>
 
-                        < div className='dodham-card'>
-                            <div className='image-wrapper'>
-                                <img className='image-dodham' src='https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvbWV8ZW58MHx8MHx8fDA%3D' alt='' />
-                                <div className='wrapper-container'>
-                                    <div className='day-container'>
-                                        <div className='day'>
-                                            <p>Day 1</p>
+                                        </div>
+                                        <div className='images-related'>
+                                            <div className='images-dodham'>
+                                                <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
+                                                <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
+                                                <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
+                                                {/* <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt=''/> */}
+                                            </div>
                                         </div>
 
                                     </div>
-                                    <div className='images-related'>
-                                        <div className='images-dodham'>
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            {/* <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt=''/> */}
+                                </div>
+
+                                <div className='textes-dodhamyatra'>
+                                    <div className='View-Program'>
+                                        <button onClick={() => showtooltip()}>View Program</button>
+                                        <div className='tool-tip-dodhamyatra'>
+
+                                            <div className='tool-radio'>
+                                                <input type="radio" id="1" name="fav_language" value="HTML" />
+                                                <label for="1">Sahastradhara helipad to sersi helipad</label>
+                                            </div>
+                                            <div className='tool-radio'>
+                                                <input type="radio" id="2" name="fav_language" value="HTML" />
+                                                <label for="2">Sersi to kedarnath</label>
+                                            </div>
+                                            <div className='tool-radio'>
+                                                <input type="radio" id="3" name="fav_language" value="HTML" />
+                                                <label for="3">Kedarnath darshan</label>
+                                            </div>
+                                            <div className='tool-radio'>
+                                                <input type="radio" id="4" name="fav_language" value="HTML" />
+                                                <label for="4">In afternoon come back to gupt kashi for an overnight stay</label>
+                                            </div>
+
+
                                         </div>
                                     </div>
 
+
+                                    <div className='all-text-dodhamyatra'>
+                                        <h2>VISIT KEDARNATH (DEHRADUN)</h2>
+                                        <p>
+                                            <ReactTypingEffect
+                                                speed={50}
+                                                eraseSpeed={0}
+                                                typingDelay={false}
+                                                eraseDelay={1000}
+                                                text={"We have include every detail comfort & charges applicable from dehradun helipad to back dehradun helipad that you will encounter on your do dham yatra after booking with us you are ready to move on a journey of a lifetime.."}
+                                            />
+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div className='textes-dodhamyatra'>
-                                <div className='View-Program'>
-                                    <button onClick={() => showtooltip()}>View Program</button>
-                                    <div className='tool-tip-dodhamyatra'>
-
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="1" name="fav_language" value="HTML" />
-                                            <label for="1">Sahastradhara helipad to sersi helipad</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="2" name="fav_language" value="HTML" />
-                                            <label for="2">Sersi to kedarnath</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="3" name="fav_language" value="HTML" />
-                                            <label for="3">Kedarnath darshan</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="4" name="fav_language" value="HTML" />
-                                            <label for="4">In afternoon come back to gupt kashi for an overnight stay</label>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-
-                                <div className='all-text-dodhamyatra'>
-                                    <h2>VISIT KEDARNATH (DEHRADUN)</h2>
-                                    <p>We have include every detail comfort & charges applicable from dehradun helipad to back dehradun helipad that you will encounter on your do dham yatra after booking with us you are ready to move on a journey of a lifetime..</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        < div className='dodham-card'>
-                            <div className='image-wrapper'>
-                                <img className='image-dodham' src='https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvbWV8ZW58MHx8MHx8fDA%3D' alt='' />
-                                <div className='wrapper-container'>
-                                    <div className='day-container'>
-                                        <div className='day'>
-                                            <p>Day 1</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='images-related'>
-                                        <div className='images-dodham'>
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            {/* <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt=''/> */}
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div className='textes-dodhamyatra'>
-                                <div className='View-Program'>
-                                    <button onClick={() => showtooltip()}>View Program</button>
-                                    <div className='tool-tip-dodhamyatra'>
-
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="1" name="fav_language" value="HTML" />
-                                            <label for="1">Sahastradhara helipad to sersi helipad</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="2" name="fav_language" value="HTML" />
-                                            <label for="2">Sersi to kedarnath</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="3" name="fav_language" value="HTML" />
-                                            <label for="3">Kedarnath darshan</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="4" name="fav_language" value="HTML" />
-                                            <label for="4">In afternoon come back to gupt kashi for an overnight stay</label>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-
-                                <div className='all-text-dodhamyatra'>
-                                    <h2>VISIT KEDARNATH (DEHRADUN)</h2>
-                                    <p>We have include every detail comfort & charges applicable from dehradun helipad to back dehradun helipad that you will encounter on your do dham yatra after booking with us you are ready to move on a journey of a lifetime..</p>
-                                </div>
-                            </div>
-                        </div>
-                        < div className='dodham-card'>
-                            <div className='image-wrapper'>
-                                <img className='image-dodham' src='https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvbWV8ZW58MHx8MHx8fDA%3D' alt='' />
-                                <div className='wrapper-container'>
-                                    <div className='day-container'>
-                                        <div className='day'>
-                                            <p>Day 1</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='images-related'>
-                                        <div className='images-dodham'>
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt='' />
-                                            {/* <img className='images-dodham-all' src='https://media.istockphoto.com/id/1223306508/photo/close-up-of-hindu-god-rama-idol.webp?b=1&s=170667a&w=0&k=20&c=NXRw174cY564HbRGwrfvLbOoBR3Gv-PhKnzOSaxg72M=' alt=''/> */}
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div className='textes-dodhamyatra'>
-                                <div className='View-Program'>
-                                    <button onClick={() => showtooltip()}>View Program</button>
-                                    <div className='tool-tip-dodhamyatra'>
-
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="1" name="fav_language" value="HTML" />
-                                            <label for="1">Sahastradhara helipad to sersi helipad</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="2" name="fav_language" value="HTML" />
-                                            <label for="2">Sersi to kedarnath</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="3" name="fav_language" value="HTML" />
-                                            <label for="3">Kedarnath darshan</label>
-                                        </div>
-                                        <div className='tool-radio'>
-                                            <input type="radio" id="4" name="fav_language" value="HTML" />
-                                            <label for="4">In afternoon come back to gupt kashi for an overnight stay</label>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-
-                                <div className='all-text-dodhamyatra'>
-                                    <h2>VISIT KEDARNATH (DEHRADUN)</h2>
-                                    <p>We have include every detail comfort & charges applicable from dehradun helipad to back dehradun helipad that you will encounter on your do dham yatra after booking with us you are ready to move on a journey of a lifetime..</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
+                        </Bounce>
                     </div>
                 </div>
             </div>

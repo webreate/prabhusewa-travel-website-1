@@ -2,7 +2,6 @@ import React from "react";
 import "../../style/home/HomeSlideImage.css";
 import Slider from "react-slick";
 
-
 const HomeSlideImage = () => {
   const images = [
     {
@@ -68,54 +67,32 @@ const HomeSlideImage = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 1500,
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // ]
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    prevArrow: <></>, // Hides the previous arrow
+    nextArrow: <></>, // Hides the next arrow
+    slidesToShow: 0, // Set to 1 to ensure only one column
+
   };
   return (
     <>
       <div className="HomeImageslider-container">
 
-        <Slider {...settings} >
-          <div className="slider">
-            {images.map((res, index) => (
+        <div className="slider">
+          {images.map((res, index) => (
+            <Slider {...settings} key={index}>
+              <div>
+                <img
+                  className="homeslideimg"
+                  src={res.Image}
+                  alt="img"
+                />
+              </div>
+            </Slider>
+          ))}
 
-              <img
-                className="homeslideimg"
-                src={res.Image}
-                alt="img"
-              />
-
-            ))}
-
-          </div>
-        </Slider>
+        </div>
       </div>
     </>
   );
