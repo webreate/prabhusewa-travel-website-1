@@ -1,75 +1,51 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../style/Allpackeges/Packeges.css";
 import { Slide } from "react-awesome-reveal";
 import { HiArrowSmRight } from "react-icons/hi";
-
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchProducts } from "../../store/Products/Apicallpackages";
 import { HiArrowSmLeft } from "react-icons/hi";
 
 
 
+
 const Packeges = () => {
-   
-  // useEffect(()=>{
-  //   fetch('https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS TRAVEL')
-  //   .then(res=>res.json())
-  //   .then(deta=>{
-  //     console.log(deta)
-  //   })
-  // })
+  const [startindex, setStartindex] = useState(0)
+  const itemsPerPage = 6;
+
+  const dispatch = useDispatch();
+  const selectedProduct = useSelector((state) => state.product.productData);
+  const selectstatus = useSelector((state) => state.product.status);
 
 
-  const PakageDeta = [
-    {
-      id: 1,
-      Image:
-        "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "CAMPING GROUP TRAVEL",
-      Paragraf:
-        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...!",
-      delay: 1,
-    },
-    {
-      id: 2,
-      Image:
-        "https://plus.unsplash.com/premium_photo-1663088722056-f399c902c6ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "VACATION RELIGIOUS TRAVEL",
-      Paragraf:
-        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...!",
-    },
-    {
-      id: 3,
-      Image:
-        "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "VACATION RELIGIOUS TRAVEL",
-      Paragraf:
-        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
-    },
-    {
-      id: 4,
-      Image:
-        "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "CAMPING GROUP TRAVEL",
-      Paragraf:
-        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
-    },
-    {
-      id: 5,
-      Image:
-        "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "VACATION RELIGIOUS TRAVEL",
-      Paragraf:
-        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
-    },
-    {
-      id: 6,
-      Image:
-        "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      PkgName: "CAMPING GROUP TRAVEL",
-      Paragraf:
-        "Embark on a divine journey with our Chardham Yatra package, carefully crafted for spiritual seekers. This road and helicopter expedition...",
-    },
+  // console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
 
-  ];
+  useEffect(() => {
+    dispatch(fetchProducts())
+  }, [dispatch])
+
+  if (selectstatus === "loading") {
+    return <h1>Lodding....</h1>
+  }
+  if (selectstatus === "failed") {
+    alert("something want worng !")
+  }
+
+  /* click button change data  */
+
+  const visibleData = selectedProduct.slice(startindex, startindex + itemsPerPage); // products all deta here
+  const hasMoreItems = startindex + itemsPerPage < selectedProduct.length;
+  const showNextButton = hasMoreItems && visibleData.length > 0;
+  const showPreviewButton = startindex > 0;
+  const Next = () => {
+    setStartindex(prevIndex => prevIndex + itemsPerPage);
+
+  }
+
+  const Priview = (e) => {
+    setStartindex(prevIndex => Math.max(0, prevIndex - itemsPerPage));
+
+  }
 
   return (
     <>
@@ -97,23 +73,23 @@ const Packeges = () => {
           </div>
 
           <div className="Packages-card-container">
-            {PakageDeta.map((res) => {
+            {visibleData?.map((res) => {
               return (
                 <>
-                  <Slide key={res.id}>
-                    <div className="packages-card" key={res.id}>
+                  <Slide key={res._id}>
+                    <div className="packages-card" key={res._id}>
                       <div className="images-box">
                         <img
                           className="image-round"
-                          src={res.Image}
+                          src={res?.gallery[0].galleryImage}
                           alt="images"
                         />
                       </div>
                       <div className="text-div">
-                        <h1 className="text-1">{res.PkgName}</h1>
+                        <h1 className="text-1">{res?.category}</h1>
                       </div>
                       {/* <h1 className="day">{res.Day}</h1> */}
-                      <p className="packages-para">{res.Paragraf}</p>
+                      <p className="packages-para">{res?.shortDescription.slice(0, 150)}</p>
                       <div className="packages-button">
                         <button className="button-btn">View Details</button>
                       </div>
@@ -126,8 +102,17 @@ const Packeges = () => {
           <div className="more-button">
             <div className="sub-button">
               <Slide direction="right">
-                <button className="button-btn1"> <HiArrowSmLeft className="icon-btn" /></button>
-                <button className="button-btn1"><HiArrowSmRight className="icon-btn" /></button>
+                {
+                  showPreviewButton && (
+                    <button className="button-btn1" onClick={(e) => Priview(e)} > <HiArrowSmLeft className="icon-btn" /></button>
+                  )
+                }
+
+                {showNextButton && (
+                  <button className="button-btn1" onClick={Next}>
+                    <HiArrowSmRight className="icon-btn" />
+                  </button>
+                )}
               </Slide>
             </div>
           </div>

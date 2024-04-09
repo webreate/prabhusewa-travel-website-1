@@ -7,9 +7,9 @@ export const fetchProducts = createAsyncThunk("products/fetchProducts", async (r
   try {
     const res = await axios.get(`https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS TRAVEL`);
    
-    console.log("redux response", res);
+    // console.log("redux response", res.data.packages);
     // const data = await res.json();
-    return res.data;
+    return res.data.packages;
   } catch (error) {
     return rejectWithValue({ error: error.message });
   }
@@ -18,6 +18,7 @@ export const fetchProducts = createAsyncThunk("products/fetchProducts", async (r
 // Define the initial state
 const initialState = {
   productData: [],
+  
   status: "idle", // or 'loading', 'succeeded', 'failed'
   error: null,
 };
@@ -44,8 +45,6 @@ const productSlice = createSlice({
   },
 });
 
-export const selectProducts = (state) => state.product.productData;
-export const selectStatus = (state) => state.product.status;
-export const selectError = (state) => state.product.error;
+export const {setproduct,setstatus} = productSlice.actions
 
 export default productSlice.reducer;

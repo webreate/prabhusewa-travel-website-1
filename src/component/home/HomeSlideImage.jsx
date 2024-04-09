@@ -62,39 +62,26 @@ const HomeSlideImage = () => {
     },
   ];
 
-
   let settings = {
     dots: false,
     infinite: true,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
-    prevArrow: <></>, // Hides the previous arrow
-    nextArrow: <></>, // Hides the next arrow
-    slidesToShow: 0, // Set to 1 to ensure only one column
-
+    prevArrow: <></>,
+    nextArrow: <></>,
   };
   return (
-    <>
+    <Slider {...settings}>
       <div className="HomeImageslider-container">
-
-        <div className="slider">
-          {images.map((res, index) => (
-            <Slider {...settings} key={index}>
-              <div>
-                <img
-                  className="homeslideimg"
-                  src={res.Image}
-                  alt="img"
-                />
-              </div>
-            </Slider>
-          ))}
-
-        </div>
+        {images.map((res, index) => (
+          <div key={index} className="homeslideimg">
+            <img src={res?.Image} alt="img" />
+          </div>
+        ))}
       </div>
-    </>
+    </Slider>
+
   );
 };
 
