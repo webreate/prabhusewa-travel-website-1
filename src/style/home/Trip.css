@@ -31,20 +31,21 @@
 }
 .trip-card-container {
   width: 100%;
-  height: auto;
+  height: 10%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   overflow: hidden;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 .trip-card-container::-webkit-scrollbar {
   display: none;
 }
 .trip-slide-cards {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   gap: 1.875rem;
+  /* overflow: hidden; */
   animation: slide 20s linear infinite;
 }
 /* card */

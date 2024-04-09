@@ -14,7 +14,7 @@ const Allpackegeshero = () => {
           />
         </div>
         <div className="over-text-container">
-          <div className="ser-container">
+          {/* <div className="ser-container">
             <div className="input-container">
               <IoSearchSharp className="ser-icon" />
               <input
@@ -23,7 +23,7 @@ const Allpackegeshero = () => {
                 placeholder="What your want to search"
               />
             </div>
-          </div>
+          </div> */}
           <div className="text-packeges-container">
             <div className="text-packges">
               <Bounce>

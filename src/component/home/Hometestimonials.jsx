@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../style/home/Hometestimonials.css";
 import { IoIosStar } from "react-icons/io";
 // import { Fade } from "react-awesome-reveal";
@@ -63,16 +63,13 @@ const Hometestimonials = () => {
     },
   ];
 
-  const next = () => {
-    setTimeout(() => {
-      setChangeitem(changeitem + 1);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setChangeitem((prevItem) => (prevItem + 1) % Testimonials.length);
     }, 2000);
-    if (changeitem === Testimonials.length-1) {
-      setChangeitem(0);
-    }
-  };
-  next();
 
+    return () => clearTimeout(timeoutId);
+  }, [changeitem, Testimonials.length]);
 
   return (
     <>
@@ -90,7 +87,7 @@ const Hometestimonials = () => {
           </div>
           <div className="testimonials-cards">
             <div className="sub-testimonials-cards">
-              <img src={Testimonials[changeitem].Image} alt="user" />
+              <img src={Testimonials[changeitem]?.Image} alt="user" />
               <h1>{Testimonials[changeitem].Name}</h1>
               <p className="m-p">{Testimonials[changeitem].Member}</p>
               <p className="p-p">{Testimonials[changeitem].Testimonials}</p>

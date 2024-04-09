@@ -7,6 +7,7 @@ import Termsofconditions from "./pages/Termsofconditions.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContactPage from "./pages/ContactUs.jsx";
+import Packages from "./pages/Packagespage.jsx";
 import Form from "./component/popupform/Form.jsx";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Privacypolicy" element={<Privacypolicy />} />
           <Route path="/Termsofconditions" element={<Termsofconditions />} />
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Packages" element={<Packages />} />
           <Route path="/Form" element={<Form />} />
         </Routes>
       </BrowserRouter>

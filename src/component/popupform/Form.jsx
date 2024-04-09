@@ -55,7 +55,7 @@ const Form = ({ show, cross }) => {
         </div>
         <div className="book-form-division">
           <form action="" className="form-tag" onSubmit={submitHandler}>
-            <div className="form-tag-line-1  line">
+            <div className="form-tag-line-1  bookNowFormInput">
               <input
                 type="text"
                 onChange={handleInput}
@@ -73,7 +73,7 @@ const Form = ({ show, cross }) => {
                 id="phoneNo"
               />
             </div>
-            <div className="form-tag-line-2  line">
+            <div className="form-tag-line-2  bookNowFormInput">
               <input
                 type="email"
                 onChange={handleInput}
@@ -91,7 +91,7 @@ const Form = ({ show, cross }) => {
                 placeholder="No of People Travelling"
               />
             </div>
-            <div className="form-tag-line-3 line">
+            <div className="form-tag-line-3 bookNowFormInput">
               <select
                 id="Package"
                 className="package"
@@ -114,7 +114,7 @@ const Form = ({ show, cross }) => {
                 className="Budget"
               />
             </div>
-            <div className="form-tag-line-4 line">
+            <div className="form-tag-line-4 bookNowFormInput">
               <input
                 style={{ background: "transparent" }}
                 type="text"
@@ -125,7 +125,7 @@ const Form = ({ show, cross }) => {
                 placeholder="message"
               />
             </div>
-            <div className="form-tag-line-5 line">
+            <div className="form-tag-line-5 bookNowFormInput">
               <input
                 type="date"
                 onChange={handleInput}
