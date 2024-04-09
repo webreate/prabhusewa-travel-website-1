@@ -126,22 +126,27 @@ const Form = ({ show, cross }) => {
               />
             </div>
             <div className="form-tag-line-5 bookNowFormInput">
-              <input
-                type="date"
-                onChange={handleInput}
-                name="dateofjourney"
-                value={bookData?.dateofjourney}
-                id="dateofjourney"
-                placeholder=""
-              />
-              <button
-                type="submit"
-                name="button"
-                id="button"
-                className="Book-btn"
-              >
-                Submit
-              </button>
+              <div className="journeyDate">
+                <label htmlFor="dateofjourney">date of journey</label>
+                <input
+                  type="date"
+                  onChange={handleInput}
+                  name="dateofjourney"
+                  value={bookData?.dateofjourney}
+                  id="dateofjourney"
+                  placeholder=""
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  name="button"
+                  id="button"
+                  className="Book-btn"
+                >
+                  Submit
+                </button>
+              </div>
             </div>
           </form>
         </div>
