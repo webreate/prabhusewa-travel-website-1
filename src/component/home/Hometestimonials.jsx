@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "../../style/home/Hometestimonials.css";
 import { IoIosStar } from "react-icons/io";
-// import { Fade } from "react-awesome-reveal";
+
 const Hometestimonials = () => {
-  // let customstar = [0,2,2];
   const [changeitem, setChangeitem] = useState(0);
+
+
+ 
+  // const selectMaxstatus = useSelector((state) => state.product.status);
+
+
 
   const Testimonials = [
     {
@@ -62,6 +67,8 @@ const Hometestimonials = () => {
       star: 5,
     },
   ];
+
+ 
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {

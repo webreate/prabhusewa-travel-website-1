@@ -94,7 +94,7 @@
 }
 .image-trip img {
   width: 100%;
-  height: auto;
+  height: 10.625rem;
   object-fit: cover;
   border-radius: 0.313rem;
 }

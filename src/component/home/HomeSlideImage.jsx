@@ -70,17 +70,19 @@ const HomeSlideImage = () => {
     autoplaySpeed: 2000,
     prevArrow: <></>,
     nextArrow: <></>,
+    slidesToShow: 5,
+    slidesToScroll: 1
   };
   return (
-    <Slider {...settings}>
-      <div className="HomeImageslider-container">
+    <div className="HomeImageslider-container">
+      <Slider {...settings} style={{width:"100%"}}>
         {images.map((res, index) => (
           <div key={index} className="homeslideimg">
             <img src={res?.Image} alt="img" />
           </div>
         ))}
-      </div>
-    </Slider>
+      </Slider>
+    </div>
 
   );
 };

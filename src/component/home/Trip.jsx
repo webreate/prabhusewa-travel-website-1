@@ -1,101 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../style/home/Trip.css";
 import Slider from "react-slick";
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchmaxvisit } from "../../store/features/Maxvisitapi";
 const Trip = () => {
-  const Trips = [
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
-    {
-      Name: "Shree Kedarnath",
-      Paragraf:
-        "Around 275 kms has to be covered on the 5th day and the bus will depart from Uttarkashi at 6 am. Breakfast will be at the GMVN tourist rest house at Chinyalisaur. You will arrive at Chamba/NewTehri at around 12. You can explore New Tehri and visit the Tehri Dam. You will leave New Tehri at around 1 pm. Lunch halt will be at the GMVN tourist rest house at Srinagar. The bus will reach Guptkashi at around5.30 pm. Check into your accommodation and rest.",
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-    },
+  const dispatch = useDispatch()
+  const selectedMaxvisit = useSelector((state) => state.maxvisit.maxproduct);
+  const selectMaxstatus = useSelector((state) => state.maxvisit.status);
+  // console.log(selectedMaxvisit)
 
-  ];
+
+  useEffect(() => {
+    dispatch(fetchmaxvisit())
+  }, [dispatch])
+
+
+  if (selectMaxstatus === "loading") {
+    return <h1>Lodding....</h1>
+  }
+  if (selectMaxstatus === "failed") {
+    alert("something want worng !")
+  }
+
 
   let settings = {
     dots: false,
@@ -124,18 +50,18 @@ const Trip = () => {
         </div>
         <div className="trip-card-container">
           <div className="trip-slide-cards">
-            {Trips.map((TripData, index) => {
-              const { Name, Paragraf, Image } = TripData;
+            {selectedMaxvisit?.map((TripData, index) => {
+              // const { Name, Paragraf, Image } = TripData;
               return (
                 <Slider {...settings} key={index}>
                   <>
                     <div className="trip-card" >
                       <div className="sub-card">
                         <div className="card-text-card">
-                          <a href="/">{Name}</a>
-                          <p>{Paragraf}</p>
+                          <a href="/">{TripData?.packageName}</a>
+                          <p>{TripData?.shortDescription}</p>
                           <div className="image-trip">
-                            <img src={Image} alt="trip" />
+                            <img src={TripData?.gallery[0].galleryImage} alt="trip" />
                           </div>
                           <div className="trip-button">
                             <button>View Detail</button>
