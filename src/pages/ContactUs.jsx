@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "../assest/constant/Constant.css";
 import Header from "../component/layout/Header";
 import "../style/Contact/ContactUs.css";
@@ -14,6 +15,29 @@ import HeroSection from "../component/Shared/HeroSection/HeroSection";
 const ContactPage = () => {
   const homeData = Data.find((item) => item.id === 1);
   // console.log(homeData);
+  const [data, setData] = useState({
+    username: "",
+    number: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInput = (event) => {
+    setData({ ...data, [event.target.name]: event.target.value });
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    axios
+      .post("", { data })
+      .then((res) => {
+        console.log(res);
+        event.target.reset();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <div className="Globle-Container">
       <Header />
@@ -30,12 +54,19 @@ const ContactPage = () => {
               our "Contact Us" page. We're here to provide prompt and friendly
               support to enhance your travel experience.
             </p>
-            <form action="#" method="POST" className="form-inputs">
-              <label htmlFor="Full Name">Full Name</label> <br />
+            <form
+              action="#"
+              method="POST"
+              className="form-inputs"
+              onSubmit={submitHandler}
+            >
+              <label htmlFor="username">Full Name</label> <br />
               <input
                 type="text"
+                onChange={handleInput}
                 name="username"
-                id="Full Name"
+                value={data?.username}
+                id="username"
                 placeholder="username"
                 autoComplete="off"
                 required
@@ -44,7 +75,9 @@ const ContactPage = () => {
               <br />
               <input
                 type="number"
-                name="Number"
+                onChange={handleInput}
+                name="number"
+                value={data?.number}
                 id="number"
                 placeholder="Number"
                 autoComplete="off"
@@ -54,17 +87,22 @@ const ContactPage = () => {
               <br />
               <input
                 type="email"
-                name="Email"
+                onChange={handleInput}
+                name="email"
+                value={data?.email}
                 id="email"
                 placeholder="Email"
                 autoComplete="off"
                 required
               />
-              <label htmlFor="textarea">Comment/Questions</label>
+              <label htmlFor="message">Comment/Questions</label>
               <br />
               <textarea
                 name="message"
-                id="textarea"
+                onChange={handleInput}
+                id="message"
+                placeholder="message"
+                value={data?.message}
                 cols="30"
                 rows="8"
                 autoComplete="off"

@@ -106,7 +106,7 @@ h1{
   border-bottom: 2px solid var(--primary-gray);
 }
 
-.package, .budge{
+.package,.Budget{
   width: 47.8%;
   padding: 6px 4px;
   /* margin-bottom: 4px;
@@ -118,6 +118,9 @@ h1{
   background: transparent;
 
 }
+/* .Budget{
+  width: %;
+} */
 
 .form-tag-line-4 input{
   width: 100%;
@@ -138,8 +141,13 @@ h1{
   border-bottom: 2px solid var(--primary-gray);
 }
 
-#book-btn{
+.Book-btn{
   width: 30%;
+  height: 9%;
+position: absolute;
+bottom: 13%;
+right: 6%;
+ 
   background-color: var(--primary-yellow);
   cursor: pointer;
   border: none;
@@ -162,6 +170,11 @@ h1{
   .book-form-division{
     height: 73%;
     width: 90%;
+  }
+  .Book-btn{
+    position: absolute;
+    bottom: 18%;
+    right: 7%;
   }
 
 }
