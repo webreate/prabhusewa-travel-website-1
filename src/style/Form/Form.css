@@ -54,6 +54,7 @@
 } */
 .cross-btn{
   border: none;
+  cursor: pointer;
   color: var(--primary-red);
   background:transparent ;
 }
