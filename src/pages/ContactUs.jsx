@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "../assest/constant/Constant.css";
 import Header from "../component/layout/Header";
 import "../style/Contact/ContactUs.css";
@@ -6,37 +7,41 @@ import Tel from "../assest/ContactIcons/Tel.png";
 import contact from "../assest/ContactIcons/contact.png";
 import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
-import CoverImg from "../assest/CoverPageImg/Cover.png";
-
-import { Fade, Bounce } from "react-awesome-reveal";
+// import CoverImg from "../assest/CoverPageImg/Cover.png";
+import Data from "../component/Shared/HeroSection/HeroData.json";
+import HeroSection from "../component/Shared/HeroSection/HeroSection";
+// import { Fade, Bounce } from "react-awesome-reveal";
 
 const ContactPage = () => {
+  const homeData = Data.find((item) => item.id === 1);
+  // console.log(homeData);
+  const [data, setData] = useState({
+    username: "",
+    number: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInput = (event) => {
+    setData({ ...data, [event.target.name]: event.target.value });
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    axios
+      .post("", { data })
+      .then((res) => {
+        console.log(res);
+        event.target.reset();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <div className="Globle-Container">
       <Header />
-
-      <div className="Allpackeges-container">
-        <div className="image-container">
-          <img className="allpackeges-image" src={CoverImg} />
-        </div>
-        <div className="over-text-container">
-          <div className="text-packeges-container">
-            <div className="text-packges">
-              <Bounce>
-                <h1>Contact Information</h1>
-              </Bounce>
-
-              <Fade className="fade">
-                <p className="packages-para">
-                  Have questions or need assistance? Feel free to reach out
-                  through our "Contact Us" page. We're here to provide prompt
-                  and friendly support to enhance your travel experience.
-                </p>
-              </Fade>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection {...homeData} />;
       <div className="contact-container">
         <div className="contact-heading">
           <h2>Leave Us Your Info</h2>
@@ -49,12 +54,19 @@ const ContactPage = () => {
               our "Contact Us" page. We're here to provide prompt and friendly
               support to enhance your travel experience.
             </p>
-            <form action="#" method="POST" className="form-inputs">
-              <label htmlFor="Full Name">Full Name</label> <br />
+            <form
+              action="#"
+              method="POST"
+              className="form-inputs"
+              onSubmit={submitHandler}
+            >
+              <label htmlFor="username">Full Name</label> <br />
               <input
                 type="text"
+                onChange={handleInput}
                 name="username"
-                id="Full Name"
+                value={data?.username}
+                id="username"
                 placeholder="username"
                 autoComplete="off"
                 required
@@ -63,7 +75,9 @@ const ContactPage = () => {
               <br />
               <input
                 type="number"
-                name="Number"
+                onChange={handleInput}
+                name="number"
+                value={data?.number}
                 id="number"
                 placeholder="Number"
                 autoComplete="off"
@@ -73,17 +87,22 @@ const ContactPage = () => {
               <br />
               <input
                 type="email"
-                name="Email"
+                onChange={handleInput}
+                name="email"
+                value={data?.email}
                 id="email"
                 placeholder="Email"
                 autoComplete="off"
                 required
               />
-              <label htmlFor="textarea">Comment/Questions</label>
+              <label htmlFor="message">Comment/Questions</label>
               <br />
               <textarea
                 name="message"
-                id="textarea"
+                onChange={handleInput}
+                id="message"
+                placeholder="message"
+                value={data?.message}
                 cols="30"
                 rows="8"
                 autoComplete="off"

@@ -1,5 +1,7 @@
 import React from "react";
 import "../../style/home/HomeSlideImage.css";
+import Slider from "react-slick";
+
 const HomeSlideImage = () => {
   const images = [
     {
@@ -59,25 +61,29 @@ const HomeSlideImage = () => {
         "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
     },
   ];
+
+  let settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    prevArrow: <></>,
+    nextArrow: <></>,
+    slidesToShow: 5,
+    slidesToScroll: 1
+  };
   return (
-    <>
-      <div className="HomeImageslider-container">
-        <div className="slider">
-          {images.map((res, index) => {
-            return (
-              <>
-                <img
-                  className="homeslideimg"
-                  src={res.Image}
-                  alt="img"
-                  key={index}
-                />
-              </>
-            );
-          })}
-        </div>
-      </div>
-    </>
+    <div className="HomeImageslider-container">
+      <Slider {...settings} style={{width:"100%"}}>
+        {images.map((res, index) => (
+          <div key={index} className="homeslideimg">
+            <img src={res?.Image} alt="img" />
+          </div>
+        ))}
+      </Slider>
+    </div>
+
   );
 };
 

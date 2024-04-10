@@ -5,31 +5,35 @@ import headerimg from "../../assest/ContactIcons/Layer_1.png";
 import Form from "../popupform/Form";
 // import contactus from "../../pages/ContactUs";
 const Header = () => {
-  // let lastScrolltop = 0;
-  // let navbaar = document.getElementsByClassName(".header-container");
-
-  // window.addEventListener("scroll", () => {
-  //   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //   if (scrollTop > lastScrolltop) {
-  //     navbaar.style.marginTop = "-3.125rem";
-  //   } else {
-  //     navbaar.style.marginTop = "0rem";
-  //   }
-  //   lastScrolltop = scrollTop;
-  //   console.log(scrollTop)
+  // let lastScrollTop = 0;
+  // const header = document.querySelector('.header');
+  
+  // window.addEventListener('scroll', function() {
+  //     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  //     if (scrollTop > lastScrollTop) {
+  //         // Scrolling down
+  //         header.style.transform = 'translateY(-100%)'; // Hides the header by moving it above the viewport
+  //     } else {
+  //         // Scrolling up
+  //         header.style.transform = 'translateY(0)'; // Shows the header by resetting its position
+  //     }
+  //     lastScrollTop = scrollTop;
   // });
 
   const [form, setform] = useState(false);
 
+  const crossClick = () => {
+    setform(false);
+  };
+
   return (
     <>
-      <div className="header-container" id="navbar">
+      <div className="header" id="navbar">
         <div className="header-name">
           <Link to="/">
             <img className="H-name" src={headerimg} alt="icon" />
           </Link>
         </div>
-
         <div className="Header-link-button">
           <nav>
             <ul>
@@ -72,7 +76,7 @@ const Header = () => {
                 <button className="header-button" onClick={() => setform(true)}>
                   Book now
                 </button>
-                {setform && <Form />}
+                <Form show={form} cross={crossClick}></Form>
               </li>
             </ul>
           </nav>
