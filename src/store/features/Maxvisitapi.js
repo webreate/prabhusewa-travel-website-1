@@ -9,7 +9,7 @@ export const fetchmaxvisit = createAsyncThunk(
         const res = await axios.get(
           `https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS TRAVEL`
         );
-        console.log('redux response',res.data.packages)
+        // console.log('redux response',res.data.packages)
         // console.log("redux response", res.data.packages);
         return res.data.packages;
       } catch (error) {
