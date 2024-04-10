@@ -5,6 +5,7 @@
 .Globle-Container{
   width: 100%;
   height: 100vh;
+  box-sizing: border-box;
 }
 .image-container {
   width: 100%;
@@ -92,10 +93,6 @@
   outline: none;
 }
 
-.star{
-  color:var(--primary-red);
-}
-
  input,textarea{
   padding: 8px 8px;
   width: 90%;
@@ -129,24 +126,24 @@ textarea:focus{
 .map-container{
   width: 50%;
   padding: 24px;
-  .map{
-    margin-top: 12px;
-  }
+ 
 
-  .map-1{
-    width: 100%;
-
-  }
-
+ 
+}
+.map{
+  width: 100%;
+  margin-top: 12px;
+}
+.mapOfContactUsPage{
+  width: 98%;
 }
 .boxes {
-  margin-bottom: 30px;
-  /* margin-top: 20px; */
-  height: 12.5rem;
+  margin-bottom: 45px;
+  height: 30vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap:2%;
   align-items: center;
 }
 
@@ -198,7 +195,7 @@ textarea:focus{
 
 
 /* Media query for screens with a minimum width of 1600px */
-@media only screen and (min-width: 1600px) {
+/* @media only screen and (min-width: 1600px) {
   .Container {
     padding: 30px;
   }
@@ -230,10 +227,10 @@ textarea:focus{
     margin-top: 20px;
     margin-bottom: 7px;
   }
-}
+} */
 
 /* Media query for screens with a minimum width of 1900px */
-@media only screen and (min-width: 1900px) {
+/* @media only screen and (min-width: 1900px) {
   .Container {
     padding: 40px;
   }
@@ -246,9 +243,6 @@ textarea:focus{
   .map-1{
     width: 100%;
   }
-  /* .boxes {
-    gap: 50px;
-  } */
 
   .box {
     margin: 0px 18px;
@@ -263,4 +257,4 @@ textarea:focus{
     margin-top: 20px;
     margin-bottom: 10px;
   }
-}
+} */
