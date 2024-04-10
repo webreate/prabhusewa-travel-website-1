@@ -5,7 +5,7 @@ import { HiArrowSmRight } from "react-icons/hi";
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProducts } from "../../store/features/Apicallpackages";
 import { HiArrowSmLeft } from "react-icons/hi";
-
+import Lodder from "../lodder/Lodder";
 
 
 
@@ -25,7 +25,7 @@ const Packeges = () => {
   }, [dispatch])
 
   if (selectstatus === "loading") {
-    return <h1>Lodding....</h1>
+    return <Lodder/>
   }
   if (selectstatus === "failed") {
     alert("something want worng !")

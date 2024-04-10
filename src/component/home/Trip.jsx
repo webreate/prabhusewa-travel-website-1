@@ -3,6 +3,7 @@ import "../../style/home/Trip.css";
 import Slider from "react-slick";
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchmaxvisit } from "../../store/features/Maxvisitapi";
+import Lodder from "../lodder/Lodder";
 const Trip = () => {
   const dispatch = useDispatch()
   const selectedMaxvisit = useSelector((state) => state.maxvisit.maxproduct);
@@ -16,7 +17,7 @@ const Trip = () => {
 
 
   if (selectMaxstatus === "loading") {
-    return <h1>Lodding....</h1>
+    return <Lodder />
   }
   if (selectMaxstatus === "failed") {
     alert("something want worng !")
@@ -59,7 +60,9 @@ const Trip = () => {
                       <div className="sub-card">
                         <div className="card-text-card">
                           <a href="/">{TripData?.packageName}</a>
-                          <p>{TripData?.shortDescription}</p>
+                          <div className="para-trip">
+                            <p>{TripData?.shortDescription}</p>
+                          </div>
                           <div className="image-trip">
                             <img src={TripData?.gallery[0].galleryImage} alt="trip" />
                           </div>

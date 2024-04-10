@@ -1,0 +1,30 @@
+@import "../../assest/constant/Constant.css";
+.lodder-container{
+    width: 100%;
+    height: 100vh;
+    background: transparent
+    linear-gradient(319deg, var(--primary-darkBlue) 0%, #03080d73 42%, #112742 100%) 0% 0%
+    no-repeat padding-box;
+    position: absolute;
+    z-index: 9999999999;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.lodder-icon{
+    font-size: 5rem;
+    color: white;
+    animation: TbLoaderAnimation 2s linear infinite;
+}
+
+
+@keyframes TbLoaderAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
