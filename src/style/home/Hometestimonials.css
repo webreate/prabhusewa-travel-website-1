@@ -60,6 +60,7 @@
   letter-spacing: 0px;
   color: var(--primary-lightBlue);
   opacity: 1;
+  margin-top: 1rem;
 }
 .sub-testimonials-cards .m-p {
   text-align: left;

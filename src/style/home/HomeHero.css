@@ -72,6 +72,7 @@ opacity: 1;
   .text-h {
     width: 80%;
     height: auto;
+    /* background-color: green; */
   }
   .text-h .text-h1 {
     text-align: center;
@@ -85,6 +86,12 @@ opacity: 1;
     height: 60vh;
     overflow: hidden;
   }
+  .para-con{
+    margin-top: 3.5rem;
+  }
+  .text-h1{
+    margin-top: 3.5rem;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -96,7 +103,13 @@ opacity: 1;
   }
   .text-h {
     width: 95%;
-    height: auto;
+    height: 200px;
+  }
+  .para-con{
+    margin-top: 3.5rem;
+  }
+  .text-h1{
+    margin-top: 3.5rem;
   }
 }
 

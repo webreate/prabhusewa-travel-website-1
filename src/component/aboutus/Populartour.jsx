@@ -34,15 +34,17 @@ const Populartour = () => {
               return (
                 < div className="img-div">
                   <img className='tour-img' src={res?.gallery[0].galleryImage} alt='Tour' />
-                  <h3 className='img-head'>{res?.packageName}</h3>
+                 <div className='text-box'>
+                 <h3 className='img-head'>{res?.packageName}</h3>
                   <p className='img-p'>{res?.shortDescription.slice(0, 150)}</p>
-                  <button id='img-btn'>Book Now</button>
+                 </div>
+                <div className='btn-box'>
+                <button id='img-btn'>Book Now</button>
+                </div>
                 </div>
               )
             })
           }
-
-
         </div>
       </div>
     </>

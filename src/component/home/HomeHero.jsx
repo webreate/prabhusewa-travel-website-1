@@ -28,6 +28,7 @@ const HomeHero = () => {
                   <p className="homehero-last-p">
                     ChardhamYtra 2024 Tour Packages
                   </p>
+                
                 </Fade>
               </div>
             </div>
