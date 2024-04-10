@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../style/Form/Form.css";
 import { ImCross } from "react-icons/im";
 import axios from "axios";
+import { fetchProducts } from "../../store/features/Apicallpackages";
+import { useDispatch, useSelector } from "react-redux";
 
 const Form = ({ show, cross }) => {
+  const selectedProduct = useSelector((state) => state.product.productData);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
   const [bookData, setBookData] = useState({
     fullName: "",
     phoneNo: "",
@@ -38,6 +47,7 @@ const Form = ({ show, cross }) => {
         console.log(err);
       });
   };
+  console.log(selectedProduct);
 
   return (
     <>
@@ -94,15 +104,14 @@ const Form = ({ show, cross }) => {
             <div className="form-tag-line-3 bookNowFormInput">
               <select
                 id="Package"
-                className="package"
+                className="packageBookNowForm"
                 onChange={handleInput}
                 name="packages"
                 value={bookData?.packages}
               >
-                <option value="volvo">Packages</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
+                {selectedProduct.map((ele) => (
+                  <option value="volvo">{ele.packageName}</option>
+                ))}
               </select>
               <input
                 type="number"
@@ -126,8 +135,10 @@ const Form = ({ show, cross }) => {
               />
             </div>
             <div className="form-tag-line-5 bookNowFormInput">
-              <div className="journeyDate">
+              <div className="journeyDateHeading">
                 <label htmlFor="dateofjourney">date of journey</label>
+              </div>
+              <div className="journeyDate">
                 <input
                   type="date"
                   onChange={handleInput}
@@ -136,8 +147,6 @@ const Form = ({ show, cross }) => {
                   id="dateofjourney"
                   placeholder=""
                 />
-              </div>
-              <div>
                 <button
                   type="submit"
                   name="button"
