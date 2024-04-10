@@ -3,7 +3,7 @@ import "../../style/Allpackeges/Packeges.css";
 import { Slide } from "react-awesome-reveal";
 import { HiArrowSmRight } from "react-icons/hi";
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchProducts } from "../../store/Products/Apicallpackages";
+import { fetchProducts } from "../../store/features/Apicallpackages";
 import { HiArrowSmLeft } from "react-icons/hi";
 
 
