@@ -1,9 +1,30 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "../../style/home/Homepackages.css";
 import { FaRegHeart } from "react-icons/fa";
 // import { FaStar } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 const Homepackages = () => {
+  const [productdata,setProductdata] =useState(8)
+  const [isToggled,setIsToggled] = useState(false)
+const movileresponsive = window.innerWidth <= 768;
+
+const dataaddtoggle = (e)=>{
+  if(!isToggled){
+    setProductdata(8)
+  }else{
+    setProductdata(4)
+  }
+  
+  setIsToggled(!isToggled)
+}
+
+
+useEffect(()=>{
+ if(movileresponsive){
+  setProductdata(4)
+ }
+},[movileresponsive])
+    
   const Packagesdeta = [
     {
       Image:
@@ -95,7 +116,7 @@ const Homepackages = () => {
         
         </div>
         <div className="main-container">
-          {Packagesdeta.map((res, index) => {
+          {Packagesdeta.slice(0,productdata).map((res, index) => {
             return (
               <>
                 <Slide direction="left">
@@ -132,6 +153,9 @@ const Homepackages = () => {
               </>
             );
           })}
+          <div className="viewmore-resp-btn">
+            <button onClick={(e)=>dataaddtoggle(e)}>{isToggled ? 'Less' : 'View more'}</button>
+          </div>
         </div>
       </div>
     </>

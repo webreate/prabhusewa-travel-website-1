@@ -5,13 +5,13 @@ const Homebestvalue = () => {
   return (
     <>
       <div className="bestValue-container">
-        <img
+        {/* <img
           className="bestvalue-image"
           src="https://images.unsplash.com/photo-1611659934318-06fd70ced53c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="bestvalue"
-        />
+        /> */}
 
-        <div className="bestValue-text-container">
+        {/* <div className="bestValue-text-container"> */}
           <div className="text-main">
             <Bounce>
               <h1 className="text-h1-bv">Why We have Best Value</h1>
@@ -91,7 +91,7 @@ const Homebestvalue = () => {
               </Slide>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </>
   );

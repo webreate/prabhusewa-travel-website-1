@@ -24,17 +24,18 @@ const Trip = () => {
   }
 
 
-  let settings = {
+  const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
+    autoPlay: true,
+    speed: 500,
+    // cssEase: "linear",
     prevArrow: <></>, // Hides the previous arrow
     nextArrow: <></>, // Hides the next arrow
     slidesToShow: 0, // Set to 1 to ensure only one column
   }
+
+
   return (
     <>
       <div className="trip-container">
@@ -51,34 +52,31 @@ const Trip = () => {
         </div>
         <div className="trip-card-container">
           <div className="trip-slide-cards">
-            {selectedMaxvisit?.map((TripData, index) => {
-              // const { Name, Paragraf, Image } = TripData;
-              return (
-                <Slider {...settings} key={index}>
-                  <>
-                    <div className="trip-card" >
-                      <div className="sub-card">
-                        <div className="card-text-card">
-                          <a href="/">{TripData?.packageName}</a>
-                          <div className="para-trip">
-                            <p>{TripData?.shortDescription}</p>
-                          </div>
-                          <div className="image-trip">
-                            <img src={TripData?.gallery[0].galleryImage} alt="trip" />
-                          </div>
-                          <div className="trip-button">
-                            <button>View Detail</button>
-                          </div>
-                        </div>
+            <Slider {...settings}>
+
+              {selectedMaxvisit?.map((TripData, index) => (
+                <div className="trip-card " >
+                  <div className="sub-card">
+                    <div className="card-text-card">
+                      <a href="/">{TripData?.packageName}</a>
+                      <div className="para-trip">
+                        <p>{TripData?.shortDescription}</p>
+                      </div>
+                      <div className="image-trip">
+                        <img src={TripData?.gallery[0].galleryImage} alt="trip" />
+                      </div>
+                      <div className="trip-button">
+                        <button>View Detail</button>
                       </div>
                     </div>
-                  </>
-                </Slider>
+                  </div>
+                </div>
 
-              )
-
-            })}
+              ))}
+            </Slider>
           </div>
+
+
         </div>
       </div>
     </>
