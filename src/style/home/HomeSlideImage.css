@@ -45,3 +45,19 @@
 .slider:hover {
   animation-play-state: paused;
 }
+
+
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px){
+  .homeslideimg {
+    width: 15.5rem;
+    height: 12rem;
+    border-radius: 0.125rem;
+    cursor: pointer;
+  }
+  .homeslideimg img {
+    height: 15rem;
+    width: 200px;
+    object-fit: cover;
+  }
+}
