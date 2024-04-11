@@ -56,6 +56,7 @@ const Packeges = () => {
           alt="temple"
         /> */}
         <div className="packeges-container-main">
+
           <div className="package-text-box">
             <h1>List of all the package for tour</h1>
 
