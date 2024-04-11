@@ -8,7 +8,6 @@
     gap: 40px;
     
 }
-
 .about-img{
     width: 50%   
 }
@@ -27,3 +26,26 @@ border-radius: 5px;
 color: #000000;
 }
    
+@media only screen and (max-width: 768px){
+   .para{
+    width: 100%;
+    height: 300px;
+    padding: 30% 5% 3% 12%;
+   }
+
+   .about-container{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+   }
+
+   .about-img{
+    width: 100%   
+}
+
+.img{
+    height: 100%;
+}
+}

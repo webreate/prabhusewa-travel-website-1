@@ -1,22 +1,27 @@
 .section{
-  height: 300px;
+  height:38vh;
   width: 100%;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  /* background-attachment: fixed; */
-  /* background-size: cover; */
-  background-size: 100% 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /* text-align: center; */
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  /* margin: auto; */
 }
 .data-heading{
   font-size: 80px;
+  display: inline;
+  margin: 0;
+  align-items: center;
   color: var(--primary-yellow);
 }
 .data-para{
   width: 70%;
+  text-align: center;
+  align-items: center;
+  margin: 0px auto;
   color: var(--primary-white);
-  position: absolute;
-  top: 40%;
-
 }

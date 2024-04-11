@@ -102,3 +102,15 @@
     /* margin-top: 20px; */
 }
 
+@media only screen and (max-width: 768px){
+    #head{
+        font-size: larger;
+        padding: 10% 0 3% 5%;
+    }
+
+    #head2{
+        font-size: small;
+        padding: 10% 4% 3% 0;
+    }
+}
+
