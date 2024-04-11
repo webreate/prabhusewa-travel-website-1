@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import "../../style/gallery/Gallerycontent.css";
+import "../../style/gallery/Gallerycontent.css";
 
 const Gallerycontent = () => {
   const [gdata, setGdata] = useState([]);

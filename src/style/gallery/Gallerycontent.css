@@ -29,13 +29,13 @@
 .gallery-img {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: auto;
   overflow: hidden;
 }
 .g-img {
   width: 100%;
-  background-size: cover;
+  background-size: contain;
 }
 
 .row-2 {
