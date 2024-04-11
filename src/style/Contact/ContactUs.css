@@ -6,44 +6,13 @@
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-}
-.image-container {
-  width: 100%;
-  height: 20rem;
-  position: absolute;
-  overflow: hidden;
-}
-.allpackeges-image {
-  width: 100%;
-  height:auto;
-  object-fit: cover;
-  position: absolute;
-  bottom: 1px;
-}
-
-.text-packges{
-  height: 180px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* margin: 70px 0px; */
-  margin-bottom: -150px;
- 
-}
-
-.fade{
-  width: 60%;
-  margin: auto;
-}
-
-.package-para{
-  color: var(--primary-white);
+  /* overflow: hidden; */
 }
 
 .contact-container{
   padding: 0px 40px;
 }
+
 .contact-heading{
   color:var(--primary-blue);;
   font: bolder;
@@ -194,67 +163,48 @@ textarea:focus{
 }
 
 
-/* Media query for screens with a minimum width of 1600px */
-/* @media only screen and (min-width: 1600px) {
+
+/* media query for mobile  */
+
+
+
+@media  screen and (max-width: 414px) {
+  .Globle-Container {
+    height: auto;
+    width: 90%; 
+  }
+
   .Container {
-    padding: 30px;
+    flex-direction: column; 
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .contact-container{
+    padding: 0px 8px 0px 0px;
   }
 
   .form-container,
   .map-container {
-    width: 40%;
+    width: 90%; 
   }
 
-  label{
-    margin-bottom: 10px;
+  .map{
+
   }
 
-  
-
-  .map-1{
-    width: 100%;
-  }
-
-  .box {
-   margin: 0px 20px;
-    width: 20%;
-  }
-  .form-inputs {
-    font-size: 100%; 
-    padding: 25px; 
-  }
-  input,textarea{
-    margin-top: 20px;
-    margin-bottom: 7px;
-  }
-} */
-
-/* Media query for screens with a minimum width of 1900px */
-/* @media only screen and (min-width: 1900px) {
-  .Container {
-    padding: 40px;
-  }
-
-  .form-container,
-  .map-container {
-    width: 35%;
-  }
-  
-  .map-1{
-    width: 100%;
+  .boxes {
+    height: auto;
+    margin: 0px 3px 25px 3px;
+    gap: 3vh;
+    flex-direction: column; 
   }
 
   .box {
-    margin: 0px 18px;
-    width: 15%;
-  }
-  .form-inputs {
-    font-size: 110%; 
-    padding: 30px; 
+    width: 90%; 
   }
 
-  input,textarea{
-    margin-top: 20px;
-    margin-bottom: 10px;
+  .contact-heading {
+    font-size: 20px; 
+
   }
-} */
+}

@@ -7,7 +7,8 @@
   flex-direction: column;
 
   /* text-align: center; */
-  background-size: 100% 100%;
+
+  background-size: cover;
   background-repeat: no-repeat;
   /* margin: auto; */
 }
@@ -19,9 +20,23 @@
   color: var(--primary-yellow);
 }
 .data-para{
-  width: 70%;
+  width: 80%;
   text-align: center;
   align-items: center;
   margin: 0px auto;
   color: var(--primary-white);
 }
+
+/* @media only screen and (max-width:414px){
+  .section{
+    height: 30vh;
+  width: 100%;
+  }
+  .data-heading{
+    font-size: 30px;
+  }
+  .data-para{
+    font-size: 10px;
+    width: 95%;
+  }
+} */
