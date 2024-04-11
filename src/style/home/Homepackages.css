@@ -151,3 +151,20 @@
   cursor: pointer;
   border: none;
 }
+/* view more button show only mobile view */
+.viewmore-resp-btn{
+  display: none;
+}
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px){
+  .viewmore-resp-btn{
+    display: block;
+  }
+  .viewmore-resp-btn button{
+    width: 150px;
+    height: 40px;
+    background-color:  var(--primary-yellow);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

@@ -3,6 +3,7 @@ import "../../style/layout/Header.css";
 import { Link } from "react-router-dom";
 import headerimg from "../../assest/ContactIcons/Layer_1.png";
 import Form from "../popupform/Form";
+import { GiHamburgerMenu } from "react-icons/gi";
 // import contactus from "../../pages/ContactUs";
 const Header = () => {
   // let lastScrollTop = 0;
@@ -79,8 +80,13 @@ const Header = () => {
                 <Form show={form} cross={crossClick}></Form>
               </li>
             </ul>
+           
           </nav>
+          <div className="menu-container">
+                <GiHamburgerMenu className="icon-menu"/>
+            </div>
         </div>
+        
       </div>
     </>
   );

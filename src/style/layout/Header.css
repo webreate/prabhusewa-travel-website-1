@@ -12,6 +12,7 @@
 }
 
 .Header-link-button {
+  display: flex;
   padding: 0 2% 0 0;
 }
 .Header-link-button nav ul li {
@@ -56,4 +57,37 @@
   letter-spacing: 0rem;
   color: var(--primary-darkBlue);
   opacity: 1;
+}
+/* 
+.Header-link-button nav{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+} */
+.menu-container{
+  width: auto;
+  height: 3.9rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-menu{
+  font-size: 30px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px){
+  .icon-menu{
+    display: block;
+  }
+  .Header-link-button nav ul{
+    display: none;
+  }
+  
+
 }
