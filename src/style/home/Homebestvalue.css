@@ -1,22 +1,14 @@
 @import "../../assest//constant//Constant.css";
 .bestValue-container {
   width: 100%;
-  height: 60vh;
-}
-.bestvalue-image {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-  position: absolute;
-}
-.bestValue-text-container {
-  position: relative;
-  width: 100%;
-  height: 60vh;
+  height: auto;
+  background-image: url('https://images.unsplash.com/photo-1611659934318-06fd70ced53c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   display: flex;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
 }
+
 .text-main {
   width: 100%;
   height: auto;
@@ -31,7 +23,7 @@
 }
 .bestvalue-card {
   width: 100%;
-  height: 40vh;
+  height: auto;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -70,6 +62,63 @@
   opacity: 1;
 }
 
+
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px){
+  .bestValue-container{
+    margin-top: -30px;
+  }
+  .bestvalue-card {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr)); */
+    gap: 12px;
+    margin-top: 50px;
+  }
+  .card {
+    width: 10.625rem;
+    height: auto;
+  }
+  .text-h1-bv {
+    text-align: center;
+    font: normal normal bold 2rem/0px Roboto;
+    letter-spacing: 0px;
+    color: var(--primary-blue);
+    opacity: 1;
+    margin-top: 2rem;
+  }
+  .bv-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .image-box {
+    height: 4rem;
+  }
+  .card-heading {
+    font-size: 1rem;
+  }
+  .para-card {
+    text-align: center;
+    font: normal normal normal 1rem/1.25rem Roboto;
+    letter-spacing: 0px;
+    color: var(--primary-darkBlue);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* .... desktop responsive ...... */
 
 /* Large devices (desktops, 992px and up) */
@@ -105,12 +154,12 @@
 }
 
 @media only screen and (min-width: 1921px) {
-  .bestValue-container {
+  /* .bestValue-container {
     height: 60vh;
   }
   .bestvalue-image {
     height: 60vh;
-  }
+  } */
   .bestvalue-card {
     height: 30vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -118,4 +167,5 @@
     gap: 12px;
 
   }
+
 }
