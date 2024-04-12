@@ -24,21 +24,21 @@ const Trip = () => {
   }
 
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoPlay: true,
-    autoplaySpeed: 2000,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    cssEase: "linear",
-    arrows: false, // Hide arrow navigation
-    draggable: false, // Disable dragging the slider with mouse/touch
-    pauseOnHover: false, // Pause autoplay on hover
-    pauseOnFocus: false // Pause autoplay on focus
-  }
-
+// Slider settings
+const settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000, // Adjust autoplay speed in milliseconds
+  speed: 2000,
+  cssEase: "linear",
+  arrows: false, // Hide arrow navigation
+  draggable: false, // Disable dragging the slider with mouse/touch
+  pauseOnHover: false, // Pause autoplay on hover
+  pauseOnFocus: false // Pause autoplay on focus
+};
 
   return (
     <>
@@ -56,7 +56,7 @@ const Trip = () => {
         </div>
         <div className="trip-card-container">
           {/* <div className="trip-slide-cards"> */}
-            <Slider {...settings}>
+          <Slider {...settings}>
 
               {selectedMaxvisit?.map((TripData, index) => (
                 <div className="trip-card " >

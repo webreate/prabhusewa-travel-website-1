@@ -30,6 +30,7 @@
 .img-section{
     width: 100%;
     height: auto;
+    overflow: hidden;
     /* display: flex !important; */
     align-items: center;
     gap: 25px;
