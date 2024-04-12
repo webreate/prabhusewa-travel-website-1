@@ -41,6 +41,16 @@ const Form = ({ show, cross }) => {
       .then((res) => {
         console.log(res);
         console.log(res.bookData);
+        setBookData({
+          fullName: "",
+          phoneNo: "",
+          email: " ",
+          noofpeopletravelling: "",
+          packages: "",
+          budget: " ",
+          message: "",
+          dateofjourney: "",
+        });
         event.target.reset();
       })
       .catch((err) => {
@@ -73,6 +83,7 @@ const Form = ({ show, cross }) => {
                 value={bookData?.fullName}
                 placeholder="Full Name"
                 id="fullName"
+                className="bookNowFormInputTag"
               />
               <input
                 type="number"
@@ -81,6 +92,7 @@ const Form = ({ show, cross }) => {
                 value={bookData?.phoneNo}
                 placeholder="Phone No"
                 id="phoneNo"
+                className="bookNowFormInputTag"
               />
             </div>
             <div className="form-tag-line-2  bookNowFormInput">
@@ -91,6 +103,7 @@ const Form = ({ show, cross }) => {
                 value={bookData?.email}
                 placeholder="E-mail"
                 id="email"
+                className="bookNowFormInputTag"
               />
               <input
                 type="number"
@@ -99,6 +112,7 @@ const Form = ({ show, cross }) => {
                 value={bookData?.noofpeopletravelling}
                 id="noofpeopletravelling"
                 placeholder="No of People Travelling"
+                className="bookNowFormInputTag"
               />
             </div>
             <div className="form-tag-line-3 bookNowFormInput">
@@ -132,6 +146,7 @@ const Form = ({ show, cross }) => {
                 value={bookData?.message}
                 id="message"
                 placeholder="message"
+                className="bookNowFormInputTag"
               />
             </div>
             <div className="form-tag-line-5 bookNowFormInput">
@@ -146,6 +161,7 @@ const Form = ({ show, cross }) => {
                   value={bookData?.dateofjourney}
                   id="dateofjourney"
                   placeholder=""
+                  className="bookNowFormInputTag"
                 />
                 <button
                   type="submit"
