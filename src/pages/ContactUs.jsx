@@ -29,9 +29,10 @@ const ContactPage = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     axios
-      .post("", { data })
+      .post("https://parbhusewa-travel.onrender.com/user/contactus", { data })
       .then((res) => {
         console.log(res);
+        console.log(res.data);
         event.target.reset();
       })
       .catch((err) => {
@@ -108,7 +109,7 @@ const ContactPage = () => {
                 autoComplete="off"
                 required
               ></textarea>
-              <input className="contact-form-btn" type="submit" value="send" />
+              <input className="contact-form-btn" type="submit" />
             </form>
           </div>
           <div className="map-container">

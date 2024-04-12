@@ -75,6 +75,7 @@
 .contact-form-btn{
   background-color: var(--primary-yellow);
   font-weight:600;
+  outline: none;
   width: 93%;
   color:  var(--primary-black);
   border: none;
@@ -199,6 +200,7 @@ textarea:focus{
     
     input,textarea{
       width: 95%;
+      margin: 0px;
     }
   
   }
@@ -206,13 +208,36 @@ textarea:focus{
     width:100%;
   }
 
+  div.form-container{
+    padding-bottom: 0px;
+  }
+  div.map-container{
+    padding-top: 0px;
+  }
+
 
   .box {
     width: 90%; 
+    height: 15vh;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    
   }
+
+  .box-icon{
+    height: 50px;
+    width: 50px;
+  }
+
+  .icons-img{
+    height: 25px;
+    width: 25px;
+  }
+
 
   .contact-heading {
     font-size: 20px; 
+
 
   }
 }
