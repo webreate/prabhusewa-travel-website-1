@@ -108,7 +108,7 @@ const ContactPage = () => {
                 autoComplete="off"
                 required
               ></textarea>
-              <input className="form-btn" type="submit" value="send" />
+              <input className="contact-form-btn" type="submit" value="send" />
             </form>
           </div>
           <div className="map-container">

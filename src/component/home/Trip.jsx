@@ -28,17 +28,21 @@ const Trip = () => {
     dots: false,
     infinite: true,
     autoPlay: true,
+    autoplaySpeed: 2000,
     speed: 500,
-    // cssEase: "linear",
-    prevArrow: <></>, // Hides the previous arrow
-    nextArrow: <></>, // Hides the next arrow
-    slidesToShow: 0, // Set to 1 to ensure only one column
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    cssEase: "linear",
+    arrows: false, // Hide arrow navigation
+    draggable: false, // Disable dragging the slider with mouse/touch
+    pauseOnHover: false, // Pause autoplay on hover
+    pauseOnFocus: false // Pause autoplay on focus
   }
 
 
   return (
     <>
-      <div className="trip-container">
+     
         <div className="trip-text-container">
           <div className="tript-text-box">
             <h1>We Create the Trip You Love</h1>
@@ -51,7 +55,7 @@ const Trip = () => {
           </div>
         </div>
         <div className="trip-card-container">
-          <div className="trip-slide-cards">
+          {/* <div className="trip-slide-cards"> */}
             <Slider {...settings}>
 
               {selectedMaxvisit?.map((TripData, index) => (
@@ -74,11 +78,11 @@ const Trip = () => {
 
               ))}
             </Slider>
-          </div>
+          {/* </div> */}
 
 
         </div>
-      </div>
+    
     </>
   );
 };
