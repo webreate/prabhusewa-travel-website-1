@@ -102,7 +102,7 @@
   }
   .para-card {
     text-align: center;
-    font: normal normal normal 1rem/1.25rem Roboto;
+    font: normal normal normal 0.625rem/1.25rem Roboto;
     letter-spacing: 0px;
     color: var(--primary-darkBlue);
     opacity: 1;

@@ -87,10 +87,10 @@ const Packeges = () => {
                         />
                       </div>
                       <div className="text-div">
-                        <h1 className="text-1">{res?.category}</h1>
+                        <h1 className="text-1">{res?.packageName}</h1>
                       </div>
                       {/* <h1 className="day">{res.Day}</h1> */}
-                      <p className="packages-para">{res?.shortDescription.slice(0, 150)}</p>
+                      <p className="packages-para">{res?.shortDescription.slice(0, 145)}</p>
                       <div className="packages-button">
                         <button className="button-btn">View Details</button>
                       </div>
