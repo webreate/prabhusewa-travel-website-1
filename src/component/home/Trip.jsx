@@ -36,7 +36,7 @@ const settings = {
   cssEase: "linear",
   arrows: false, // Hide arrow navigation
   draggable: false, // Disable dragging the slider with mouse/touch
-  pauseOnHover: false, // Pause autoplay on hover
+  pauseOnHover: true, // Pause autoplay on hover
   pauseOnFocus: false // Pause autoplay on focus
 };
 
