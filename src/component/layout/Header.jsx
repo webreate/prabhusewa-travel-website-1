@@ -27,17 +27,25 @@ const Header = () => {
     setform(false);
   };
 
+
+  /* toggle hame burger menu */
+const HmemenuToggel = ()=>{
+  const toggelbaar = document.querySelector(".ul-header")
+  toggelbaar.classList.toggle("toggle")
+  // alert("hii")
+}
+
   return (
     <>
-      <div className="header" id="navbar">
+      <div className="header" >
         <div className="header-name">
           <Link to="/">
             <img className="H-name" src={headerimg} alt="icon" />
           </Link>
         </div>
         <div className="Header-link-button">
-          <nav>
-            <ul>
+        
+            <ul className="ul-header">
               <li>
                 <Link to="/" className="a">
                   Home
@@ -63,26 +71,17 @@ const Header = () => {
                   Contact Us
                 </Link>
               </li>
-              {/* <li>
-                <a href="/" className="a">
-                  login
-                </a>
-              </li>
-              {/* <li>
-                <Link to="/" className="a">
-                  Signup
-                </a>
-              </li> */}
-              <li>
+           
+          
                 <button className="header-button" onClick={() => setform(true)}>
                   Book now
                 </button>
                 <Form show={form} cross={crossClick}></Form>
-              </li>
+            
             </ul>
            
-          </nav>
-          <div className="menu-container">
+      
+          <div className="menu-container" onClick={()=>HmemenuToggel()}>
                 <GiHamburgerMenu className="icon-menu"/>
             </div>
         </div>
@@ -91,5 +90,4 @@ const Header = () => {
     </>
   );
 };
-
 export default Header;

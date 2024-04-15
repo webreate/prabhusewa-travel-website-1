@@ -7,7 +7,7 @@ export const fetchmaxvisit = createAsyncThunk(
     async (rejectWithValue) => {
       try {
         const res = await axios.get(
-          `https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS TRAVEL`
+          `https://parbhusewa-travel.onrender.com/package/getmaxvisitpackage`
         );
         // console.log('redux response',res.data.packages)
         // console.log("redux response", res.data.packages);
