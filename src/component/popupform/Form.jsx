@@ -161,7 +161,12 @@ const Form = ({ show, cross }) => {
             </div>
             <div className="form-tag-line-5 bookNowFormInput">
               <div className="journeyDateHeading">
-                <label htmlFor="dateofjourney">date of journey</label>
+                <label
+                  classname="journeyDateHeadingLabel"
+                  htmlFor="dateofjourney"
+                >
+                  date of journey
+                </label>
               </div>
               <div className="journeyDate">
                 <input
@@ -174,12 +179,8 @@ const Form = ({ show, cross }) => {
                   className="bookNowFormInputTag"
                   required
                 />
-                <button
-                  type="submit"
-                  name="button"
-                  id="button"
-                  className="Book-btn"
-                >
+
+                <button type="submit" id="bookNowSubmitBtn" name="button">
                   Submit
                 </button>
               </div>

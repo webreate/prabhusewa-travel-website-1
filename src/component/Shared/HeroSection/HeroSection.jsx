@@ -4,8 +4,8 @@ import "../../../style/HeroSection/HeroSection.css";
 const HeroSection = ({ heading, paragraph }) => {
   // console.log(background_image);
   return (
-    <div className="section">
-      <div className="HeroSectiontext">
+    <div className="heroSectionDynamicParent">
+      <div className="heroSectionDynamictext">
         <Bounce>
           <h2 className="data-heading">{heading}</h2>
         </Bounce>
