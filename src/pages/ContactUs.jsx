@@ -29,9 +29,11 @@ const ContactPage = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     axios
-      .post("", { data })
+      .post("https://parbhusewa-travel.onrender.com/user/contactus", { data })
       .then((res) => {
         console.log(res);
+        console.log(res.data);
+        setData({ username: "", number: "", email: "", message: "" });
         event.target.reset();
       })
       .catch((err) => {
@@ -57,7 +59,7 @@ const ContactPage = () => {
             <form
               action="#"
               method="POST"
-              className="form-inputs"
+              className="contact-form-inputs"
               onSubmit={submitHandler}
             >
               <label htmlFor="username">Full Name</label> <br />
@@ -108,13 +110,13 @@ const ContactPage = () => {
                 autoComplete="off"
                 required
               ></textarea>
-              <input className="form-btn" type="submit" value="send" />
+              <input className="contact-form-btn" type="submit" />
             </form>
           </div>
           <div className="map-container">
             <div className="map">
               <iframe
-                className="map-1"
+                className="mapOfContactUsPage"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.5936754184027!2d78.008421!3d30.305626999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b0dc5b66fdf%3A0xe66e55ad8e0609a8!2sWEBREATE!5e0!3m2!1sen!2sin!4v1711856491594!5m2!1sen!2sin"
                 width="550"
                 height="430"

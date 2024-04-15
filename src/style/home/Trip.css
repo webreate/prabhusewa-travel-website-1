@@ -11,12 +11,15 @@
   justify-content: center;
   align-items: center;
 }
+
 .tript-text-box {
   width: 50%;
   height: auto;
 }
+
 .tript-text-box h1 {
   text-align: center;
+  padding-bottom: 1rem;
   font: normal normal bold 3.75rem/0.625rem "Roboto";
   letter-spacing: 0px;
   color: var(--primary-lightBlue);
@@ -31,31 +34,33 @@
 }
 .trip-card-container {
   width: 100%;
-  height: 10%;
-  display: flex;
-  /* align-items: center; */
+
   overflow: hidden;
-  /* overflow-x: scroll; */
+  /* height: 10%; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  /* margin-left: 20px;
+   */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
-.trip-card-container::-webkit-scrollbar {
+/* .trip-card-container::-webkit-scrollbar {
   display: none;
-}
-.trip-slide-cards {
-  width: 100%;
-  height: auto;
-  display: flex;
-  gap: 1.875rem;
-  /* overflow: hidden; */
-  animation: slide 20s linear infinite;
-}
+} */
+
 /* card */
 .trip-card {
-  width: 21.875rem;
-  height: 30.625rem;
+  width: 21.875rem !important;
+  height: auto;
   background: transparent linear-gradient(180deg, #ffc436 0%, #ffeffc 100%) 0%
     0% no-repeat padding-box;
   border-radius: 0.313rem;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 20px 0;
 }
 .sub-card {
   width: 21.875rem;
@@ -80,7 +85,7 @@
   color: var(--primary-yellow);
   opacity: 1;
 }
-.para-trip{
+.para-trip {
   width: 100%;
   height: 100px;
 }
@@ -119,20 +124,29 @@
   border: none;
   cursor: pointer;
 }
-.trip-slide-cards:hover {
-  animation-play-state: paused;
-}
-/* animation */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 9));
-  }
-}
 
-/* .... responsive ...... */
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px) {
+  .tript-text-box {
+    width: 95%;
+  }
+
+  .tript-text-box h1 {
+    font: normal normal bold 1.5rem/0.625rem "Roboto";
+  }
+  .tript-text-box p {
+    font: normal normal normal 1rem/1.875rem "Roboto";
+  }
+
+  .card-text-card {
+    width: 80%;
+  }
+
+  .image-trip {
+    margin-top: 3.25rem;
+  }
+}
+/* .... desktop responsive ...... */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -149,4 +163,3 @@
     height: auto;
   }
 }
-

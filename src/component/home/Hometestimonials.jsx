@@ -81,11 +81,11 @@ const Hometestimonials = () => {
   return (
     <>
       <div className="Testimonials-container">
-        <img
+        {/* <img
           className="Testimonials-image"
           src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww"
           alt="bg"
-        />
+        /> */}
         <div className="testimonials">
           <div className="test-text">
             <h1>

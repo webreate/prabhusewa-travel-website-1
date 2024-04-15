@@ -1,7 +1,10 @@
 @import "../../assest//constant//Constant.css";
 .Testimonials-container {
   width: 100%;
-  height: 60vh;
+  height: auto;
+  background-image: url("https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .Testimonials-image {
   width: 100%;
@@ -60,6 +63,7 @@
   letter-spacing: 0px;
   color: var(--primary-lightBlue);
   opacity: 1;
+  margin-top: 1rem;
 }
 .sub-testimonials-cards .m-p {
   text-align: left;
@@ -99,4 +103,95 @@
   opacity: 1;
   border: none;
   cursor: pointer;
+}
+
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 2rem 0;
+  }
+  .test-text {
+    width: 95%;
+    height: auto;
+  }
+  .test-text h1 {
+    font: normal normal bold 3.5rem/5rem Roboto;
+    text-align: center;
+  }
+  /* card start  */
+  .testimonials-cards {
+    width: 95%;
+    height: auto;
+    background-color: var(--primary-white);
+    border-radius: 0.313rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0 0;
+  }
+  /* card */
+  .sub-testimonials-cards {
+    width: 90%;
+    height: auto;
+  }
+  .sub-testimonials-cards img {
+    width: 6.625rem;
+    height: 6.625rem;
+    box-shadow: 0px 0.188rem 0.375rem var(--primary-opacity-black);
+    opacity: 1;
+    border-radius: 100%;
+  }
+  .sub-testimonials-cards h1 {
+    text-align: left;
+    font: normal normal bold 1.75rem/0px Roboto;
+    letter-spacing: 0px;
+    color: var(--primary-lightBlue);
+    opacity: 1;
+    margin-top: 1rem;
+  }
+  .sub-testimonials-cards .m-p {
+    text-align: left;
+    font: normal normal normal 1rem/2.188rem Roboto;
+    letter-spacing: 0px;
+    color: var(--primary-lightBlue);
+    opacity: 1;
+  }
+  .sub-testimonials-cards .p-p {
+    color: var(--primary-gray);
+    opacity: 1;
+    text-align: center;
+    font-size: 13px;
+  }
+  .button-star {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .star {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 0.125rem;
+  }
+  .star-icon {
+    color: var(--primary-yellow);
+    opacity: 1;
+    font-size: 1.563rem;
+  }
+  .button-star button {
+    width: 7.563rem;
+    height: 2.188rem;
+    background: var(--primary-yellow) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0.188rem 0.375rem #00000029;
+    border-radius: 0.313rem;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+  }
 }

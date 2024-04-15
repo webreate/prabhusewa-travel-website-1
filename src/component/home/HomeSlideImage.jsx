@@ -71,10 +71,19 @@ const HomeSlideImage = () => {
     prevArrow: <></>,
     nextArrow: <></>,
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    //  responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
   };
   return (
-    <div className="HomeImageslider-container">
+    <div className="HomeImageslider-container ">
       <Slider {...settings} style={{width:"100%"}}>
         {images.map((res, index) => (
           <div key={index} className="homeslideimg">

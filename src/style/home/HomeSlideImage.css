@@ -30,18 +30,23 @@
   gap: 10px;
 }
 
-/* .slider {
-  width: 100%;
-  height: auto;
-  display: flex;
-  gap: 0.625rem;
-  align-items: center;
-  animation: slide 20s linear infinite; 
- } */
-
 .HomeImageslider-container::-webkit-scrollbar {
   display: none;
 }
 .slider:hover {
   animation-play-state: paused;
+}
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px){
+  .homeslideimg img {
+    height: 10rem;
+    width: 12rem;
+    object-fit: cover;
+  }
+  .slick-track {
+    display: inline-flex;
+    gap: 8rem;
+   
+  }
+  
 }
