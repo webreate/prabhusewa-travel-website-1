@@ -158,6 +158,7 @@
 .input-new-latter {
   width: 250px;
   height: 30px;
+  border-radius: 5px;
 }
 .input-new-latter:focus{
   outline: none !important;

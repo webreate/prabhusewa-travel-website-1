@@ -16,7 +16,7 @@ const Homepackages = () => {
   const [productdata, setProductdata] = useState(8)
   const [isToggled, setIsToggled] = useState(false)
   const movileresponsive = window.innerWidth <= 768;
-  console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
+  // console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
 
   useEffect(() => {
     dispatch(fetchProducts())
