@@ -74,9 +74,9 @@
           <Slider {...settings}>
             {selectedMaxvisit?.map((res) => (
               <div className="img-div" key={res.id}>
-                <img className='tour-img' src={res?.gallery[0].galleryImage} alt='Tour' />
+                <img className='tour-img' src={res?.gallery[0]&&res?.gallery[0].galleryImage} alt='Tour' />
                 <div className='text-box'>
-                  <h3 className='img-head'>{res?.packageName}</h3>
+                  <h3 className='img-head'>{res?.packageName.slice(0,10)}</h3>
                   <p className='img-p'>{res?.shortDescription.slice(0, 150)}</p>
                 </div>
                 <div className='btn-box'>

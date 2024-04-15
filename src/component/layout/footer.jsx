@@ -8,14 +8,14 @@ const footer = () => {
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  
+
   return (
     <>
       <div className="footer-container">
         <div className="footer-subcontainer">
           <div className="container1">
             <p className="container1-p">
-              Lorem ipsum dolor 
+              Lorem ipsum dolor
             </p>
             <p className="container-p-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
@@ -43,70 +43,70 @@ const footer = () => {
             </div>
           </div>
 
-            <div className="container-bond">
+          <div className="container-bond">
             <div className="container2">
-            <h3 className="container-name">Main Links</h3>
-            <ul>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/" className="a">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/AboutUs" className="a">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/Allpackeges" className="a">
-                  Packages
-                </Link>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/Gallery" className="a">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/contactus" className="a">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-
-
-          <div className="container3">
-            <h3 className="container-name">Quick Links</h3>
-            <ul>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/Privacypolicy" className="a" onClick={() => scrollToTop()}>
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <Link to="/Termsofconditions" className="a" onClick={() => scrollToTop()}>
-                  Term of Conditions
-                </Link>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Blog
-                </a>
-              </li>
-            
-            </ul>
-          </div>
+              <h3 className="container-name">Main Links</h3>
+              <ul>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/" className="a" onClick={() => scrollToTop()}>
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/AboutUs" className="a" onClick={() => scrollToTop()}>
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/Allpackeges" className="a" onClick={() => scrollToTop()}>
+                    Packages
+                  </Link>
+                </li>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/Gallery" className="a" onClick={() => scrollToTop()}>
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/contactus" className="a" onClick={() => scrollToTop()}>
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
             </div>
+
+
+
+            <div className="container3">
+              <h3 className="container-name">Quick Links</h3>
+              <ul>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/Privacypolicy" className="a" onClick={() => scrollToTop()}>
+                    Privacy
+                  </Link>
+                </li>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <Link to="/Termsofconditions" className="a" onClick={() => scrollToTop()}>
+                    Term of Conditions
+                  </Link>
+                </li>
+                <li>
+                  <FaArrowRightLong style={{ color: "#ffc436" }} />
+                  <a href="/" className="a">
+                    Blog
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
 
           <div className="container-sub">
             <h3 className="subscrib-text">Subscribe News Latter</h3>
@@ -118,7 +118,7 @@ const footer = () => {
             </div>
 
           </div>
-       
+
 
         </div>
         <div className="footer-last">

@@ -10,6 +10,7 @@ import Lodder from "../lodder/Lodder";
 
 
 const Packeges = () => {
+  // const [images,setimages] =useState([""])
   const [startindex, setStartindex] = useState(0)
   const itemsPerPage = 6;
 
@@ -18,14 +19,14 @@ const Packeges = () => {
   const selectstatus = useSelector((state) => state.product.status);
 
 
-  // console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
+  console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
 
   useEffect(() => {
     dispatch(fetchProducts())
   }, [dispatch])
 
   if (selectstatus === "loading") {
-    return <Lodder/>
+    return <Lodder />
   }
   if (selectstatus === "failed") {
     alert("something want worng !")
@@ -75,16 +76,20 @@ const Packeges = () => {
 
           <div className="Packages-card-container">
             {visibleData?.map((res) => {
+
               return (
                 <>
                   <Slide key={res._id}>
                     <div className="packages-card" key={res._id}>
                       <div className="images-box">
+
                         <img
                           className="image-round"
-                          src={res?.gallery[0].galleryImage}
+                          src={ res?.gallery[0] && res?.gallery[0].galleryImage}
                           alt="images"
                         />
+
+
                       </div>
                       <div className="text-div">
                         <h1 className="text-1">{res?.packageName}</h1>

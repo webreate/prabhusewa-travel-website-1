@@ -37,7 +37,7 @@ const HmemenuToggel = ()=>{
 
   return (
     <>
-      <div className="header" id="navbar">
+      <div className="header" >
         <div className="header-name">
           <Link to="/">
             <img className="H-name" src={headerimg} alt="icon" />

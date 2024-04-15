@@ -42,7 +42,7 @@ const Trip = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
           slidesToScroll: 1
         }
       }
@@ -72,12 +72,12 @@ const Trip = () => {
             <div className="trip-card" key={index}>
               <div className="sub-card">
                 <div className="card-text-card">
-                  <a href="/">{TripData?.packageName}</a>
+                  <a href="/">{TripData?.packageName.slice(0, 20)}</a>
                   <div className="para-trip">
                     <p>{TripData?.shortDescription}</p>
                   </div>
                   <div className="image-trip">
-                    <img src={TripData?.gallery[0].galleryImage} alt="trip" />
+                    <img src={TripData.gallery[0] && TripData.gallery[0].galleryImage} alt="trip" />
                   </div>
                   <div className="trip-button">
                     <button>View Detail</button>

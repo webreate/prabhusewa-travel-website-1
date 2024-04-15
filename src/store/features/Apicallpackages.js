@@ -7,7 +7,7 @@ export const fetchProducts = createAsyncThunk(
   async (rejectWithValue) => {
     try {
       const res = await axios.get(
-        `https://prabhusewa-travel.fly.dev/package/getpackageweb?type=RELIGIOUS TRAVEL`
+        `https://parbhusewa-travel.onrender.com/package/getpackageweb`
       );
       // console.log("redux response", res.data.packages);
       return res.data.packages;

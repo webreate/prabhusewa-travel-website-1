@@ -16,7 +16,7 @@ const Homepackages = () => {
   const [productdata, setProductdata] = useState(8)
   const [isToggled, setIsToggled] = useState(false)
   const movileresponsive = window.innerWidth <= 768;
-  // console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
+  console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
 
   useEffect(() => {
     dispatch(fetchProducts())
@@ -143,7 +143,7 @@ const Homepackages = () => {
                 <Slide direction="left">
                   <div className="hpac-card" key={index}>
                     <div className="card-image">
-                      <img className="image" src={res?.gallery[0].galleryImage} alt="temple" />
+                      <img className="image" src={res?.gallery[0] && res?.gallery[0].galleryImage} alt="temple" />
                       <div className="over-text-icon">
                         <div className="over-box">
                           {
@@ -164,7 +164,7 @@ const Homepackages = () => {
 
                     <div className="card-footer-text">
                       <div className="header-text">
-                        <p>{res?.packageName}</p>
+                        <p>{res?.packageName.slice(0, 20)}</p>
                         <p>{res?.days.length} days</p>
                       </div>
                       <div className="para-box">
