@@ -59,7 +59,7 @@ h1{
  padding: 10px;
 }
 
-.form-tag{
+.book-now-form-popup{
   display: flex;
   padding:0px  10px;
   flex-direction: column;
@@ -166,13 +166,15 @@ h1{
     width: 100%;
     align-items: center;
     flex-direction: column;
-    input,.packageBookNowForm{
-      padding: 2px 0px;
-      width: 90%;
-      margin: 12px  0px ;
-    }
+   
   }
-
+   
+.bookNowFormInput input,
+.bookNowFormInput .packageBookNowForm {
+  padding: 2px 0px;
+  width: 90%;
+  margin: 12px 0px;
+}
   .book-form-division{
     height: 70%;
     width: 90%;
@@ -193,12 +195,14 @@ h1{
     padding: 2px 0px;
       width: 95%;
       margin: 12px  0px ;
-      div.journeyDate{
-        width: 100%;
-      }
-      .bookNowFormInputTag{
-        width: 98%;
-      }
+     
+      
+  }
+  div.journeyDate{
+    width: 100%;
+  }
+  .bookNowFormInputTag{
+    width: 98%;
   }
   .journeyDate{
     display: flex;
@@ -232,24 +236,26 @@ h1{
     width: 100%;
     align-items: center;
     flex-direction: column;
-    input,.packageBookNowForm{
-      padding: 2px 0px;
-      width: 90%;
-      margin: 12px  0px ;
-    }
+    
   }
+  .bookNowFormInput input,
+.bookNowFormInput .packageBookNowForm {
+  padding: 2px 0px;
+  width: 90%;
+  margin: 12px 0px;
+}
 
-  .book-form-division{
+.book-form-division{
     height: 70%;
     width: 90%;
-  }
+}
   
-  .form-tag-line-1 input{
+.form-tag-line-1 input{
     width: 90%;
-  }
-  .form-tag-line-2 input{
+}
+.form-tag-line-2 input{
     width: 90%;
-  }
+}
   .form-tag-line-4 input{
     width: 90%;
     margin: 8px 0px;
@@ -262,13 +268,13 @@ h1{
   div.form-tag-line-5.bookNowFormInput{
     padding: 2px 0px;
       width: 95%;
-      margin: 12px  0px ;
-      div.journeyDate{
-        width: 100%;
-      }
-      .bookNowFormInputTag{
-        width: 98%;
-      }
+      margin: 12px  0px ;   
+  }
+  div.journeyDate{
+    width: 100%;
+  }
+  .bookNowFormInputTag{
+    width: 98%;
   }
   .journeyDate{
     display: flex;

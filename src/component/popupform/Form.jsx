@@ -77,7 +77,11 @@ const Form = ({ show, cross }) => {
           </div>
         </div>
         <div className="book-form-division">
-          <form action="" className="form-tag" onSubmit={submitHandler}>
+          <form
+            action=""
+            className="book-now-form-popup"
+            onSubmit={submitHandler}
+          >
             <div className="form-tag-line-1  bookNowFormInput">
               <input
                 type="text"
