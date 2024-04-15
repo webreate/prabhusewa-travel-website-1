@@ -190,14 +190,15 @@
   .container1 {
     width: 95%;
     height: auto;
+    display: none;
   }
   .container2 {
     width: 30%;
     height: auto;
   }
   .container3 {
-    width: 45%;
-    height: 240px;
+    width: 48%;
+    height: auto;
   }
   .container-bond {
     width: 95%;

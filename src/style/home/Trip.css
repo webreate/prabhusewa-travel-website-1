@@ -7,7 +7,7 @@
 .trip-text-container {
   width: 100%;
   height: 30vh;
-  display: flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -33,8 +33,8 @@
   opacity: 1;
 }
 .trip-card-container {
-  width: 100% ;
-  
+  width: 100%;
+
   overflow: hidden;
   /* height: 10%; */
   /* display: flex; */
@@ -43,7 +43,7 @@
   gap: 25px;
   /* margin-left: 20px;
    */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none;
 }
 /* .trip-card-container::-webkit-scrollbar {
@@ -53,17 +53,17 @@
 /* card */
 .trip-card {
   width: 21.875rem !important;
-  height: auto ;
+  height: auto;
   background: transparent linear-gradient(180deg, #ffc436 0%, #ffeffc 100%) 0%
     0% no-repeat padding-box;
   border-radius: 0.313rem;
   opacity: 1;
-  display: flex ;
+  display: flex;
   flex-direction: column;
   padding: 0 0 20px 0;
 }
 .sub-card {
-  width: 21.875rem ;
+  width: 21.875rem;
   height: 30.25rem;
   background: var(--primary-lightBlue) 0% 0% no-repeat padding-box;
   border-radius: 0.313rem;
@@ -75,7 +75,7 @@
   align-items: center;
 }
 .card-text-card {
-  width: 20rem ;
+  width: 20rem;
   height: 28.75rem;
 }
 .card-text-card a {
@@ -85,7 +85,7 @@
   color: var(--primary-yellow);
   opacity: 1;
 }
-.para-trip{
+.para-trip {
   width: 100%;
   height: 100px;
 }
@@ -95,7 +95,7 @@
   color: var(--primary-white);
 }
 .image-trip {
-  width: 100% ;
+  width: 100%;
   height: 10.625rem;
   overflow: hidden;
   border-radius: 0.313rem;
@@ -124,27 +124,15 @@
   border: none;
   cursor: pointer;
 }
-/* .trip-slide-cards:hover {
-  animation-play-state: paused;
-} */
-/* animation */
-/* @keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 9));
-  }
-} */
 
 
 
 /*----------------- mobile responsive ----------- */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .tript-text-box {
     width: 95%;
   }
-  
+
   .tript-text-box h1 {
     font: normal normal bold 1.5rem/0.625rem "Roboto";
   }
@@ -152,16 +140,17 @@
     font: normal normal normal 1rem/1.875rem "Roboto";
   }
 
- .card-text-card{
-  width: 80%;
- }
-
-  .sub-card{
+  .card-text-card {
     width: 80%;
   }
 
-  
-
+  .image-trip {
+    margin-top: 3.25rem;
+  }
+  .trip-card{
+    margin-left: -200px;
+  }
+ 
 }
 /* .... desktop responsive ...... */
 
@@ -180,4 +169,3 @@
     height: auto;
   }
 }
-
