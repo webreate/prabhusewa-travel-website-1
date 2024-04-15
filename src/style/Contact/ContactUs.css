@@ -50,7 +50,7 @@
   line-height: 20px;
   word-spacing: 2px;
 }
-.form-inputs{
+.contact-form-inputs{
   font-size:90%;
   width: 100%;
   display: flex;
@@ -60,17 +60,19 @@
   flex-direction: column;
   gap: 10px;
   outline: none;
+  
 }
 
- input,textarea{
+input,textarea{
   padding: 8px 8px;
   width: 90%;
-  outline: none;
+  outline: none !important;
   background-color: var(--primary-white);
   border: 1px solid rgb(220, 214, 214);
   border-radius: 2px;
   box-shadow: 2px 2px 5px rgba(220, 214, 214,0.2);
 }
+
 
 .contact-form-btn{
   background-color: var(--primary-yellow);
@@ -80,6 +82,8 @@
   color:  var(--primary-black);
   border: none;
   cursor: pointer;
+  outline: none !important;
+  border: none !important;
 }
 
 label{

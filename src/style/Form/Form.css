@@ -57,8 +57,6 @@ h1{
   height: 70%;
   width: 90%;
  padding: 10px;
-
-
 }
 
 .form-tag{
@@ -74,7 +72,11 @@ h1{
   flex-direction: row;
   justify-content: space-between;
 }
-
+.bookNowFormInputTag,.Budget,.packageBookNowForm{
+  outline: none !important;
+  border: none !important;
+  border-bottom:2px solid var(--primary-gray) !important; 
+}
 .form-tag-line-2 input{
   width: 45%;
   border: none;
@@ -131,7 +133,7 @@ h1{
 }
 .form-tag-line-5 input{
   width: 45%;
-  border: 2px solid var(--primary-gray);
+  border: 2px solid var(--primary-gray)  !important;
   outline: none;
   background: transparent;
 }
