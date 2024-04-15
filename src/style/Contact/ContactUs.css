@@ -169,7 +169,86 @@ textarea:focus{
 
 
 
-/* media query for mobile  */
+
+/* media query for mobile  for 768px width*/
+
+
+@media  screen and (max-width: 768px) {
+  .Globle-Container {
+    height: auto;
+    width: 100%; 
+  }
+
+  .Container {
+    flex-direction: column; 
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .contact-container{
+    padding: 0px 0px 0px 0px;
+  }
+
+  .form-container,
+  .map-container {
+    width: 90%; 
+  }
+
+  .map{
+    width: 100%;
+    margin-top: 12px;
+  }
+  .mapOfContactUsPage{
+    width: 99%;
+  }
+
+  .boxes {
+    height: auto;
+    margin: 0px 3px 25px 3px;
+    gap: 3vh;
+    flex-direction: column; 
+  }
+
+  
+  input.contact-form-btn{
+    width:99%;
+   
+  }
+  .contactFormPageInp{
+ width:95%;
+  }
+
+  div.form-container{
+    padding-bottom: 0px;
+  }
+  div.map-container{
+    padding-top: 0px;
+  }
+
+
+  .box {
+    width: 90%; 
+    height: 22vh;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    
+  }
+
+  .box-icon{
+    height: 70px;
+    width: 70px;
+  }
+
+  .icons-img{
+    height: 30px;
+    width: 30px;
+  }
+ .box-para,.anchor-box{
+    font-size: 17px; 
+  }
+ 
+}
+/* media query for mobile  for 414px width*/
+
 
 
 
@@ -241,7 +320,5 @@ textarea:focus{
 
   .contact-heading {
     font-size: 20px; 
-
-
   }
 }

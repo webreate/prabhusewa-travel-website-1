@@ -15,7 +15,8 @@ const Gallerycontent = () => {
   }, []);
 
   const handleLoadMore = () => {
-    setShowCount((prevCount) => prevCount + 8);
+    setShowCount(8);
+    setTimeout(() => setShowCount((prevCount) => prevCount + 8), 0);
   };
   return (
     <>
