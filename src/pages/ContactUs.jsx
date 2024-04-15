@@ -33,6 +33,7 @@ const ContactPage = () => {
       .then((res) => {
         console.log(res);
         console.log(res.data);
+        setData({ username: "", number: "", email: "", message: "" });
         event.target.reset();
       })
       .catch((err) => {
@@ -58,7 +59,7 @@ const ContactPage = () => {
             <form
               action="#"
               method="POST"
-              className="form-inputs"
+              className="contact-form-inputs"
               onSubmit={submitHandler}
             >
               <label htmlFor="username">Full Name</label> <br />

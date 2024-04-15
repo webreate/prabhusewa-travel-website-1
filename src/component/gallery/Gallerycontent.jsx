@@ -4,13 +4,19 @@ import "../../style/gallery/Gallerycontent.css";
 
 const Gallerycontent = () => {
   const [gdata, setGdata] = useState([]);
+  const [showCount, setShowCount] = useState(8);
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://parbhusewa-travel.onrender.com/package/getpackagegallery")
       .then((res) => res.json())
       .then((data) => {
-        setGdata(data);
+        setGdata(data.gallery);
+        console.log(data);
       });
-  });
+  }, []);
+
+  const handleLoadMore = () => {
+    setShowCount((prevCount) => prevCount + 8);
+  };
   return (
     <>
       <div className="main-gallery">
@@ -19,15 +25,21 @@ const Gallerycontent = () => {
         </div>
 
         <div className="gallery-section">
-          <div className="gallery-img">
-            {gdata.map((res) => (
-              <img className="g-img row-2" src={res.image} alt={res.title} />
-            ))}
-          </div>
+          {gdata.slice(0, showCount).map((res, index) => (
+            <div key={index} className="gallery-img">
+              <img
+                className="g-img row-2"
+                src={res.galleryImage}
+                alt={res.title}
+              />{" "}
+            </div>
+          ))}
         </div>
         <br />
         <div className="btn-section">
-          <button id="g1-btn">Load More</button>
+          <button id="g1-btn" onClick={handleLoadMore}>
+            Load More
+          </button>
         </div>
       </div>
     </>

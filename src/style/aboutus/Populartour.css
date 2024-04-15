@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     padding: 0 0 3rem 0;
+    overflow: hidden;
 }
 
 /* .tour-main::-webkit-scrollbar {
@@ -59,7 +60,7 @@
     align-items: center;
     border: 1px solid rgb(214, 214, 214);
     border-radius: 5px;
-    padding: 0 10px 10px 0;
+    /* padding: 0 10px 10px 0; */
 }
 
 .tour-img{
@@ -70,7 +71,7 @@
 }
 
 .img-head{
-   /* padding-left: 30px;    */
+   padding-left: 10px;   
     /* height: 10px; */
     color: #337ccf;
     font-size: 22px;
@@ -81,14 +82,15 @@
    color: #337ccf;
 
    /* width: 100%; */
-  /* padding-left: 30px; */
+  padding-left: 10px;
 }
 .btn-box{
     width: 100%;
     height: auto;
     display: flex;
     justify-content: end;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    padding: 1rem 0 1rem 0 ;
 }
 .text-box{
     width: 95%;
@@ -123,7 +125,7 @@
         padding: 10% 4% 3% 0;
     }
     
-.img-div{
+/* .img-div{
    margin-left: -200px;
-}
+} */
 }
