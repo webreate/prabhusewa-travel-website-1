@@ -18,7 +18,6 @@ export const fetchmaxvisit = createAsyncThunk(
     }
   );
   
-
   // initi
   const initialState={
      maxproduct:[],

@@ -19,7 +19,7 @@ const Packeges = () => {
   const selectstatus = useSelector((state) => state.product.status);
 
 
-  console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
+  // console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
 
   useEffect(() => {
     dispatch(fetchProducts())
