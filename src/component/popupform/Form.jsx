@@ -34,6 +34,7 @@ const Form = ({ show, cross }) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    console.log("bookenow:::::::::::", bookData);
     axios
       .post("https://parbhusewa-travel.onrender.com/user/packageinquiary", {
         bookData,
