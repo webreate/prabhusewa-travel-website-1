@@ -11,6 +11,10 @@
 }
 .hide {
   transform: translateY(-100%); /* Hide the navbar by moving it above the viewport */
+  transition-duration: 0.25s;
+}
+.show{
+  transition-duration: 0.25s;
 }
 .Header-link-button {
   display: flex;
