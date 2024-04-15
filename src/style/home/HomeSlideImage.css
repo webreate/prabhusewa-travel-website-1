@@ -39,7 +39,7 @@
 /*----------------- mobile responsive ----------- */
 @media only screen and (max-width: 768px){
   .homeslideimg img {
-    height: 9rem;
+    height: 10rem;
     width: 12rem;
     object-fit: cover;
   }

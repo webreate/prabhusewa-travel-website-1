@@ -190,6 +190,7 @@
   .container1 {
     width: 95%;
     height: auto;
+    display: none;
   }
   .container2 {
     width: 30%;

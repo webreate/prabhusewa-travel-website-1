@@ -4,6 +4,10 @@
     padding: 0 0 3rem 0;
 }
 
+/* .tour-main::-webkit-scrollbar {
+    display: none;
+} */
+
 .tour-head{
     width: 100%;
     height: 20%;
@@ -24,23 +28,29 @@
 }
 
 .img-section{
-    /* width: 100%; */
+    width: 98%;
     height: auto;
-    display: flex;
+    overflow-x: hidden;
+    /* display: flex !important; */
     align-items: center;
     gap: 25px;
-    overflow: hidden;
-    overflow-x: scroll;
+    /* overflow: hidden; */
+    /* overflow-x: scroll; */
     /* background-color: green; */
     margin-left: 20px;
+     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
    
 }
 
 .img-section::-webkit-scrollbar{
-    width: 0;
+    /* width: 0; */
+    display: none;
 }
+
+
 .img-div{
-    width: 300px;
+    width: 300px !important;
     height: auto;
     /* background-color: red; */
     display: flex;
@@ -49,7 +59,7 @@
     align-items: center;
     border: 1px solid rgb(214, 214, 214);
     border-radius: 5px;
-    padding: 0 0 10px 0;
+    padding: 0 10px 10px 0;
 }
 
 .tour-img{
@@ -102,3 +112,18 @@
     /* margin-top: 20px; */
 }
 
+@media only screen and (max-width: 768px){
+    #head{
+        font-size: larger;
+        padding: 10% 0 3% 5%;
+    }
+
+    #head2{
+        font-size: small;
+        padding: 10% 4% 3% 0;
+    }
+    
+.img-div{
+   margin-left: -200px;
+}
+}

@@ -17,22 +17,18 @@
 }
 
 .book-form-Container{
-  /* margin-top: 10px; */
   min-height: 450px;
-  width: 800px;
+  width: 60%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
   z-index: 5;
-
-  /* margin:auto; */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  /* padding: 10px 0px; */
   background-color: var(--primary-white);
 }
 .book-form-heading{
@@ -41,16 +37,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
-  
-  /* padding: 0px 20px; */
-  /* background-color: red; */
   text-align: center;
   width: 88%;
 }
-/* .cut-cross-div{
-  margin-right: -120px;
-} */
+
 .cross-btn{
   border: none;
   cursor: pointer;

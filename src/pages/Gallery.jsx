@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../component/layout/Header";
-// import Galleryhero from "../component/gallery/Galleryhero";
 import HeroSection from "../component/Shared/HeroSection/HeroSection";
 import Data from "../component/Shared/HeroSection/HeroData.json";
 import Gallerycontent from "../component/gallery/Gallerycontent";
