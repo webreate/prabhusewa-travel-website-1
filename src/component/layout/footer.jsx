@@ -14,7 +14,7 @@ const footer = () => {
         <div className="footer-subcontainer">
           <div className="container1">
             <p className="container1-p">
-              Lorem ipsum dolor sit amet consectetur
+              Lorem ipsum dolor 
             </p>
             <p className="container-p-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
@@ -42,7 +42,8 @@ const footer = () => {
             </div>
           </div>
 
-          <div className="container2">
+            <div className="container-bond">
+            <div className="container2">
             <h3 className="container-name">Main Links</h3>
             <ul>
               <li>
@@ -101,20 +102,10 @@ const footer = () => {
                   Blog
                 </a>
               </li>
-              {/* <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Content and Guidelines reporting Content
-                </a>
-              </li>
-              <li>
-                <FaArrowRightLong style={{ color: "#ffc436" }} />
-                <a href="/" className="a">
-                  Help
-                </a>
-              </li> */}
+            
             </ul>
           </div>
+            </div>
 
           <div className="container-sub">
             <h3 className="subscrib-text">Subscribe News Latter</h3>
@@ -126,12 +117,7 @@ const footer = () => {
             </div>
 
           </div>
-          {/* <div className="container-gradients">
-              <div className="gradients"></div>
-              <div className="gradients"></div>
-              <div className="gradients"></div>
-              <div className="gradients"></div>
-          </div> */}
+       
 
         </div>
         <div className="footer-last">
