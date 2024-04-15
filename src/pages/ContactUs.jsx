@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import Axios from "axios";
 import "../assest/constant/Constant.css";
 import Header from "../component/layout/Header";
 import "../style/Contact/ContactUs.css";
@@ -7,33 +7,36 @@ import Tel from "../assest/ContactIcons/Tel.png";
 import contact from "../assest/ContactIcons/contact.png";
 import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
-// import CoverImg from "../assest/CoverPageImg/Cover.png";
 import Data from "../component/Shared/HeroSection/HeroData.json";
 import HeroSection from "../component/Shared/HeroSection/HeroSection";
-// import { Fade, Bounce } from "react-awesome-reveal";
 
 const ContactPage = () => {
   const homeData = Data.find((item) => item.id === 1);
   // console.log(homeData);
   const [data, setData] = useState({
-    username: "",
-    number: "",
+    fullName: "",
+    mobileNumber: "",
     email: "",
-    message: "",
+    comment: "",
   });
 
   const handleInput = (event) => {
+    if (
+      event.target.name === "mobileNumber" &&
+      event.target.value.length > 10
+    ) {
+      event.target.value = event.target.value.slice(0, 10);
+    }
     setData({ ...data, [event.target.name]: event.target.value });
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
-    axios
-      .post("https://parbhusewa-travel.onrender.com/user/contactus", { data })
+    Axios.post("https://parbhusewa-travel.onrender.com/user/contactus", data)
       .then((res) => {
         console.log(res);
         console.log(res.data);
-        setData({ username: "", number: "", email: "", message: "" });
+        setData({ fullName: "", MobileNumber: "", email: "", comment: "" });
         event.target.reset();
       })
       .catch((err) => {
@@ -42,8 +45,10 @@ const ContactPage = () => {
   };
   return (
     <div className="Globle-Container">
-      <Header />
-      <HeroSection {...homeData} />;
+      <div className="header-hero-dynamic-container">
+        <Header />
+        <HeroSection {...homeData} />;
+      </div>
       <div className="contact-container">
         <div className="contact-heading">
           <h2>Leave Us Your Info</h2>
@@ -66,11 +71,12 @@ const ContactPage = () => {
               <input
                 type="text"
                 onChange={handleInput}
-                name="username"
-                value={data?.username}
+                name="fullName"
+                value={data?.fullName}
                 id="username"
                 placeholder="username"
                 autoComplete="off"
+                className="contactFormPageInp"
                 required
               />
               <label htmlFor="number">Mobile Number</label>
@@ -78,11 +84,14 @@ const ContactPage = () => {
               <input
                 type="number"
                 onChange={handleInput}
-                name="number"
-                value={data?.number}
+                name="mobileNumber"
+                value={data?.mobileNumber}
                 id="number"
                 placeholder="Number"
+                maxlength="10"
+                pattern="[0-9]{10}"
                 autoComplete="off"
+                className="contactFormPageInp"
                 required
               />
               <label htmlFor="email">Email Address</label>
@@ -95,19 +104,20 @@ const ContactPage = () => {
                 id="email"
                 placeholder="Email"
                 autoComplete="off"
-                required
+                className="contactFormPageInp"
               />
               <label htmlFor="message">Comment/Questions</label>
               <br />
               <textarea
-                name="message"
+                name="comment"
                 onChange={handleInput}
                 id="message"
                 placeholder="message"
-                value={data?.message}
+                value={data?.comment}
                 cols="30"
                 rows="8"
                 autoComplete="off"
+                className="contactFormPageInp"
                 required
               ></textarea>
               <input className="contact-form-btn" type="submit" />

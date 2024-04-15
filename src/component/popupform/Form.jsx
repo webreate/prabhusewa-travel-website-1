@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../style/Form/Form.css";
 import { ImCross } from "react-icons/im";
-import axios from "axios";
+import Axios from "axios";
 import { fetchProducts } from "../../store/features/Apicallpackages";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -29,15 +29,18 @@ const Form = ({ show, cross }) => {
   }
 
   const handleInput = (event) => {
+    if (event.target.name == "phoneNo" && event.target.value.length > 10) {
+      event.target.value = event.target.value.slice(0, 10);
+    }
     setBookData({ ...bookData, [event.target.name]: event.target.value });
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
-    axios
-      .post("https://parbhusewa-travel.onrender.com/user/packageinquiary", {
-        bookData,
-      })
+    Axios.post(
+      "https://parbhusewa-travel.onrender.com/user/packageinquiary",
+      bookData
+    )
       .then((res) => {
         console.log(res);
         console.log(res.bookData);
@@ -51,7 +54,7 @@ const Form = ({ show, cross }) => {
           message: "",
           dateofjourney: "",
         });
-        event.target.reset();
+        // event.target.reset();
       })
       .catch((err) => {
         console.log(err);
@@ -74,7 +77,11 @@ const Form = ({ show, cross }) => {
           </div>
         </div>
         <div className="book-form-division">
-          <form action="" className="form-tag" onSubmit={submitHandler}>
+          <form
+            action=""
+            className="book-now-form-popup"
+            onSubmit={submitHandler}
+          >
             <div className="form-tag-line-1  bookNowFormInput">
               <input
                 type="text"
@@ -84,6 +91,7 @@ const Form = ({ show, cross }) => {
                 placeholder="Full Name"
                 id="fullName"
                 className="bookNowFormInputTag"
+                required
               />
               <input
                 type="number"
@@ -92,7 +100,10 @@ const Form = ({ show, cross }) => {
                 value={bookData?.phoneNo}
                 placeholder="Phone No"
                 id="phoneNo"
+                maxlength="10"
+                pattern="[0-9]{10}"
                 className="bookNowFormInputTag"
+                required
               />
             </div>
             <div className="form-tag-line-2  bookNowFormInput">
@@ -113,6 +124,7 @@ const Form = ({ show, cross }) => {
                 id="noofpeopletravelling"
                 placeholder="No of People Travelling"
                 className="bookNowFormInputTag"
+                required
               />
             </div>
             <div className="form-tag-line-3 bookNowFormInput">
@@ -135,6 +147,7 @@ const Form = ({ show, cross }) => {
                 value={bookData?.budget}
                 id="budget"
                 className="Budget"
+                required
               />
             </div>
             <div className="form-tag-line-4 bookNowFormInput">
@@ -147,11 +160,17 @@ const Form = ({ show, cross }) => {
                 id="message"
                 placeholder="message"
                 className="bookNowFormInputTag"
+                required
               />
             </div>
             <div className="form-tag-line-5 bookNowFormInput">
               <div className="journeyDateHeading">
-                <label htmlFor="dateofjourney">date of journey</label>
+                <label
+                  classname="journeyDateHeadingLabel"
+                  htmlFor="dateofjourney"
+                >
+                  date of journey
+                </label>
               </div>
               <div className="journeyDate">
                 <input
@@ -162,13 +181,10 @@ const Form = ({ show, cross }) => {
                   id="dateofjourney"
                   placeholder=""
                   className="bookNowFormInputTag"
+                  required
                 />
-                <button
-                  type="submit"
-                  name="button"
-                  id="button"
-                  className="Book-btn"
-                >
+
+                <button type="submit" id="bookNowSubmitBtn" name="button">
                   Submit
                 </button>
               </div>
