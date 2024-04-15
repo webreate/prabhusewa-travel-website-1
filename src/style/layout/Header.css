@@ -6,11 +6,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 9999;
  
 }
-
+.hide {
+  transform: translateY(-100%); /* Hide the navbar by moving it above the viewport */
+}
 .Header-link-button {
   display: flex;
   padding: 0 2% 0 0;
@@ -25,6 +27,14 @@
   letter-spacing: 0rem;
   color: var(--primary-white);
   opacity: 1;
+}
+.active{
+  text-decoration: none;
+  cursor: pointer;
+  font: normal normal medium 1.25rem/0rem Roboto;
+  letter-spacing: 0rem;
+  opacity: 1;
+  color: var(--primary-yellow);
 }
 .Header-link-button ul li .a:hover {
   color: var(--primary-yellow);
