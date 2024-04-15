@@ -29,7 +29,7 @@ const Trip = () => {
     infinite: true,
     autoPlay: true,
     speed: 500,
-    // cssEase: "linear",
+    cssEase: "linear",
     prevArrow: <></>, // Hides the previous arrow
     nextArrow: <></>, // Hides the next arrow
     slidesToShow: 0, // Set to 1 to ensure only one column
@@ -52,10 +52,10 @@ const Trip = () => {
         </div>
         <div className="trip-card-container">
           <div className="trip-slide-cards">
-            <Slider {...settings}>
 
+            <Slider {...settings}>
               {selectedMaxvisit?.map((TripData, index) => (
-                <div className="trip-card " >
+                <div className="trip-card" key={index}>
                   <div className="sub-card">
                     <div className="card-text-card">
                       <a href="/">{TripData?.packageName}</a>
@@ -75,8 +75,6 @@ const Trip = () => {
               ))}
             </Slider>
           </div>
-
-
         </div>
       </div>
     </>
