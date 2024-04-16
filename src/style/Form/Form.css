@@ -153,6 +153,9 @@ h1{
 
 /* Media query start */
 @media only screen and (max-width:768px){
+  .globle{
+    position: fixed;
+  }
   .book-form-Container{
     height: auto;
     padding: 10px 0px;
@@ -223,6 +226,9 @@ h1{
 
 @media only screen and (max-width:280px)
 {
+  .globle{
+    position: fixed;
+  }
   .book-form-Container{
     height: auto;
     padding: 10px 0px;
