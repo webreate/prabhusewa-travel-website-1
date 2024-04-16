@@ -42,7 +42,7 @@ const Header = () => {
 
   /* toggle hame burger menu */
   const HmemenuToggel = () => {
-    const toggelbaar = document.querySelector(".ul-header")
+    const toggelbaar = document.querySelector(".ul-header");
     toggelbaar.classList.toggle("toggle")
   }
   function scrollToTop() {
