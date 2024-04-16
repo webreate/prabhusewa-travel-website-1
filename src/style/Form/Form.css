@@ -199,10 +199,10 @@ h1{
       
   }
   div.journeyDate{
-    width: 100%;
+    width: 105%;
   }
-  .bookNowFormInputTag{
-    width: 98%;
+  input#dateofjourney.bookNowFormInputTag{
+    width: 92%;
   }
   .journeyDate{
     display: flex;
