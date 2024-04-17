@@ -15,52 +15,57 @@ const Privacycontent = () => {
       <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
       </li>
       <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
-            <p id='p-para'>Introduction</p>
-      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
-      </li>
-      <hr/>
-      <li>
+      </Slide>
+      <Slide>
+        <li>
             <p id='p-para'>Introduction</p>
       <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
       </li>
       <hr/>
       </Slide>
+      <Slide>
+        <li>
+            <p id='p-para'>Introduction</p>
+      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
+      </li>
+      <hr/>
+      </Slide>
+      <Slide>
+        <li>
+            <p id='p-para'>Introduction</p>
+      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
+      </li>
+      <hr/>
+      </Slide>
+      <Slide>
+        <li>
+            <p id='p-para'>Introduction</p>
+      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
+      </li>
+      <hr/>
+      </Slide>
+      <Slide>
+        <li>
+            <p id='p-para'>Introduction</p>
+      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
+      </li>
+      <hr/>
+      </Slide>
+      <Slide>
+        <li>
+            <p id='p-para'>Introduction</p>
+      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
+      </li>
+      <hr/>
+      </Slide>
+      <Slide>
+        <li>
+            <p id='p-para'>Introduction</p>
+      <p id='p-para2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo cumque facere quasi vel nostrum dolor voluptatum deserunt eum expedita esse cum consectetur, molestias quia non pariatur commodi quibusdam officia rerum nam, nobis voluptates. Hic asperiores tenetur voluptatum optio! Non, voluptate?</p>
+      </li>
+      <hr/>
+      </Slide>
+      
       </ul>
     </div>
     </>

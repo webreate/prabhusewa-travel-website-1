@@ -11,3 +11,23 @@
 #p-para{
     color:#337ccf;
 }
+
+@keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide {
+    animation: slideInFromTop 0.5s ease forwards;
+    opacity: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
