@@ -18,16 +18,16 @@
 }
 
 .contact-container{
-  padding: 0px 40px;
+  padding: 0rem 2.5rem;
 }
 
 .contact-heading{
   color:var(--primary-blue);;
   font: bolder;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 25px;
-  margin-bottom:-40px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.563rem;
+  margin-bottom:-2.5rem;
   /*padding: 8px 0px; */
 }
 
@@ -38,7 +38,7 @@
  display: flex;
  flex-direction: row;
  justify-content: space-between;
- padding: 5px;
+ padding: 0.313rem;
 }
 
 .form-container{
@@ -48,37 +48,39 @@
   display: flex;
   /* margin-top: -12px; */
   flex-direction:column;
-  padding:20px;
+  padding:1.25rem;
 }
 .form-para{
   font-size:90%;
   margin: 0;
   width: 90%;
   font-weight:normal;
-  line-height: 20px;
-  word-spacing: 2px;
+  line-height: 1.25rem;
+  word-spacing: 0.125rem;
 }
 .contact-form-inputs{
   font-size:90%;
   width: 100%;
   display: flex;
   align-items: start;
-  padding:20px 0px ;
+  padding:1.25rem 0rem;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   outline: none;
   
 }
 
 input,textarea{
-  padding: 8px 8px;
+  padding: 0.5rem 0.5rem;
   width: 90%;
   outline: none !important;
   background-color: var(--primary-white);
   border: 1px solid rgb(220, 214, 214);
-  border-radius: 2px;
-  box-shadow: 2px 2px 5px rgba(220, 214, 214,0.2);
+  border-radius: 0.125rem;
+  box-shadow: 0.125rem 0.125rem 0.313rem rgba(220, 214, 214,0.2);
+  margin-top: -2.188rem;
+  /* margin-bottom:20px ; */
 }
 
 
@@ -88,6 +90,7 @@ input,textarea{
   outline: none;
   width: 93%;
   color:  var(--primary-black);
+margin-top: 0.625rem;
   border: none;
   cursor: pointer;
   outline: none !important;
@@ -95,32 +98,32 @@ input,textarea{
 }
 
 label{
-  margin-bottom: -35px;
+  margin-bottom: -2.188;
 }
 
 input:focus{
-  border: 2px solid var( --primary-blue);
+  border: 0.125rem solid var( --primary-blue);
 }
 textarea:focus{
-  border: 2px solid var( --primary-blue);
+  border: 0.125rem solid var( --primary-blue);
 }
 
 .map-container{
   width: 50%;
-  padding: 24px;
+  padding: 1.5rem;
  
 
  
 }
 .map{
   width: 100%;
-  margin-top: 12px;
+  margin-top: 0.75rem;
 }
 .mapOfContactUsPage{
   width: 98%;
 }
 .boxes {
-  margin-bottom: 45px;
+  margin-bottom: 2.813rem;
   height: 30vh;
   width: 100%;
   display: flex;
@@ -137,11 +140,11 @@ textarea:focus{
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.188rem;
   height: 90%;
   width: 30%;
   background: linear-gradient(to right, var(--primary-blue), var(--primary-lightBlue));
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .anchor-box {
@@ -156,9 +159,9 @@ textarea:focus{
 }
 
 .box-icon {
-  height: 80px;
-  width: 80px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  height: 30%;
+  width: 20%;
+  box-shadow: 0rem 0rem 0.188rem rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,8 +170,8 @@ textarea:focus{
 }
 
 .icons-img {
-  height: 40px;
-  width: 40px;
+  height: 65%;
+  width: 65%;
 }
 
 .box:hover {
@@ -189,11 +192,11 @@ textarea:focus{
 
   .Container {
     flex-direction: column; 
-    padding: 0px;
+    padding: 0rem;
     box-sizing: border-box;
   }
   .contact-container{
-    padding: 0px 0px 0px 0px;
+    padding: 0rem;
   }
 
   .form-container,
@@ -203,7 +206,7 @@ textarea:focus{
 
   .map{
     width: 100%;
-    margin-top: 12px;
+    margin-top: 0.75rem;
   }
   .mapOfContactUsPage{
     width: 99%;
@@ -211,7 +214,7 @@ textarea:focus{
 
   .boxes {
     height: auto;
-    margin: 0px 3px 25px 3px;
+    margin: 0rem 0.188rem 1.563rem 0.188rem;
     gap: 3vh;
     flex-direction: column; 
   }
@@ -226,32 +229,32 @@ textarea:focus{
   }
 
   div.form-container{
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
   }
   div.map-container{
-    padding-top: 0px;
+    padding-top: 0rem;
   }
 
 
   .box {
     width: 90%; 
     height: 22vh;
-    padding: 10px 0px;
+    padding: 0.625rem 0rem;
     box-sizing: border-box;
     
   }
 
   .box-icon{
-    height: 70px;
-    width: 70px;
+    height: 35%;
+    width: 12%;
   }
 
   .icons-img{
-    height: 30px;
-    width: 30px;
+    height: 55%;
+    width: 50%;
   }
  .box-para,.anchor-box{
-    font-size: 17px; 
+    font-size: 1.063rem; 
   }
  
 }
@@ -265,11 +268,11 @@ textarea:focus{
 
   .Container {
     flex-direction: column; 
-    padding: 0px;
+    padding: 0rem;
     box-sizing: border-box;
   }
   .contact-container{
-    padding: 0px 0px 0px 0px;
+    padding: 0rem;
   }
 
   .form-container,
@@ -279,7 +282,7 @@ textarea:focus{
 
   .boxes {
     height: auto;
-    margin: 0px 3px 25px 3px;
+    margin: 0rem 0.188rem 1.563rem 0.188rem;
     gap: 3vh;
     flex-direction: column; 
   }
@@ -288,7 +291,7 @@ textarea:focus{
     
     input,textarea{
       width: 95%;
-      margin: 0px;
+      margin: 0rem;
     }
   
   }
@@ -297,32 +300,32 @@ textarea:focus{
   }
 
   div.form-container{
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
   }
   div.map-container{
-    padding-top: 0px;
+    padding-top: 0rem;
   }
 
 
   .box {
     width: 90%; 
     height: 15vh;
-    padding: 10px 0px;
+    padding: 0.625rem 0rem;
     box-sizing: border-box;
   }
 
   .box-icon{
-    height: 50px;
-    width: 50px;
+    height: 30%;
+    width: 20%;
   }
 
   .icons-img{
-    height: 25px;
-    width: 25px;
+    height: 60%;
+    width: 50%;
   }
 
 
   .contact-heading {
-    font-size: 20px; 
+    font-size: 1.25rem; 
   }
 }
