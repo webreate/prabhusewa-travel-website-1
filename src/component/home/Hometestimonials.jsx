@@ -15,55 +15,91 @@ const Hometestimonials = () => {
     {
       Image:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
-      Name: "RoBert Albert",
-      Member: "Member of the Chardham",
+      Name: " Anjali Kalra",
+      Member: "Member of the PrabhuSewa",
       Testimonials:
-        "  As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!",
+        "My spiritual journey in Rishikesh was elevated by Prabhu Seva's guidance. Their expertise in arranging Ganga Aarti experiences and yoga retreats made it an unforgettable pilgrimage.",
       star: 5,
     },
     {
       Image:
         "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
-      Name: "Abhishek kumar",
-      Member: "Member of the Chardham",
+      Name: " Amit Dagar ",
+      Member: "Member of the  PrabhuSewa",
       Testimonials:
-        "  As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!",
+        "Highly recommend for their seamless arrangements in Haridwar. Their assistance during the Ganga Aarti ceremony ensured a deeply spiritual experience. ",
       star: 5,
     },
     {
       Image:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
-      Name: "suraj yadav",
-      Member: "Member of the Chardham",
+      Name: "Ravi Gupta",
+      Member: "Member of the PrabhuSewa",
       Testimonials:
-        "  As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!",
+        " Thanks to Prabhu Seva, my Kedarnath pilgrimage was smooth and hassle-free. Their support with accommodation and transport allowed me to focus on the divine journey.",
       star: 5,
     },
     {
       Image:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
-      Name: "sharma",
-      Member: "Member of the Chardham",
+      Name: "Deepak Pal",
+      Member: "Member of the PrabhuSewa",
       Testimonials:
-        "  As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!",
+      "An enriching experience in Badrinath, all thanks to [Travel Company]. Their local guides provided insights into the temple's significance, enhancing the spiritual journey.",
       star: 5,
     },
     {
       Image:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
-      Name: "ravi teja",
-      Member: "Member of the Chardham",
+      Name: " Neha Garg",
+      Member: "Member of the PrabhuSewa",
       Testimonials:
-        "  As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!",
+      "Gratitude to Prabhu Seva for organizing a memorable trip to Yamunotri. Their assistance with darshan and exploring nearby attractions made the pilgrimage truly special.",
       star: 5,
     },
     {
       Image:
         "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
-      Name: "gaurav",
-      Member: "Member of the Chardham",
+      Name: "Rahul Mehta ",
+      Member: "Member of the PrabhuSewa",
       Testimonials:
-        "  As a frequent traveler, I can confidently say that Uttarakhand Dekho stands out. The dedication to client satisfaction, coupled with their in-depth knowledge of Uttarakhand, ensures an unmatched travel adventure.Exceptional services!",
+      "My pilgrimage to Gangotri was made seamless. Their support with accommodation and transportation ensured a fulfilling spiritual experience.",
+      star: 5,
+    },
+    {
+      Image:
+        "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
+      Name: "Priya Shastri ",
+      Member: "Member of the PrabhuSewa",
+      Testimonials:
+      "Thank you for arranging a peaceful retreat in Uttarkashi. Their guidance in exploring local temples and spiritual sites was invaluable.",
+      star: 5,
+    },
+    {
+      Image:
+        "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
+      Name: "Ananya Bhatt  ",
+      Member: "Member of the PrabhuSewa",
+      Testimonials:
+      "Exceptional service from Prabhu Seva during my visit to Joshimath. Their assistance with accommodation and exploring nearby attractions made the trip memorable.",
+      star: 5,
+    },
+    {
+      Image:
+        "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
+      Name: "Sunita Rai ",
+      Member: "Member of the PrabhuSewa",
+      Testimonials:
+      "Effortless journey to Hemkund Sahib, thanks to the team. Their support with trekking arrangements and accommodation made the pilgrimage spiritually fulfilling.",
+      star: 5,
+    },
+    {
+      Image:
+        "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
+      Name: "Vivek Sinha ",
+      Member: "Member of the PrabhuSewa",
+      Testimonials:
+      "Grateful for assistance during my Uttarkashi pilgrimage. Their local insights and logistical support ensured a smooth and meaningful journey.",
       star: 5,
     },
   ];
@@ -105,8 +141,7 @@ const Hometestimonials = () => {
                   <IoIosStar className="star-icon" />
                   <IoIosStar className="star-icon" />
                   <IoIosStar className="star-icon" />
-                </div>
-                <button>View Detail</button>
+                </div> 
               </div>
             </div>
           </div>

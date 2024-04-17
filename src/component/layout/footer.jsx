@@ -15,14 +15,10 @@ const footer = () => {
         <div className="footer-subcontainer">
           <div className="container1">
             <p className="container1-p">
-              Lorem ipsum dolor
+              Prabh Sewa
             </p>
             <p className="container-p-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              voluptatum numquam fuga repellendus totam, repudiandae tenetur
-              facilis earum ipsa iste incidunt cupiditate impedit recusandae nam
-              culpa dolore sunt alias ad. impedit recusandae nam culpa dolore
-              sunt alias ad. impedit recusandae nam culpa dolore sunt alias ad.
+            PRABHU SEVA is your gateway to unforgettable adventures around the globe. From pristine beaches to ancient temples, we specialize in crafting personalized travel experiences tailored to your interests and preferences. With our dedication to exceptional service and attention to detail, let us turn your travel dreams into reality. Start planning your next journey with us today!
             </p>
             <div className="footer-images">
               <img
