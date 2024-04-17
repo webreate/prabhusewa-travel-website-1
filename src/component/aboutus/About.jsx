@@ -31,7 +31,10 @@ const About = () => {
         </div>
         <div className="para">
           <Slide direction='right'>
-          <p>Welcome to Uttarakhand Dekho, where adventure meets serenity! We are a premier travel company dedicated to unlocking the enchanting beauty of Uttarakhand, India. Our passion lies in curating immersive journeys that showcase the rich cultural tapestry, diverse landscapes, and hidden gems of this Himalayan state. Uttarakhand Dekho is your gateway to unforgettable experiences, whether you seek thrilling mountain adventures, spiritual retreats, or tranquil escapes. Our expert team ensures seamless travel arrangements, personalized itineraries, and a commitment to sustainable tourism, allowing you to discover the soul-stirring magic of Uttarakhand with confidence and joy. Come, let Uttarakhand Dekho be your trusted companion on a journey of discovery and wonder!</p>
+          <p>Welcome to PRABHU SEVA TOUR & TRAVELS, your premier partner for exploring the enchanting beauty and rich culture of Uttarakhand, India's Devbhoomi (Land of the Gods).
+Passionate about showcasing the diverse landscapes, spiritual sites, and adventurous experiences that make Uttarakhand a must-visit destination for travelers from around the world, we curate bespoke journeys tailored to your every desire.
+With years of experience and a deep-rooted connection to the region, our team of travel experts is dedicated to providing unparalleled service, personalized attention, and authentic experiences that leave a lasting impression.
+Discover the magic of Uttarakhand with us and embark on a journey that will captivate your senses, nourish your soul, and create memories to last a lifetime. Let us be your trusted companion as you explore the unparalleled beauty and spiritual essence of Uttarakhand.</p>
           </Slide>
         </div>
         </>
@@ -39,7 +42,10 @@ const About = () => {
         <>
          <div className="para">
           <Slide direction='right'>
-      <p>Welcome to Uttarakhand Dekho, where adventure meets serenity! We are a premier travel company dedicated to unlocking the enchanting beauty of Uttarakhand, India. Our passion lies in curating immersive journeys that showcase the rich cultural tapestry, diverse landscapes, and hidden gems of this Himalayan state. Uttarakhand Dekho is your gateway to unforgettable experiences, whether you seek thrilling mountain adventures, spiritual retreats, or tranquil escapes. Our expert team ensures seamless travel arrangements, personalized itineraries, and a commitment to sustainable tourism, allowing you to discover the soul-stirring magic of Uttarakhand with confidence and joy. Come, let Uttarakhand Dekho be your trusted companion on a journey of discovery and wonder!</p>
+      <p>Welcome to PRABHU SEVA TOUR & TRAVELS, your premier partner for exploring the enchanting beauty and rich culture of Uttarakhand, India's Devbhoomi (Land of the Gods).
+Passionate about showcasing the diverse landscapes, spiritual sites, and adventurous experiences that make Uttarakhand a must-visit destination for travelers from around the world, we curate bespoke journeys tailored to your every desire.
+With years of experience and a deep-rooted connection to the region, our team of travel experts is dedicated to providing unparalleled service, personalized attention, and authentic experiences that leave a lasting impression.
+Discover the magic of Uttarakhand with us and embark on a journey that will captivate your senses, nourish your soul, and create memories to last a lifetime. Let us be your trusted companion as you explore the unparalleled beauty and spiritual essence of Uttarakhand.</p>
       </Slide>
     </div>
      <div className="about-img">
