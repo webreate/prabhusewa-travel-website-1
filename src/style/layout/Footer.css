@@ -37,7 +37,7 @@
 }
 .container3 {
   width: 40%;
-  height: 240px;
+  height: 15rem;
 }
 .container3 ul li {
   list-style-type: none;
@@ -129,15 +129,15 @@
   padding: 0 3%;
 }
 .container-sub {
-  width: 350px;
+  width: 21.875rem;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 
 .container-sub {
-  width: 400px;
-  height: 200px;
+  width: 25rem;
+  height: 12.5rem;
 }
 .subscrib-text {
   text-align: center;
@@ -148,35 +148,35 @@
 }
 .inpute-box-new-latter {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   overflow: hidden;
 }
 .input-new-latter {
-  width: 250px;
-  height: 30px;
-  border-radius: 5px;
+  width: 15.625rem;
+  height: 1.875rem;
+  border-radius: 0.3125rem;
 }
 .input-new-latter:focus{
   outline: none !important;
 }
 .new-latter-button {
-  width: 100px;
-  height: 45px;
+  width: 6.25rem;
+  height: 2.8125rem;
   cursor: pointer;
   border: none;
   background-color: var(--primary-yellow);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 /* container bond */
 .container-bond {
   width: 25%;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: space-around;
   /* background-color: red; */
 }
@@ -204,13 +204,13 @@
   .container-bond {
     width: 95%;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: space-around;
     margin-top: 1rem;
   }
   .container-sub {
     width: 95%;
-    height: 110px;
+    height: 6.875rem;
   }
   .container-p-white {
     font: 1rem/1.375rem;
@@ -223,12 +223,12 @@
   .footer-last p {
     color: var(--primary-white);
     padding: 0 1rem;
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
   .input-new-latter {
-    width: 200px;
+    width: 12.5rem;
   }
   .new-latter-button {
-    width: 80px;
+    width: 5rem;
   }
 }
