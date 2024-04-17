@@ -24,7 +24,7 @@
 }
 .text-container p {
   text-align: center;
-  font: normal normal normal 1rem/20px Roboto;
+  font: normal normal normal 1rem/1.25rem Roboto;
   letter-spacing: 0px;
   color: var(--primary-lightgray);
   opacity: 1;
@@ -35,7 +35,7 @@
   height: auto;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 4fr));
   /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr)); */
   gap: 0.75rem;
 }
@@ -112,7 +112,7 @@
   margin-top: -0.313rem;
 }
 .header-text p {
-  font: normal normal bold 1.25rem / px Roboto;
+  font: normal normal bold 1.25rem / 0rem Roboto;
   letter-spacing: 0px;
   color: var(--primary-lightBlue);
   opacity: 1;
@@ -161,10 +161,10 @@
     display: block;
   }
   .viewmore-resp-btn button{
-    width: 150px;
-    height: 40px;
+    width: 9.375rem;
+    height: 2.5rem;
     background-color:  var(--primary-yellow);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
   }
 }

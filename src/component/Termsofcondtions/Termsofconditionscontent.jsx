@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../style/Termsandconditions/Termsofconditionscontent.css'
+import { Slide} from "react-awesome-reveal";
 
 const Termsofconditionscontent = () => {
   return (
@@ -10,6 +11,7 @@ const Termsofconditionscontent = () => {
             </div>
             <div className="sub-content">
                 <ul>
+                    <Slide>
                     <li>
                         <p>Each person is allowed to carry only one single bag with maximum 2kg weight in the helicopter.</p>
                     </li>
@@ -40,6 +42,7 @@ const Termsofconditionscontent = () => {
                     <li>
                         <p>Each person is allowed to carry only one single bag with maximum 2kg weight in the helicopter.</p>
                     </li>
+                    </Slide>
                 </ul>
             </div>
         </div>

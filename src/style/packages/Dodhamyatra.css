@@ -22,7 +22,7 @@
 }
 .text-container h2 {
   text-align: center;
-  font: normal normal medium 44px/58px Roboto;
+  font: normal normal medium 2.75rem/3.625rem Roboto;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
@@ -81,11 +81,11 @@
   gap: 0.625rem;
 }
 .our-packages {
-  width: 200px;
-  height: 35px;
+  width: 12.5rem;
+  height: 2.1875rem;
   background: #ffc436 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 5px;
+  box-shadow: 0px .01875rem 0.375rem #00000029;
+  border-radius: 0.3125rem;
   opacity: 1;
   cursor: pointer;
 }
@@ -98,15 +98,48 @@
 }
 .Attraction,
 .cato-btn {
-  width: 170px;
-  height: 35px;
+  width: 10.625rem;
+  height: 2.1875rem;
   background: transparent;
-  border: 1px solid white;
+  border: 0.0625rem solid white;
   color: white;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 5px;
+  box-shadow: 0px 0.1875rem 0.375rem #00000029;
+  border-radius: 0.3125rem;
   opacity: 1;
   cursor: pointer;
+}
+.Attraction-btn{
+  width: 10.625rem;
+  height: 2.1875rem;
+  background: transparent;
+  border: 0.0625rem solid white;
+  color: white;
+  box-shadow: 0px 0.1875rem 0.375rem #00000029;
+  border-radius: 0.3125rem;
+  opacity: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Attraction-ul{
+  width: 31.25rem; 
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 9;
+  top: 2rem;
+  left: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.1875rem;
+
+}
+.Attraction-ul li{
+  color: black;
 }
 /* ........... dodham-packages-container ........... */
 .dodham-packages-container {
@@ -122,7 +155,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   overflow: hidden;
   /* background-color: rgb(128, 110, 217); */
 }
@@ -132,11 +165,11 @@
   border-radius: 0.525rem;
   background: transparent linear-gradient(180deg, #083f8380 0%, #04204280 100%)
     0% 0% no-repeat padding-box;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .image-wrapper {
   width: 38%;
@@ -160,20 +193,20 @@
   justify-content: space-between;
 }
 .day-container {
-  width: 200px;
+  width: 12.5rem;
   height: 20rem;
   /* background-color: rgb(164, 230, 164); */
 }
 .day-packages-day {
-  width: 180px;
-  height: 45px;
+  width: 11.25rem;
+  height: 2.8125rem;
   background: #dfa00a 0% 0% no-repeat padding-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .images-related {
-  width: 400px;
+  width: 25rem;
   height: 20rem;
   /* background-color: rgb(229, 185, 185); */
   display: flex;
@@ -181,19 +214,19 @@
   align-items: center;
 }
 .images-dodham {
-  width: 150px;
+  width: 9.375rem;
   height: 19rem;
   /* background-color: rgb(149, 239, 237); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .images-dodham-all {
-  width: 100px;
-  height: 90px;
-  border-radius: 5px;
+  width: 6.25rem;
+  height: 5.625rem;
+  border-radius: 0.3125rem;
   opacity: 1;
   cursor: pointer;
   cursor: pointer;
@@ -216,49 +249,29 @@
   position: relative;
 }
 .View-Program button {
-  width: 150px;
-  height: 40px;
+  width: 9.375rem;
+  height: 2.5rem;
   border: none;
   background: #ffc436 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 5px;
+  box-shadow: 0px 0.1875rem 0.375rem #00000029;
+  border-radius: 0.3125rem;
   opacity: 1;
   cursor: pointer;
 }
 .tool-tip-dodhamyatra {
-  width: 340px;
-  height: 130px;
+  width: 21.25rem;
+  height: auto;
   background-color: #ffffff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
+  /* text-align: center; */
+  border-radius: .0375rem;
+  padding: 0.3125rem;
   position: absolute;
   z-index: 1;
   top: 3rem;
   right: 2rem;
-  display: flex;
-  /* justify-content:space-around; */
-  /* align-items: center; */
-  flex-direction: column;
-  gap: 15px;
-  display: none;
+ padding:  0 1rem 0;
 }
-.tool-radio {
-  width: 100%;
-  height: 20px;
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 5px;
-  /* background-color: green; */
-  margin-top: 10px;
-}
-.tool-radio input {
-  height: 15px;
-  width: 15px;
-}
-.tool-radio label {
-  font-size: 12px;
-}
+
 .all-text-dodhamyatra {
   width: 100%;
   height: 15rem;
@@ -270,7 +283,7 @@
 .all-text-dodhamyatra h2 {
   /* UI Properties */
   text-align: left;
-  font: normal normal normal 40px/0px Perpetua;
+  font: normal normal normal 2.5rem/0px Perpetua;
   letter-spacing: 0px;
   color: #ffffff;
   text-transform: uppercase;
@@ -279,7 +292,7 @@
 .all-text-dodhamyatra p {
   /* UI Properties */
   text-align: left;
-  font: normal normal 300 20px/35px Roboto;
+  font: normal normal 300 1.25rem/2.1875rem Roboto;
   letter-spacing: 0px;
   color: #06c6c6;
   text-transform: lowercase;

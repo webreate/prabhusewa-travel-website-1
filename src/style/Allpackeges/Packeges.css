@@ -95,21 +95,21 @@
   top: 1.875rem;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 4fr));
   /* grid-template-rows: repeat(auto-fit,minmax(400px,2fr)); */
   gap: 0.75rem;
 }
 .packages-card {
   width: 21.875rem;
   height: 31rem;
-  border: 2px solid var(--primary-white);
+  border: 0.125rem solid var(--primary-white);
   border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .images-box {
@@ -143,13 +143,11 @@
   letter-spacing: 0rem;
   color: var(--primary-white);
 }
-/* .day {
-  text-align: center;
-  font: normal normal 300 1.875rem/0rem Roboto;
-  letter-spacing: 0rem;
-  color: var(--primary-white);
-  padding: 2%;
-} */
+.p-bx{
+  width: 100%;
+  height: 8rem;
+  /* background-color: red; */
+}
 .packages-para {
   text-align: center;
   font: normal normal 300 1.25rem/1.563rem Roboto;
@@ -165,7 +163,7 @@
   align-items: center;
 }
 .button-btn {
-  width: 200px;
+  width: 12.5rem;
   height: 3.3rem;
   cursor: pointer;
   border: none;
@@ -193,10 +191,10 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .button-btn1 {
-  width: 100px;
+  width: 6.25rem;
   height: 3.3rem;
   cursor: pointer;
   border: none;
@@ -210,7 +208,7 @@
   opacity: 1;
 }
 .icon-btn {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 
@@ -244,7 +242,7 @@
     width: 95%;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 4fr));
     /* grid-template-rows: repeat(auto-fit,minmax(400px,2fr)); */
     gap: 0.75rem;
   }
@@ -278,7 +276,7 @@
     color: var(--primary-white);
   }
   .button-btn {
-    width: 150px;
+    width: 9.375rem;
     height: 3rem;
   }
   .packages-button{
@@ -302,6 +300,6 @@
 
 @media only screen and (min-width: 1921px) {
   .Packages-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 4fr));
+    grid-template-columns: repeat(auto-fit, minmax(31.25rem, 4fr));
   }
 }
