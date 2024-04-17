@@ -6,10 +6,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchProducts } from "../../store/features/Apicallpackages";
 import { HiArrowSmLeft } from "react-icons/hi";
 import Lodder from "../lodder/Lodder";
-
+import { useNavigate } from "react-router-dom";
 
 
 const Packeges = () => {
+  const navigate = useNavigate()
   // const [images,setimages] =useState([""])
   const [startindex, setStartindex] = useState(0)
   const itemsPerPage = 6;
@@ -76,7 +77,7 @@ const Packeges = () => {
 
           <div className="Packages-card-container">
             {visibleData?.map((res) => {
-
+console.log(res)
               return (
                 <>
                   <Slide key={res._id}>
@@ -95,9 +96,11 @@ const Packeges = () => {
                         <h1 className="text-1">{res?.packageName}</h1>
                       </div>
                       {/* <h1 className="day">{res.Day}</h1> */}
+                      <div className="p-bx">
                       <p className="packages-para">{res?.shortDescription.slice(0, 145)}</p>
+                      </div>
                       <div className="packages-button">
-                        <button className="button-btn">View Details</button>
+                        <button className="button-btn" onClick={()=>navigate(`/packages/${res._id}`)}>View Details</button>
                       </div>
                     </div>
                   </Slide>

@@ -10,6 +10,7 @@ import ContactPage from "./pages/ContactUs.jsx";
 import Packages from "./pages/Packagespage.jsx";
 import Form from "./component/popupform/Form.jsx";
 
+
 function App() {
   return (
     <>
@@ -22,7 +23,7 @@ function App() {
           <Route path="/Privacypolicy" element={<Privacypolicy />} />
           <Route path="/Termsofconditions" element={<Termsofconditions />} />
           <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Packages" element={<Packages />} />
+          <Route path="/packages/:_id" element={<Packages />} />
           <Route path="/Form" element={<Form />} />
         </Routes>
       </BrowserRouter>
