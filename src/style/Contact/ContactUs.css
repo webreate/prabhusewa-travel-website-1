@@ -80,6 +80,7 @@ input,textarea{
   border-radius: 0.125rem;
   box-shadow: 0.125rem 0.125rem 0.313rem rgba(220, 214, 214,0.2);
   margin-top: -2.188rem;
+  /* margin-bottom:20px ; */
 }
 
 
@@ -89,6 +90,7 @@ input,textarea{
   outline: none;
   width: 93%;
   color:  var(--primary-black);
+margin-top: 0.625rem;
   border: none;
   cursor: pointer;
   outline: none !important;
