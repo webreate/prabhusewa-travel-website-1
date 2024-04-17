@@ -6,9 +6,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   position: fixed;
+
   z-index: 9999;
- 
 }
 .hide {
   transform: translateY(-100%); /* Hide the navbar by moving it above the viewport */

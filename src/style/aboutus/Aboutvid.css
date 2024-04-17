@@ -1,7 +1,6 @@
-/* .video-main{
-    width: 100%;
-    height: auto;
-} */
+.video-main{
+    padding: 0 10px 10px 10px ;
+}
 
 .video{
     width: 100%;
@@ -9,11 +8,6 @@
 }
 
 @media only screen and (max-width: 768px){
-
-    .video-main{
-        /* height: 250px; */
-        padding: 0 10px 10px 10px ;
-    }
     .video{
         height: 90%;
     }
