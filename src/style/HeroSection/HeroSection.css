@@ -23,9 +23,9 @@
 }
 
 .data-heading {
-  font-size: 80px;
+  font-size: 5rem;
   position: relative;
-  top: 30px;
+  top: 1.875rem;
   /* right: 1px; */
   display: block;
   margin: 0;
@@ -36,10 +36,10 @@
 .data-para {
   width: 80%;
   position: relative;
-  top: 30px;
+  top: 1.875rem;
   text-align: center;
   align-items: center;
-  margin: 0px auto;
+  margin: 0rem auto;
   color: var(--primary-white);
 }
 
@@ -72,15 +72,15 @@
     height: 33vh;
   }
   h2.data-heading{
-    font-size: 60px;
+    font-size: 3.75rem;
     position: relative;
-    top: 35px;
+    top: 2.188rem;
     text-align: center;
   }
   p.data-para{
-    font-size: 14px;
+    font-size: 0.875rem;
     position: relative;
-    top: 35px;
+    top: 2.188rem;
   }
   .HeroSectiontext{
     height: 30vh;
@@ -94,11 +94,11 @@
     height: 30vh;
   }
   h2.data-heading{
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
   }
   p.data-para{
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .HeroSectiontext{
     height: 30vh;
