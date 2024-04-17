@@ -3,11 +3,15 @@ import React from "react";
 import Dodhamyatra from "../component/packages/Dodhamyatra";
 import Header from "../component/layout/Header";
 import Footer from "../component/layout/footer";
+
+import  Herododham from "../component/packages/Herododham"
 const Packages = () => {
+
   return (
     <>
       <Header />
-      {/* <Galleryhero/> */}
+      <Herododham />
+
       <Dodhamyatra />
       <Footer />
     </>

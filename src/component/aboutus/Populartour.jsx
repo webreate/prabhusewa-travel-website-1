@@ -34,8 +34,8 @@
       cssEase: "linear",
       arrows: false, // Hide arrow navigation
       draggable: false, // Disable dragging the slider with mouse/touch
-      pauseOnHover: false, // Pause autoplay on hover
-      pauseOnFocus: false ,// Pause autoplay on focus
+      pauseOnHover: true, // Pause autoplay on hover
+      pauseOnFocus: false,// Pause autoplay on focus
       responsive: [
         {
           breakpoint: 480,

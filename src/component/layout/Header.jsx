@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import headerimg from "../../assest/ContactIcons/Layer_1.png";
 import Form from "../popupform/Form";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 // import contactus from "../../pages/ContactUs";
 const Header = () => {
+  const navigate = useNavigate()
   const [showNavbar, setShowNavbar] = useState(true);
 
   useEffect(() => {
@@ -42,7 +44,7 @@ const Header = () => {
 
   /* toggle hame burger menu */
   const HmemenuToggel = () => {
-    const toggelbaar = document.querySelector(".ul-header")
+    const toggelbaar = document.querySelector(".ul-header");
     toggelbaar.classList.toggle("toggle")
   }
   function scrollToTop() {
@@ -60,27 +62,27 @@ const Header = () => {
         <div className="Header-link-button">
 
           <ul className="ul-header">
-            <li>
+            <li onClick={()=>navigate("/")}>
               <Link to="/" className="a" onClick={() => scrollToTop()}>
                 Home
               </Link>
             </li>
-            <li>
+            <li onClick={()=>navigate("/AboutUs")}>
               <Link to="/AboutUs" className="a" onClick={() => scrollToTop()}>
                 About us
               </Link>
             </li>
-            <li>
+            <li onClick={()=>navigate("/Allpackeges")}>
               <Link to="/Allpackeges" className="a" onClick={() => scrollToTop()}>
                 Packages
               </Link>
             </li>
-            <li>
+            <li onClick={()=>navigate("/Gallery")}>
               <Link to="/Gallery" className="a" onClick={() => scrollToTop()}>
                 Gallery
               </Link>
             </li>
-            <li>
+            <li onClick={()=>navigate("/contactus")}>
               <Link to="/contactus" className="a" onClick={() => scrollToTop()}>
                 Contact Us
               </Link>
