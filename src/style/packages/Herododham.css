@@ -91,3 +91,26 @@
   opacity: 100%;
   padding: 2rem;
 }
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px){
+  .text-packges {
+    width: 95%;
+    height: auto;
+  }
+  .text-packges h1 {
+    text-align: center;
+    font: normal normal normal 2rem/0rem Roboto;
+    /* letter-spacing: 0rem; */
+    /* color: var(--primary-yellow); */
+    /* opacity: 100%; */
+  }
+  .text-packges p {
+    text-align: center;
+    /* font: normal normal medium 10px/0rem Roboto; */
+    font-size: 0.9375rem;
+    letter-spacing: 0rem;
+    color: var(--primary-white);
+    opacity: 100%;
+    padding: 0rem;
+  }
+}
