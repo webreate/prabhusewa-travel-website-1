@@ -27,7 +27,7 @@
   color: #ffffff;
   opacity: 1;
 }
-.text-container p {
+.text-container .texts p {
   text-align: center;
   letter-spacing: 0px;
   text-transform: capitalize;
@@ -84,7 +84,7 @@
   width: 12.5rem;
   height: 2.1875rem;
   background: #ffc436 0% 0% no-repeat padding-box;
-  box-shadow: 0px .01875rem 0.375rem #00000029;
+  box-shadow: 0px 0.01875rem 0.375rem #00000029;
   border-radius: 0.3125rem;
   opacity: 1;
   cursor: pointer;
@@ -96,7 +96,7 @@
 .Attraction option {
   color: black;
 }
-.Attraction,
+
 .cato-btn {
   width: 10.625rem;
   height: 2.1875rem;
@@ -108,7 +108,7 @@
   opacity: 1;
   cursor: pointer;
 }
-.Attraction-btn{
+.Attraction-btn {
   width: 10.625rem;
   height: 2.1875rem;
   background: transparent;
@@ -123,8 +123,8 @@
   align-items: center;
   position: relative;
 }
-.Attraction-ul{
-  width: 31.25rem; 
+.Attraction-ul {
+  width: 31.25rem;
   height: auto;
   background-color: rgb(255, 255, 255);
   position: absolute;
@@ -136,10 +136,56 @@
   flex-direction: column;
   gap: 1rem;
   border-radius: 0.1875rem;
-
 }
-.Attraction-ul li{
+.Attraction-ul li {
   color: black;
+  list-style-type: none;
+}
+
+/* modal  */
+.modal-attraction {
+  width: 100%;
+  height: 100vh;
+  background: transparent
+    linear-gradient(
+      319deg,
+      var(--primary-darkBlue) 0%,
+      #03080d73 42%,
+      #112742 100%
+    )
+    0% 0% no-repeat padding-box;
+  position: absolute;
+  z-index: 999999999;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.Attraction-ul2 {
+  width: 31.25rem;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 9;
+  top: 2rem;
+  left: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.1875rem;
+}
+.Attraction-ul2 li {
+  color: black;
+  list-style-type: none;
 }
 /* ........... dodham-packages-container ........... */
 .dodham-packages-container {
@@ -263,13 +309,13 @@
   height: auto;
   background-color: #ffffff;
   /* text-align: center; */
-  border-radius: .0375rem;
+  border-radius: 0.0375rem;
   padding: 0.3125rem;
   position: absolute;
   z-index: 1;
   top: 3rem;
   right: 2rem;
- padding:  0 1rem 0;
+  padding: 0 1rem 0;
 }
 
 .all-text-dodhamyatra {
@@ -297,4 +343,217 @@
   color: #06c6c6;
   text-transform: lowercase;
   opacity: 1;
+}
+
+/* ------- Hotel details pages -------- */
+.HotelsDetails-container {
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(201, 191, 191); */
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr)); */
+  gap: 0.75rem;
+  /* padding: 0 0 1rem 0; */
+}
+.hoteldetails-card {
+  width: 400px;
+  height: 400px;
+  background: transparent linear-gradient(180deg, #083f8380 0%, #04204280 100%)
+    0% 0% no-repeat padding-box;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.hotelnights {
+  width: 100%;
+  height: 40px;
+  background-color: #ffc436;
+  /* justify-content: center; */
+  display: flex;
+  align-items: center;
+}
+.hotelnights h1 {
+  font-size: 16px;
+  margin-left: 1rem;
+}
+.image-box {
+  width: 100%;
+  height: 200px;
+  /* background-color: red; */
+  overflow: hidden;
+}
+.images-hoteldetails {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hotelpackagesdetails {
+  width: 100%;
+  height: 160px;
+  /* background-color: red; */
+}
+.hotelpackagescity {
+  font-size: 20px;
+  color: #06c6c6;
+  padding: 0.625rem 0.9rem 0 0.625rem;
+  /* margin-top: 2px; */
+}
+.comfortPackage {
+  color: #06c6c6;
+  padding: 0 1rem 0 0.625rem;
+  margin-top: -10px;
+}
+.valuePackage {
+  color: #06c6c6;
+  padding: 0 1rem 0 0.625rem;
+  margin-top: 10px;
+}
+.valuePackage span {
+  font: bold;
+  color: white;
+}
+.comfortPackage span {
+  font: bold;
+  color: white;
+  /* font-weight: 800; */
+}
+.hotelpackagescity span {
+  color: white;
+}
+.paratext {
+  width: 100%;
+  height: 400px;
+  /* background-color: red; */
+}
+
+/*----------------- mobile responsive ----------- */
+@media only screen and (max-width: 768px) {
+  .texts {
+    width: 95%;
+    height: auto;
+  }
+  .text-container .texts p {
+    font-size: 15px;
+  }
+  .lines {
+    width: 95%;
+    /* height: auto; */
+  }
+  .Attraction-ul {
+    width: 20.25rem;
+    left: 1rem;
+  }
+  .Attraction-ul2 {
+    width: 20.25rem;
+    left: 0;
+  }
+
+  .dodham-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-wrapper {
+    width: 95%;
+  }
+  .image-dodham {
+    width: 95%;
+  }
+  .textes-dodhamyatra {
+    width: 95%;
+    height: 20rem;
+  }
+  .all-text-dodhamyatra h2 {
+    font: normal normal normal 1.5rem/0px Perpetua;
+  }
+  .all-text-dodhamyatra p {
+    height: 200px;
+
+    text-align: left;
+    font: normal normal 300 1rem/2.1875rem Roboto;
+    letter-spacing: 0px;
+    color: #06c6c6;
+    text-transform: lowercase;
+    opacity: 1;
+  }
+
+  .tool-tip-dodhamyatra {
+    width: 15.25rem;
+    right: 1rem;
+  }
+  .paratext {
+    width: 100%;
+    height: 300px;
+  }
+
+  .hoteldetails-card {
+    width: 100%;
+    height: 420px;
+    background: transparent
+      linear-gradient(180deg, #083f8380 0%, #04204280 100%) 0% 0% no-repeat
+      padding-box;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .hotelpackagesdetails {
+    width: 90%;
+    height: auto;
+  }
+  .Attraction-btn {
+    width: 7.625rem;
+  }
+
+  .cato-btn {
+    width: 7.725rem;
+    font-size: 10px;
+  }
+  .Attraction-btn p {
+    font-size: 11px;
+  }
+
+  .catogry-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0 0;
+  }
+  .all-catogry {
+    width: 95%;
+    height: auto;
+    position: relative;
+    display: grid;
+    justify-items: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr)); */
+    gap: 0.75rem;
+    padding: 0 0 1rem 0;
+  }
+  .modal-attraction {
+    display: block;
+  }
+  .Attraction-ul2 {
+    display: none;
+  }
+  .Attraction-ul {
+    display: none;
+  }
+  .mobile-res {
+    width: 70%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.1875rem;
+  }
+  .mobile-res li {
+    list-style-type: none;
+  }
 }
