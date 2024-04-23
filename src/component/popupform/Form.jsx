@@ -169,7 +169,7 @@ const Form = ({ show, cross }) => {
                   classname="journeyDateHeadingLabel"
                   htmlFor="dateofjourney"
                 >
-                  date of journey
+                  Date of journey
                 </label>
               </div>
               <div className="journeyDate">
