@@ -43,6 +43,15 @@ const ContactPage = () => {
         console.log(err);
       });
   };
+
+  const handleGmailRedirect = (event) => {
+    event.preventDefault();
+    // event.stopPropagation();
+    const gmailAddress = "surajkumaryadav9749@gmail.com";
+    const subject = "Sent";
+    window.location.href = `mailto:${gmailAddress}?subject=${subject}`;
+  };
+
   return (
     <div className="Globle-Container">
       <div className="header-hero-dynamic-container">
@@ -149,13 +158,17 @@ const ContactPage = () => {
             +91-4343434343
           </a>
         </div>
-        <div className="box box-2">
+        <div className="box box-2" onClick={handleGmailRedirect}>
           <div className="box-icon">
             <img src={mail} alt="" className="icons-img" />
           </div>
           <p className="box-para">Email Address</p>
-          <a href="#" className="anchor-box">
-            Chardham.12@gmail.com
+          <a
+            href="mailto:surajkumaryadav9749@gmail.com"
+            className="anchor-box"
+            target="_blank"
+          >
+            surajkumaryadav9749@gmail.com
           </a>
         </div>
         <div className="box box-3">
