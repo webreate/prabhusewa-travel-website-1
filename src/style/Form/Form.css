@@ -130,6 +130,7 @@ h1{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .form-tag-line-5 input{
   width: 43%;
@@ -138,12 +139,15 @@ h1{
   background: transparent;
 }
 .journeyDateHeading{
-  padding: 5px 5px;
+  padding: 10px 5px;
   color: var(--primary-gray);
+  width: 100%;
 }
 .bookNowFormInputTag{
   padding: 0;
   margin: 0;
+  height: 40px;
+  width: 45%;
 }
 #bookNowSubmitBtn{
   width: 30%;
@@ -152,6 +156,9 @@ h1{
   background-color: var(--primary-yellow);
   cursor: pointer;
   border: none;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* Media query start */

@@ -45,8 +45,7 @@ const Homebestvalue = () => {
                   </div>
                   <p className="card-heading">Safety</p>
                   <p className="para-card">
-                  Prioritizing your safety, our travel website offers a comprehensive suite of services aimed at keeping you informed and protected throughout your journey. Access detailed pre-trip safety guidelines specific to your destination and rely on our 24/7 emergency support for unforeseen circumstances. Stay informed with real-time notifications on local conditions, knowing that all our service providers undergo stringent health and safety audits. Essential safety tools such as emergency contact numbers and GPS tracking via our mobile app enhance your security. Additionally, we assist in selecting comprehensive travel insurance for your peace of mind. Travel with confidence and peace of mind, supported by our dedicated team.olore magna
-                    aliqua. Ut enim ad minim veniam, quis
+                  Our travel website prioritizes your safety, providing detailed pre-trip safety guidelines and 24/7 emergency support. Stay informed through real-time updates on local conditions, and travel with confidence knowing that all our service providers meet stringent health and safety standards. We offer a comprehensive range of services to ensure a secure and hassle-free journey, backed by our dedicated support team. Experience peace of mind from start to finish.
                   </p>
                 </div>
               </Slide>
