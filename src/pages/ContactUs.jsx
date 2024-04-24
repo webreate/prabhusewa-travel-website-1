@@ -9,6 +9,8 @@ import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
 import Data from "../component/Shared/HeroSection/HeroData.json";
 import HeroSection from "../component/Shared/HeroSection/HeroSection";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactPage = () => {
   const homeData = Data.find((item) => item.id === 1);
@@ -36,10 +38,12 @@ const ContactPage = () => {
       .then((res) => {
         console.log(res);
         console.log(res.data);
+        notify("Submitted successfully !");
         setData({ fullName: "", MobileNumber: "", email: "", comment: "" });
         event.target.reset();
       })
       .catch((err) => {
+        notify("Submission failed. Please try again.");
         console.log(err);
       });
   };
@@ -70,6 +74,10 @@ const ContactPage = () => {
   const handleTollFreeNumber = (event) => {
     event.preventDefault();
     window.location.href = "tel:+180000000000";
+  };
+
+  const notify = (message) => {
+    toast(message);
   };
 
   return (
@@ -150,8 +158,13 @@ const ContactPage = () => {
                 className="contactFormPageInp"
                 required
               ></textarea>
-              <input className="contact-form-btn" type="submit" />
+              <input
+                className="contact-form-btn"
+                type="submit"
+                onClick={notify}
+              />
             </form>
+            <ToastContainer />
           </div>
           <div className="map-container">
             <div className="map">
