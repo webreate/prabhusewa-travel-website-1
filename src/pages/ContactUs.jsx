@@ -52,6 +52,15 @@ const ContactPage = () => {
     window.location.href = `mailto:${gmailAddress}?subject=${subject}`;
   };
 
+  const handleContactNumberRedirect = (event) => {
+    event.preventDefault();
+    window.location.href = "tel:+917380425524";
+  };
+  const handleTollFreeNumber = (event) => {
+    event.preventDefault();
+    window.location.href = "tel:+180000000000";
+  };
+
   return (
     <div className="Globle-Container">
       <div className="header-hero-dynamic-container">
@@ -113,6 +122,7 @@ const ContactPage = () => {
                 id="email"
                 placeholder="Email"
                 autoComplete="off"
+                pattern="^([^\s@]+@[gmail|yahoo]+\.com)$"
                 className="contactFormPageInp"
               />
               <label htmlFor="message">Comment/Questions</label>
@@ -149,7 +159,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="boxes">
-        <div className="box box-1">
+        <div className="box box-1" onClick={handleContactNumberRedirect}>
           <div className="box-icon">
             <img src={contact} alt="" className="icons-img" />
           </div>
@@ -171,7 +181,7 @@ const ContactPage = () => {
             surajkumaryadav9749@gmail.com
           </a>
         </div>
-        <div className="box box-3">
+        <div className="box box-3" onClick={handleTollFreeNumber}>
           <div className="box-icon">
             <img src={Tel} alt="" className="icons-img" />
           </div>
