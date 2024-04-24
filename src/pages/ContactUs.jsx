@@ -43,7 +43,18 @@ const ContactPage = () => {
         console.log(err);
       });
   };
-
+  const [placeholder, setPlaceholder] = useState("Email");
+  const handleEmailChange = (event) => {
+    const email = event.target.value;
+    const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
+    const isValid = emailRegex.test(email);
+    setData({ ...data.email });
+    if (!isValid) {
+      setPlaceholder(" *Please enter a valid Gmail or Yahoo email address.");
+    } else {
+      setPlaceholder("Email");
+    }
+  };
   const handleGmailRedirect = (event) => {
     event.preventDefault();
     // event.stopPropagation();
@@ -116,11 +127,11 @@ const ContactPage = () => {
               <br />
               <input
                 type="email"
-                onChange={handleInput}
+                onChange={handleEmailChange}
                 name="email"
                 value={data?.email}
                 id="email"
-                placeholder="Email"
+                placeholder={placeholder}
                 autoComplete="off"
                 pattern="^([^\s@]+@[gmail|yahoo]+\.com)$"
                 className="contactFormPageInp"
