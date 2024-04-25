@@ -7,18 +7,17 @@
 .textandcatogry-container {
   width: 100%;
   height: auto;
-  /* background-color: rgb(158, 199, 223); */
   display: flex;
   flex-direction: column;
 }
 .text-container {
   width: 100%;
   height: auto;
-  /* background-color: rgb(241, 206, 206); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 .text-container h2 {
   text-align: center;
@@ -40,7 +39,6 @@
 .line {
   width: 100%;
   height: auto;
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +63,6 @@
 .catogry-container {
   width: 100%;
   height: auto;
-  /* background-color: rgb(90, 211, 131); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +71,6 @@
 .all-catogry {
   width: 95%;
   height: 4rem;
-  /* background-color: green; */
   display: flex;
   justify-content: start;
   align-items: center;
@@ -166,7 +162,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 
 .Attraction-ul2 {
@@ -191,7 +186,6 @@
 .dodham-packages-container {
   width: 100%;
   height: auto;
-  /* background-color: rgb(166, 230, 166); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,7 +197,6 @@
   flex-direction: column;
   gap: 0.625rem;
   overflow: hidden;
-  /* background-color: rgb(128, 110, 217); */
 }
 .dodham-card {
   width: 100%;
@@ -220,8 +213,6 @@
 .image-wrapper {
   width: 38%;
   height: 20rem;
-  background-color: rgb(116, 201, 174);
-  /* position: absolute; */
 }
 .image-dodham {
   width: 38%;
@@ -232,7 +223,6 @@
 .wrapper-container {
   width: 100%;
   height: 20rem;
-  /* background-color: yellow; */
   background-color: #00000029;
   position: relative;
   display: flex;
@@ -241,7 +231,6 @@
 .day-container {
   width: 12.5rem;
   height: 20rem;
-  /* background-color: rgb(164, 230, 164); */
 }
 .day-packages-day {
   width: 11.25rem;
@@ -254,7 +243,6 @@
 .images-related {
   width: 25rem;
   height: 20rem;
-  /* background-color: rgb(229, 185, 185); */
   display: flex;
   justify-content: end;
   align-items: center;
@@ -262,7 +250,6 @@
 .images-dodham {
   width: 9.375rem;
   height: 19rem;
-  /* background-color: rgb(149, 239, 237); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,7 +267,6 @@
 .textes-dodhamyatra {
   width: 60%;
   height: 20rem;
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -291,7 +277,6 @@
   display: flex;
   justify-content: end;
   align-items: end;
-  /* background-color: red; */
   position: relative;
 }
 .View-Program button {
@@ -369,7 +354,6 @@
 .hotelnights {
   width: 100%;
   height: 40px;
-  background-color: #ffc436;
   /* justify-content: center; */
   display: flex;
   align-items: center;
@@ -381,7 +365,6 @@
 .image-box {
   width: 100%;
   height: 200px;
-  /* background-color: red; */
   overflow: hidden;
 }
 .images-hoteldetails {
@@ -392,7 +375,6 @@
 .hotelpackagesdetails {
   width: 100%;
   height: 160px;
-  /* background-color: red; */
 }
 .hotelpackagescity {
   font-size: 20px;
@@ -425,7 +407,6 @@
 .paratext {
   width: 100%;
   height: 400px;
-  /* background-color: red; */
 }
 
 /*----------------- mobile responsive ----------- */

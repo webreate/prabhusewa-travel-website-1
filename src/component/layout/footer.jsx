@@ -2,6 +2,9 @@ import React from "react";
 import "../../style/layout/Footer.css";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Img1 from "../../Images/a.webp"
+import Img2 from "../../Images/aaapeg.webp"
+import Img3 from "../../Images/c (1).webp"
 const footer = () => {
 
 
@@ -18,22 +21,22 @@ const footer = () => {
               Prabh Sewa
             </p>
             <p className="container-p-white">
-            PRABHU SEVA is your gateway to unforgettable adventures around the globe. From pristine beaches to ancient temples, we specialize in crafting personalized travel experiences tailored to your interests and preferences. With our dedication to exceptional service and attention to detail, let us turn your travel dreams into reality. Start planning your next journey with us today!
+              PRABHU SEVA is your gateway to unforgettable adventures around the globe. From pristine beaches to ancient temples, we specialize in crafting personalized travel experiences tailored to your interests and preferences. With our dedication to exceptional service and attention to detail, let us turn your travel dreams into reality. Start planning your next journey with us today!
             </p>
             <div className="footer-images">
               <img
                 className="footer-image-img"
-                src="https://media.istockphoto.com/id/1069137628/photo/top-of-the-jagannath-temple-puri-odisha-india.jpg?s=2048x2048&w=is&k=20&c=hsHY2ifaJtsllX5YqG6czbzgVeGoPD6u85sT03eHMSk="
+                src={Img1}
                 alt="tempal"
               />
               <img
                 className="footer-image-img"
-                src="https://media.istockphoto.com/id/1069137628/photo/top-of-the-jagannath-temple-puri-odisha-india.jpg?s=2048x2048&w=is&k=20&c=hsHY2ifaJtsllX5YqG6czbzgVeGoPD6u85sT03eHMSk="
+                src={Img2}
                 alt="tempal"
               />
               <img
                 className="footer-image-img"
-                src="https://media.istockphoto.com/id/1069137628/photo/top-of-the-jagannath-temple-puri-odisha-india.jpg?s=2048x2048&w=is&k=20&c=hsHY2ifaJtsllX5YqG6czbzgVeGoPD6u85sT03eHMSk="
+                src={Img3}
                 alt="tempal"
               />
             </div>
