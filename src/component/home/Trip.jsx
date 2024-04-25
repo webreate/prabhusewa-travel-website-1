@@ -45,7 +45,7 @@ const Trip = () => {
           slidesToShow: 1.5,
           slidesToScroll: 1
         }
-      }
+      },
     ]
   };
 
