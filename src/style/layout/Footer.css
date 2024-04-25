@@ -41,11 +41,12 @@
 }
 .container3 ul li {
   list-style-type: none;
-  width: 200px;
+  width: 180px;
   display: flex;
   gap: 0.625rem;
   align-items: center;
   margin-left: -2.5rem;
+  /* background-color: red; */
 }
 .container3 ul {
   height: 11.688rem;
