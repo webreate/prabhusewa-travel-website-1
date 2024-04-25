@@ -159,7 +159,7 @@ textarea:focus{
 }
 
 .box-icon {
-  height: 30%;
+  height: 40%;
   width: 20%;
   box-shadow: 0rem 0rem 0.188rem rgba(0, 0, 0, 0.3);
   display: flex;
@@ -245,8 +245,8 @@ textarea:focus{
   }
 
   .box-icon{
-    height: 35%;
-    width: 18%;
+    height: 40%;
+    width: 20%;
   }
 
   .icons-img{
@@ -286,6 +286,9 @@ textarea:focus{
     gap: 3vh;
     flex-direction: column; 
   }
+  p.box-para{
+    margin-top: 0.1rem;
+  }
 
   .form-inputs{
     
@@ -307,15 +310,17 @@ textarea:focus{
   }
 
 
-  .box {
+  div.box{
     width: 90%; 
-    height: 15vh;
-    padding: 0.625rem 0rem;
+    height: 100%;
+    height: 19vh;
+    padding: 0;
+    /* padding: 0.625rem 0rem; */
     box-sizing: border-box;
   }
 
   .box-icon{
-    height: 30%;
+    height: 40%;
     width: 20%;
   }
 
