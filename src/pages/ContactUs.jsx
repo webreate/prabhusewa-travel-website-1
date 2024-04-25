@@ -9,6 +9,8 @@ import Footer from "../component/layout/footer";
 import mail from "../assest/ContactIcons/mail.png";
 import Data from "../component/Shared/HeroSection/HeroData.json";
 import HeroSection from "../component/Shared/HeroSection/HeroSection";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactPage = () => {
   const homeData = Data.find((item) => item.id === 1);
@@ -36,13 +38,48 @@ const ContactPage = () => {
       .then((res) => {
         console.log(res);
         console.log(res.data);
+        notify("Submitted successfully !");
         setData({ fullName: "", MobileNumber: "", email: "", comment: "" });
         event.target.reset();
       })
       .catch((err) => {
+        notify("Submission failed. Please try again.");
         console.log(err);
       });
   };
+  const [placeholder, setPlaceholder] = useState("Email");
+  const handleEmailChange = (event) => {
+    const email = event.target.value;
+    const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
+    const isValid = emailRegex.test(email);
+    setData({ ...data.email });
+    if (!isValid) {
+      setPlaceholder(" *Please enter a valid Gmail or Yahoo email address.");
+    } else {
+      setPlaceholder("Email");
+    }
+  };
+  const handleGmailRedirect = (event) => {
+    event.preventDefault();
+    // event.stopPropagation();
+    const gmailAddress = "surajkumaryadav9749@gmail.com";
+    const subject = "Sent";
+    window.location.href = `mailto:${gmailAddress}?subject=${subject}`;
+  };
+
+  const handleContactNumberRedirect = (event) => {
+    event.preventDefault();
+    window.location.href = "tel:+917380425524";
+  };
+  const handleTollFreeNumber = (event) => {
+    event.preventDefault();
+    window.location.href = "tel:+180000000000";
+  };
+
+  const notify = (message) => {
+    toast(message);
+  };
+
   return (
     <div className="Globle-Container">
       <div className="header-hero-dynamic-container">
@@ -98,12 +135,13 @@ const ContactPage = () => {
               <br />
               <input
                 type="email"
-                onChange={handleInput}
+                onChange={handleEmailChange}
                 name="email"
                 value={data?.email}
                 id="email"
-                placeholder="Email"
+                placeholder={placeholder}
                 autoComplete="off"
+                pattern="^([^\s@]+@[gmail|yahoo]+\.com)$"
                 className="contactFormPageInp"
               />
               <label htmlFor="message">Comment/Questions</label>
@@ -120,8 +158,13 @@ const ContactPage = () => {
                 className="contactFormPageInp"
                 required
               ></textarea>
-              <input className="contact-form-btn" type="submit" />
+              <input
+                className="contact-form-btn"
+                type="submit"
+                onClick={notify}
+              />
             </form>
+            <ToastContainer />
           </div>
           <div className="map-container">
             <div className="map">
@@ -140,7 +183,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="boxes">
-        <div className="box box-1">
+        <div className="box box-1" onClick={handleContactNumberRedirect}>
           <div className="box-icon">
             <img src={contact} alt="" className="icons-img" />
           </div>
@@ -149,16 +192,20 @@ const ContactPage = () => {
             +91-4343434343
           </a>
         </div>
-        <div className="box box-2">
+        <div className="box box-2" onClick={handleGmailRedirect}>
           <div className="box-icon">
             <img src={mail} alt="" className="icons-img" />
           </div>
           <p className="box-para">Email Address</p>
-          <a href="#" className="anchor-box">
-            Chardham.12@gmail.com
+          <a
+            href="mailto:surajkumaryadav9749@gmail.com"
+            className="anchor-box"
+            target="_blank"
+          >
+            surajkumaryadav9749@gmail.com
           </a>
         </div>
-        <div className="box box-3">
+        <div className="box box-3" onClick={handleTollFreeNumber}>
           <div className="box-icon">
             <img src={Tel} alt="" className="icons-img" />
           </div>
