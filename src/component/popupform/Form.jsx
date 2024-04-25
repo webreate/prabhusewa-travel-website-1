@@ -80,7 +80,7 @@ const Form = ({ show, cross }) => {
     const email = event.target.value;
     const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
     const isValid = emailRegex.test(email);
-    setBookData({ ...bookData.email });
+    setBookData({ ...bookData, email: email });
     if (!isValid) {
       setPlaceholder("Please enter a valid Gmail or Yahoo email address.");
     } else {
@@ -119,6 +119,10 @@ const Form = ({ show, cross }) => {
                 value={bookData?.fullName}
                 placeholder="Full Name"
                 id="fullName"
+                minLength={3}
+                maxLength={20}
+                pattern="[A-Za-z ]{3,20}"
+                title="Full name should contain only letters and be between 3 and 16 characters long"
                 className="bookNowFormInputTag"
                 required
               />
@@ -131,7 +135,7 @@ const Form = ({ show, cross }) => {
                 id="phoneNo"
                 maxlength="10"
                 pattern="[0-9]{10}"
-                className="bookNowFormInputTag"
+                className="bookNowFormInputTag phoneNo"
                 required
               />
             </div>

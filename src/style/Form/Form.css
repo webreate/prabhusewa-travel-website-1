@@ -1,9 +1,9 @@
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {
+.phoneNo::-webkit-outer-spin-button,
+.phoneNo::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
  .globle{
   height: 100vh;
   width: 100%;

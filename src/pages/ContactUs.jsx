@@ -34,15 +34,16 @@ const ContactPage = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const emailRegex = /^([^\s@]+@(gmail|yahoo)\.com)$/; // Updated regex pattern
-
+    const emailRegex = /^([^\s@]+@(gmail|yahoo)\.com)$/;
     // Check if email is valid
+    // const email = event.target.value;
+    console.log("data.email::::", data.email);
     if (!emailRegex.test(data.email)) {
       notify(
         "Form not submitted. Please enter a valid Gmail or Yahoo email address."
       );
       setData({ email: "" });
-      return; // Exit function if email is not valid
+      return;
     }
     Axios.post("https://parbhusewa-travel.onrender.com/user/contactus", data)
       .then((res) => {
@@ -62,7 +63,7 @@ const ContactPage = () => {
     const email = event.target.value;
     const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
     const isValid = emailRegex.test(email);
-    setData({ ...data.email });
+    setData({ ...data, email: email });
     if (!isValid) {
       setPlaceholder(" *Please enter a valid Gmail or Yahoo email address.");
     } else {
@@ -123,6 +124,10 @@ const ContactPage = () => {
                 id="username"
                 placeholder="username"
                 autoComplete="off"
+                minLength={3}
+                maxLength={20}
+                pattern="[A-Za-z ]{3,20}"
+                title="Full name should contain only letters and be between 3 and 16 characters long"
                 className="contactFormPageInp"
                 required
               />
@@ -138,7 +143,7 @@ const ContactPage = () => {
                 maxlength="10"
                 pattern="[0-9]{10}"
                 autoComplete="off"
-                className="contactFormPageInp"
+                className="contactFormPageInp phoneNo"
                 required
               />
               <label htmlFor="email">Email Address</label>
@@ -152,6 +157,7 @@ const ContactPage = () => {
                 placeholder={placeholder}
                 autoComplete="off"
                 pattern="^([^\s@]+@[gmail|yahoo]+\.com)$"
+                title="*Please enter a valid Gmail or Yahoo email address."
                 className="contactFormPageInp"
               />
               <label htmlFor="message">Comment/Questions</label>

@@ -1,5 +1,9 @@
 
-
+.phoneNo::-webkit-outer-spin-button,
+.phoneNo::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 /* CSS FOR NORMAL SCREEN */
 
 .Globle-Container{
