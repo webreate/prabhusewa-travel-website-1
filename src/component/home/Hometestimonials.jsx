@@ -19,7 +19,7 @@ const Hometestimonials = () => {
       Member: "Member of the PrabhuSewa",
       Testimonials:
         "My spiritual journey in Rishikesh was elevated by Prabhu Seva's guidance. Their expertise in arranging Ganga Aarti experiences and yoga retreats made it an unforgettable pilgrimage.",
-      star: 5,
+      star: 4,
     },
     {
       Image:
@@ -37,7 +37,7 @@ const Hometestimonials = () => {
       Member: "Member of the PrabhuSewa",
       Testimonials:
         " Thanks to Prabhu Seva, my Kedarnath pilgrimage was smooth and hassle-free. Their support with accommodation and transport allowed me to focus on the divine journey.",
-      star: 5,
+      star: 3,
     },
     {
       Image:
@@ -55,7 +55,7 @@ const Hometestimonials = () => {
       Member: "Member of the PrabhuSewa",
       Testimonials:
       "Gratitude to Prabhu Seva for organizing a memorable trip to Yamunotri. Their assistance with darshan and exploring nearby attractions made the pilgrimage truly special.",
-      star: 5,
+      star: 4,
     },
     {
       Image:
@@ -73,7 +73,7 @@ const Hometestimonials = () => {
       Member: "Member of the PrabhuSewa",
       Testimonials:
       "Thank you for arranging a peaceful retreat in Uttarkashi. Their guidance in exploring local temples and spiritual sites was invaluable.",
-      star: 5,
+      star: 4,
     },
     {
       Image:
@@ -91,7 +91,7 @@ const Hometestimonials = () => {
       Member: "Member of the PrabhuSewa",
       Testimonials:
       "Effortless journey to Hemkund Sahib, thanks to the team. Their support with trekking arrangements and accommodation made the pilgrimage spiritually fulfilling.",
-      star: 5,
+      star: 4,
     },
     {
       Image:
@@ -100,7 +100,7 @@ const Hometestimonials = () => {
       Member: "Member of the PrabhuSewa",
       Testimonials:
       "Grateful for assistance during my Uttarkashi pilgrimage. Their local insights and logistical support ensured a smooth and meaningful journey.",
-      star: 5,
+      star: 4,
     },
   ];
 
@@ -117,11 +117,7 @@ const Hometestimonials = () => {
   return (
     <>
       <div className="Testimonials-container">
-        {/* <img
-          className="Testimonials-image"
-          src="https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww"
-          alt="bg"
-        /> */}
+
         <div className="testimonials">
           <div className="test-text">
             <h1>
@@ -130,17 +126,15 @@ const Hometestimonials = () => {
           </div>
           <div className="testimonials-cards">
             <div className="sub-testimonials-cards">
-              <img src={Testimonials[changeitem]?.Image} alt="user" />
+              {/* <img src={Testimonials[changeitem]?.Image} alt="user" /> */}
               <h1>{Testimonials[changeitem].Name}</h1>
               <p className="m-p">{Testimonials[changeitem].Member}</p>
               <p className="p-p">{Testimonials[changeitem].Testimonials}</p>
               <div className="button-star">
                 <div className="star">
-                  <IoIosStar className="star-icon" />
-                  <IoIosStar className="star-icon" />
-                  <IoIosStar className="star-icon" />
-                  <IoIosStar className="star-icon" />
-                  <IoIosStar className="star-icon" />
+                {[...Array(Testimonials[changeitem].star)].map((_, index) => (
+                    <IoIosStar key={index} className="star-icon" />
+                  ))}
                 </div> 
               </div>
             </div>
