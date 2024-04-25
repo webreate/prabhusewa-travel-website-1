@@ -170,8 +170,8 @@ textarea:focus{
 }
 
 .icons-img {
-  height: 65%;
-  width: 65%;
+  height: 45%;
+  width: 45%;
 }
 
 .box:hover {
@@ -246,12 +246,12 @@ textarea:focus{
 
   .box-icon{
     height: 35%;
-    width: 12%;
+    width: 18%;
   }
 
   .icons-img{
-    height: 55%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
   }
  .box-para,.anchor-box{
     font-size: 1.063rem; 
@@ -320,8 +320,8 @@ textarea:focus{
   }
 
   .icons-img{
-    height: 60%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
   }
 
 
