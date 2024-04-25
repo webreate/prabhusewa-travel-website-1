@@ -4,6 +4,8 @@ import { ImCross } from "react-icons/im";
 import Axios from "axios";
 import { fetchProducts } from "../../store/features/Apicallpackages";
 import { useDispatch, useSelector } from "react-redux";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = ({ show, cross }) => {
   const selectedProduct = useSelector((state) => state.product.productData);
@@ -12,6 +14,7 @@ const Form = ({ show, cross }) => {
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
+  const [placeholder, setPlaceholder] = useState("Email");
 
   const [bookData, setBookData] = useState({
     fullName: "",
@@ -34,7 +37,7 @@ const Form = ({ show, cross }) => {
     }
     setBookData({ ...bookData, [event.target.name]: event.target.value });
   };
-
+  // console.log(bookData);
   const submitHandler = (event) => {
     event.preventDefault();
     Axios.post(
@@ -44,6 +47,7 @@ const Form = ({ show, cross }) => {
       .then((res) => {
         console.log(res);
         console.log(res.bookData);
+        notify("Submitted successfully!");
         setBookData({
           fullName: "",
           phoneNo: "",
@@ -57,10 +61,26 @@ const Form = ({ show, cross }) => {
         // event.target.reset();
       })
       .catch((err) => {
+        notify("Submission failed. Please try again.");
         console.log(err);
       });
   };
-  console.log(selectedProduct);
+  // console.log(selectedProduct);
+  const handleEmailCHANGE = (event) => {
+    event.preventDefault();
+    const email = event.target.value;
+    const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
+    const isValid = emailRegex.test(email);
+    setBookData({ ...bookData.email });
+    if (!isValid) {
+      setPlaceholder("Please enter a valid Gmail or Yahoo email address.");
+    } else {
+      setPlaceholder("Email");
+    }
+  };
+  const notify = (message) => {
+    toast(message);
+  };
 
   return (
     <>
@@ -109,10 +129,11 @@ const Form = ({ show, cross }) => {
             <div className="form-tag-line-2  bookNowFormInput">
               <input
                 type="email"
-                onChange={handleInput}
+                onChange={handleEmailCHANGE}
                 name="email"
                 value={bookData?.email}
-                placeholder="E-mail"
+                placeholder={placeholder}
+                pattern="^([^\s@]+@[gmail|yahoo]+\.com)$"
                 id="email"
                 className="bookNowFormInputTag"
               />
@@ -184,7 +205,12 @@ const Form = ({ show, cross }) => {
                   required
                 />
 
-                <button type="submit" id="bookNowSubmitBtn" name="button">
+                <button
+                  type="submit"
+                  id="bookNowSubmitBtn"
+                  name="button"
+                  onClick={notify}
+                >
                   Submit
                 </button>
               </div>
@@ -192,6 +218,7 @@ const Form = ({ show, cross }) => {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

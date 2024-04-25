@@ -84,13 +84,13 @@ const footer = () => {
                 <li>
                   <FaArrowRightLong style={{ color: "#ffc436" }} />
                   <Link to="/Privacypolicy" className="a" onClick={() => scrollToTop()}>
-                    Privacy
+                    Privacy Policy
                   </Link>
                 </li>
                 <li>
                   <FaArrowRightLong style={{ color: "#ffc436" }} />
                   <Link to="/Termsofconditions" className="a" onClick={() => scrollToTop()}>
-                    Term of Conditions
+                    Terms & Conditions
                   </Link>
                 </li>
                 <li>
