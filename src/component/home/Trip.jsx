@@ -4,7 +4,9 @@ import Slider from "react-slick";
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchmaxvisit } from "../../store/features/Maxvisitapi";
 import Lodder from "../lodder/Lodder";
+import { useNavigate } from "react-router-dom";
 const Trip = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch()
   const selectedMaxvisit = useSelector((state) => state.maxvisit.maxproduct);
   const selectMaxstatus = useSelector((state) => state.maxvisit.status);
@@ -80,7 +82,7 @@ const Trip = () => {
                     <img src={TripData.gallery[0] && TripData.gallery[0].galleryImage} alt="trip" />
                   </div>
                   <div className="trip-button">
-                    <button>View Detail</button>
+                    <button  onClick={() => navigate(`/packages/${TripData._id}`)}>View Detail</button>
                   </div>
                 </div>
               </div>
