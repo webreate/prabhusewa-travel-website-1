@@ -34,6 +34,16 @@ const ContactPage = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    const emailRegex = /^([^\s@]+@(gmail|yahoo)\.com)$/; // Updated regex pattern
+
+    // Check if email is valid
+    if (!emailRegex.test(data.email)) {
+      notify(
+        "Form not submitted. Please enter a valid Gmail or Yahoo email address."
+      );
+      setData({ email: "" });
+      return; // Exit function if email is not valid
+    }
     Axios.post("https://parbhusewa-travel.onrender.com/user/contactus", data)
       .then((res) => {
         console.log(res);

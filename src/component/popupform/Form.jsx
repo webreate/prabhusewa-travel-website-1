@@ -40,6 +40,15 @@ const Form = ({ show, cross }) => {
   // console.log(bookData);
   const submitHandler = (event) => {
     event.preventDefault();
+    const emailRegex = /^([^\s@]+@(gmail|yahoo)\.com)$/; // Updated regex pattern
+    // Check if email is valid
+    if (!emailRegex.test(bookData.email)) {
+      notify(
+        "Form not submitted. Please enter a valid Gmail or Yahoo email address."
+      );
+      setBookData({ email: "" });
+      return; // Exit function if email is not valid
+    }
     Axios.post(
       "https://parbhusewa-travel.onrender.com/user/packageinquiary",
       bookData
