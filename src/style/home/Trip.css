@@ -191,13 +191,16 @@
   }
   /* card */
   .trip-card {
-    height: 20.5rem;
+    height: 29.5rem;
   }
   .sub-card {
     /* width: 100%; */
     padding: 0 1rem;
   }
+<<<<<<< HEAD
  
+=======
+>>>>>>> cab63ebdcdd8900d2c71f794e54e768c0d034c61
   .image-trip {
     margin-top: 3.25rem;
   }
