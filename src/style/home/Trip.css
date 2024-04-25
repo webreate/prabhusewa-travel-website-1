@@ -163,7 +163,6 @@
   .tript-text-box {
     width: 90%;
     height: auto;
-    background-color: red;
   }
   /* card */
   .trip-card {
@@ -189,7 +188,6 @@
   .tript-text-box {
     width: 70%;
     height: auto;
-    background-color: green;
   }
   /* card */
   .trip-card {
@@ -199,10 +197,6 @@
     /* width: 100%; */
     padding: 0 1rem;
   }
-  /* .card-text-card { */
-  /* width: 20rem; */
-  /* height: 28.75rem; */
-  /* } */
   .image-trip {
     margin-top: 3.25rem;
   }
@@ -213,7 +207,6 @@
   .tript-text-box {
     width: 70%;
     height: auto;
-    background-color: yellow;
   }
   .image-trip {
     margin-top: 0.25rem;
