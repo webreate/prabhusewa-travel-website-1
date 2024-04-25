@@ -41,6 +41,7 @@
 }
 .container3 ul li {
   list-style-type: none;
+  width: 200px;
   display: flex;
   gap: 0.625rem;
   align-items: center;
@@ -231,5 +232,31 @@
   }
   .new-latter-button {
     width: 5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .container1 {
+    width: 32%;
+    padding-left: 3%;
+  }
+
+  .container-name{
+    width: 112px;
+  }
+
+  .container-sub{
+    height: 90px;
+    padding-top: 100px;
+    width: 375px;
+    padding-right: 30px;
+  }
+
+  .new-latter-button {
+    width: 5.25rem;
+  }
+
+  .input-new-latter {
+    width: 14rem;
   }
 }
