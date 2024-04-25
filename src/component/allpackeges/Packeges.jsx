@@ -41,13 +41,14 @@ const Packeges = () => {
   const showPreviewButton = startindex > 0;
   const Next = () => {
     setStartindex(prevIndex => prevIndex + itemsPerPage);
-
+    window.scrollTo({ top: 230, behavior: 'smooth' });
   }
 
   const Priview = (e) => {
     setStartindex(prevIndex => Math.max(0, prevIndex - itemsPerPage));
-
+    window.scrollTo({ top: 230, behavior: 'smooth' });
   }
+
 
   return (
     <>
