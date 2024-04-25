@@ -95,7 +95,7 @@ const ContactPage = () => {
     <div className="Globle-Container">
       <div className="header-hero-dynamic-container">
         <Header />
-        <HeroSection {...homeData} />;
+        <HeroSection {...homeData} />
       </div>
       <div className="contact-container">
         <div className="contact-heading">
@@ -127,7 +127,7 @@ const ContactPage = () => {
                 minLength={3}
                 maxLength={20}
                 pattern="[A-Za-z ]{3,20}"
-                title="Full name should contain only letters and be between 3 and 16 characters long"
+                title="Full name should contain only letters and be between 3 and 20 characters long"
                 className="contactFormPageInp"
                 required
               />

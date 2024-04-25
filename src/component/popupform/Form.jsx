@@ -122,7 +122,7 @@ const Form = ({ show, cross }) => {
                 minLength={3}
                 maxLength={20}
                 pattern="[A-Za-z ]{3,20}"
-                title="Full name should contain only letters and be between 3 and 16 characters long"
+                title="Full name should contain only letters and be between 3 and 20 characters long"
                 className="bookNowFormInputTag"
                 required
               />
