@@ -40,6 +40,15 @@ const Form = ({ show, cross }) => {
   // console.log(bookData);
   const submitHandler = (event) => {
     event.preventDefault();
+    const emailRegex = /^([^\s@]+@(gmail|yahoo)\.com)$/; // Updated regex pattern
+    // Check if email is valid
+    if (!emailRegex.test(bookData.email)) {
+      notify(
+        "Form not submitted. Please enter a valid Gmail or Yahoo email address."
+      );
+      setBookData({ email: "" });
+      return; // Exit function if email is not valid
+    }
     Axios.post(
       "https://parbhusewa-travel.onrender.com/user/packageinquiary",
       bookData
@@ -71,7 +80,7 @@ const Form = ({ show, cross }) => {
     const email = event.target.value;
     const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
     const isValid = emailRegex.test(email);
-    setBookData({ ...bookData.email });
+    setBookData({ ...bookData, email: email });
     if (!isValid) {
       setPlaceholder("Please enter a valid Gmail or Yahoo email address.");
     } else {
@@ -110,6 +119,10 @@ const Form = ({ show, cross }) => {
                 value={bookData?.fullName}
                 placeholder="Full Name"
                 id="fullName"
+                minLength={3}
+                maxLength={20}
+                pattern="[A-Za-z ]{3,20}"
+                title="Full name should contain only letters and be between 3 and 20 characters long"
                 className="bookNowFormInputTag"
                 required
               />
@@ -122,7 +135,7 @@ const Form = ({ show, cross }) => {
                 id="phoneNo"
                 maxlength="10"
                 pattern="[0-9]{10}"
-                className="bookNowFormInputTag"
+                className="bookNowFormInputTag phoneNo"
                 required
               />
             </div>
