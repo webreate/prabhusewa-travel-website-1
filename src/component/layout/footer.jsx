@@ -1,11 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../style/layout/Footer.css";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Img1 from "../../Images/a.webp"
 import Img2 from "../../Images/aaapeg.webp"
 import Img3 from "../../Images/c (1).webp"
-const footer = () => {
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const Footer = () => {
+  const [inputdata, setInputdata] = useState('')
+
+
+
+  const sendemail = (e) => {
+    e.preventDefault();
+    if (validateEmail(inputdata.toLowerCase())) {
+      notify('Email is valid!');
+      // alert('Email is valid!');
+
+      postEmaildata()
+    } else {
+
+      notify('Please enter a valid email address.');
+    }
+  };
+
+  const validateEmail = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo)\.(com|co\.uk|in|net)$/; // Regex for Gmail and Yahoo domains
+    return re.test(email);
+  };
+
+
+  const postEmaildata = () => {
+    fetch(`https://parbhusewa-travel.onrender.com/user/postemail`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json"
+      },
+      body: JSON.stringify({
+        email: inputdata
+      })
+    })
+      .then(Response => Response.json())
+      .then(data => {
+        console.log(data)
+        notify("email send Sucsessfull !")
+        setInputdata('')
+        document.getElementById("email").value = ""
+      })
+  }
+
+
+  const notify = (message) => {
+    toast(message);
+  };
 
 
   function scrollToTop() {
@@ -111,11 +160,11 @@ const footer = () => {
             <h3 className="subscrib-text">Subscribe News Latter</h3>
             <div className="inpute-box-new-latter">
               <div className="in-b">
-                <input className="input-new-latter" type="email" placeholder="Enter you Email " />
+                <input id="email" className="input-new-latter" type="email" placeholder="Enter you Email " onChange={(e) => setInputdata(e.target.value)} />
               </div>
-              <button className="new-latter-button">Subscribe</button>
+              <button className="new-latter-button" onClick={(e) => sendemail(e)}>Subscribe</button>
             </div>
-
+            <ToastContainer />
           </div>
 
 
@@ -129,4 +178,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
