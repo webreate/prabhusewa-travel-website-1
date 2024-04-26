@@ -16,7 +16,7 @@ const Footer = () => {
   const sendemail = (e) => {
     e.preventDefault();
     if (validateEmail(inputdata.toLowerCase())) {
-      notify('Email is valid!');
+      // notify('Email is valid!');
       // alert('Email is valid!');
 
       postEmaildata()
@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="footer-subcontainer">
           <div className="container1">
             <p className="container1-p">
-             PRABHU SEWA
+              PRABHU SEWA
             </p>
             <p className="container-p-white">
               PRABHU SEWA is your gateway to unforgettable adventures around the globe. From pristine beaches to ancient temples, we specialize in crafting personalized travel experiences tailored to your interests and preferences. With our dedication to exceptional service and attention to detail, let us turn your travel dreams into reality. Start planning your next journey with us today!
