@@ -125,9 +125,9 @@ const ContactPage = () => {
                 placeholder="username"
                 autoComplete="off"
                 minLength={3}
-                maxLength={20}
-                pattern="[A-Za-z ]{3,20}"
-                title="Full name should contain only letters and be between 3 and 20 characters long"
+                maxLength={30}
+                pattern="[A-Za-z ]{3,30}"
+                title="Full name should contain only letters and be between 3 and 30 characters long"
                 className="contactFormPageInp"
                 required
               />
