@@ -3,13 +3,13 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-image: url('https://media.istockphoto.com/id/974238866/photo/audience-listens-to-the-lecturer-at-the-conference.jpg?s=2048x2048&w=is&k=20&c=Pi-Ca0DtIojLjWVcy_-LLMk2ISsSf5kg5NJtAntxGOY=');
+  background-image: url("https://media.istockphoto.com/id/974238866/photo/audience-listens-to-the-lecturer-at-the-conference.jpg?s=2048x2048&w=is&k=20&c=Pi-Ca0DtIojLjWVcy_-LLMk2ISsSf5kg5NJtAntxGOY=");
 }
 /* .image-container { */
-  /* width: 100%; */
-  /* height: 20rem; */
-  /* background-image: url('https://media.istockphoto.com/id/974238866/photo/audience-listens-to-the-lecturer-at-the-conference.jpg?s=2048x2048&w=is&k=20&c=Pi-Ca0DtIojLjWVcy_-LLMk2ISsSf5kg5NJtAntxGOY='); */
-  /* position: absolute;
+/* width: 100%; */
+/* height: 20rem; */
+/* background-image: url('https://media.istockphoto.com/id/974238866/photo/audience-listens-to-the-lecturer-at-the-conference.jpg?s=2048x2048&w=is&k=20&c=Pi-Ca0DtIojLjWVcy_-LLMk2ISsSf5kg5NJtAntxGOY='); */
+/* position: absolute;
   overflow: hidden; */
 /* } */
 .allpackeges-image {
@@ -60,10 +60,11 @@
   font-size: 1rem;
   background: transparent;
   border: none;
+  margin-top: -0.5rem;
 }
 .ser-inp::placeholder {
   color: var(--primary-white);
-  opacity: 1; 
+  opacity: 1;
 }
 .text-packeges-container {
   width: 100%;
@@ -92,7 +93,7 @@
   padding: 2rem;
 }
 /*----------------- mobile responsive ----------- */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .text-packges {
     width: 95%;
     height: auto;
