@@ -31,7 +31,7 @@ const About = () => {
         </div>
         <div className="para">
           <Slide direction='right'>
-          <p>Welcome to PRABHU SEVA TOUR & TRAVELS, your premier partner for exploring the enchanting beauty and rich culture of Uttarakhand, India's Devbhoomi (Land of the Gods).
+          <p>Welcome to PRABHU SEWA TOUR & TRAVELS, your premier partner for exploring the enchanting beauty and rich culture of Uttarakhand, India's Devbhoomi (Land of the Gods).
 Passionate about showcasing the diverse landscapes, spiritual sites, and adventurous experiences that make Uttarakhand a must-visit destination for travelers from around the world, we curate bespoke journeys tailored to your every desire.
 With years of experience and a deep-rooted connection to the region, our team of travel experts is dedicated to providing unparalleled service, personalized attention, and authentic experiences that leave a lasting impression.
 Discover the magic of Uttarakhand with us and embark on a journey that will captivate your senses, nourish your soul, and create memories to last a lifetime. Let us be your trusted companion as you explore the unparalleled beauty and spiritual essence of Uttarakhand.</p>
@@ -42,7 +42,7 @@ Discover the magic of Uttarakhand with us and embark on a journey that will capt
         <>
          <div className="para">
           <Slide direction='right'>
-      <p>Welcome to PRABHU SEVA TOUR & TRAVELS, your premier partner for exploring the enchanting beauty and rich culture of Uttarakhand, India's Devbhoomi (Land of the Gods).
+      <p>Welcome to PRABHU SEWA TOUR & TRAVELS, your premier partner for exploring the enchanting beauty and rich culture of Uttarakhand, India's Devbhoomi (Land of the Gods).
 Passionate about showcasing the diverse landscapes, spiritual sites, and adventurous experiences that make Uttarakhand a must-visit destination for travelers from around the world, we curate bespoke journeys tailored to your every desire.
 With years of experience and a deep-rooted connection to the region, our team of travel experts is dedicated to providing unparalleled service, personalized attention, and authentic experiences that leave a lasting impression.
 Discover the magic of Uttarakhand with us and embark on a journey that will captivate your senses, nourish your soul, and create memories to last a lifetime. Let us be your trusted companion as you explore the unparalleled beauty and spiritual essence of Uttarakhand.</p>

@@ -4,6 +4,7 @@
   import { fetchmaxvisit } from "../../store/features/Maxvisitapi";
   import Lodder from '../lodder/Lodder';
   import Slider from "react-slick";
+  import { Link } from 'react-router-dom';
 
   const Populartour = () => {
     const dispatch = useDispatch();
@@ -51,7 +52,9 @@
       <div className="tour-main">
         <div className="tour-head">
           <h1 id='head'>Popular Tours</h1>
-          <h2 id='head2'>View All</h2>
+          <Link to="/Allpackeges" className="a" >
+                  <h2 id='head2'>View All</h2>
+              </Link>
         </div>
         <div className="img-section">
           <Slider {...settings}>

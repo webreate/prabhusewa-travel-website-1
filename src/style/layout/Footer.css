@@ -41,10 +41,12 @@
 }
 .container3 ul li {
   list-style-type: none;
+  width: 180px;
   display: flex;
   gap: 0.625rem;
   align-items: center;
   margin-left: -2.5rem;
+  /* background-color: red; */
 }
 .container3 ul {
   height: 11.688rem;
@@ -140,11 +142,12 @@
   height: 12.5rem;
 }
 .subscrib-text {
-  text-align: center;
+  text-align: flex start;
   font: normal normal normal 1.375rem/0rem Roboto;
   letter-spacing: 0rem;
   color: var(--primary-yellow);
   opacity: 1;
+  padding-left: 3%;
 }
 .inpute-box-new-latter {
   width: 100%;
@@ -159,6 +162,7 @@
   width: 15.625rem;
   height: 1.875rem;
   border-radius: 0.3125rem;
+  margin-top: 2px;
 }
 .input-new-latter:focus{
   outline: none !important;
@@ -230,5 +234,31 @@
   }
   .new-latter-button {
     width: 5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .container1 {
+    width: 32%;
+    padding-left: 3%;
+  }
+
+  .container-name{
+    width: 112px;
+  }
+
+  .container-sub{
+    height: 90px;
+    padding-top: 100px;
+    width: 375px;
+    padding-right: 30px;
+  }
+
+  .new-latter-button {
+    width: 5.25rem;
+  }
+
+  .input-new-latter {
+    width: 14rem;
   }
 }

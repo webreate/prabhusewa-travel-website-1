@@ -124,7 +124,7 @@ const Dodhamyatra = () => {
                                 <button className='cato-btn' onClick={() => Hoteldetails()}>{!exchangedetails ? 'Hotel Details' : "Days Details"}</button>
                                 <Link to="/Termsofconditions">
 
-                                    <button className='cato-btn'>Terms And Conditions</button>
+                                    <button className='cato-btn' onClick={()=> window.scrollTo({ top: 0, behavior: 'smooth' })}>Terms And Conditions</button>
                                 </Link>
                             </div>
                             {/* mobile view */}

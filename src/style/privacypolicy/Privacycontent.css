@@ -6,10 +6,20 @@
 #p-head{
     padding-left: 30px;
     color: #337ccf;
+    font-size: 20px;
 }
 
 #p-para{
     color:#337ccf;
+    font-weight: 700;
+}
+
+#p-para2{
+  padding: 0 20px;
+}
+
+hr{
+  margin-right: 25px;
 }
 
 @keyframes slideInFromTop {

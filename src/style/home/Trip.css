@@ -34,7 +34,7 @@
 }
 .trip-card-container {
   width: 100%;
-
+  height: 33rem;
   overflow: hidden;
   /* height: 10%; */
   /* display: flex; */
@@ -46,14 +46,11 @@
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none;
 }
-/* .trip-card-container::-webkit-scrollbar {
-  display: none;
-} */
 
 /* card */
 .trip-card {
-  width: 21.875rem !important;
-  height: auto;
+  /* width: 21.875rem !important; */
+  height: 29.5rem;
   background: transparent linear-gradient(180deg, #ffc436 0%, #ffeffc 100%) 0%
     0% no-repeat padding-box;
   border-radius: 0.313rem;
@@ -63,7 +60,7 @@
   padding: 0 0 1.25rem 0;
 }
 .sub-card {
-  width: 21.875rem;
+  /* width: 21.875rem; */
   height: 30.25rem;
   background: var(--primary-lightBlue) 0% 0% no-repeat padding-box;
   border-radius: 0.313rem;
@@ -74,10 +71,10 @@
   justify-content: center;
   align-items: center;
 }
-.card-text-card {
-  width: 20rem;
-  height: 28.75rem;
-}
+/* .card-text-card { */
+/* width: 20rem; */
+/* height: 28.75rem; */
+/* } */
 .card-text-card a {
   text-decoration: underline;
   font: normal normal bold 1.563rem/2.688rem "Roboto";
@@ -145,7 +142,20 @@
   .image-trip {
     margin-top: 3.25rem;
   }
+
+  /* card */
+  .trip-card {
+    width: 21.875rem !important;
+  }
+  .sub-card {
+    width: 21.875rem;
+  }
+  .card-text-card {
+    width: 20rem;
+    height: 28.75rem;
+  }
 }
+
 /* .... desktop responsive ...... */
 
 /* Large devices (desktops, 992px and up) */
@@ -154,6 +164,23 @@
     width: 90%;
     height: auto;
   }
+  /* card */
+  .trip-card {
+    height: 29.5rem;
+  }
+  .sub-card {
+    padding: 0 1rem;
+  }
+  .card-text-card {
+    height: 28.75rem;
+  }
+  .image-trip {
+    height: 6.625rem;
+    margin-top: 7.25rem;
+  }
+  .image-trip img {
+    height: 6.625rem;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -161,5 +188,37 @@
   .tript-text-box {
     width: 70%;
     height: auto;
+  }
+  /* card */
+  .trip-card {
+    height: 29.5rem;
+  }
+  .sub-card {
+    /* width: 100%; */
+    padding: 0 1rem;
+  }
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> cab63ebdcdd8900d2c71f794e54e768c0d034c61
+  .image-trip {
+    margin-top: 3.25rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1900px) {
+  .tript-text-box {
+    width: 70%;
+    height: auto;
+  }
+  .image-trip {
+    margin-top: 0.25rem;
+  }
+  .image-trip {
+    height: 14.625rem;
+  }
+  .image-trip img {
+    height: 14.625rem;
   }
 }

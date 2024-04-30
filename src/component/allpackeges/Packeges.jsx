@@ -19,7 +19,7 @@ const Packeges = () => {
   const selectstatus = useSelector((state) => state.product.status);
 
   // console.log("selectedProduct", selectedProduct, "selectstatus", selectstatus);
-
+//test
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
@@ -47,6 +47,7 @@ const Packeges = () => {
   const Priview = (e) => {
     setStartindex((prevIndex) => Math.max(0, prevIndex - itemsPerPage));
   };
+
 
   return (
     <>
