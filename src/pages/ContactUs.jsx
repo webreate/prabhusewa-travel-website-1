@@ -84,7 +84,7 @@ const ContactPage = () => {
     <div className="Globle-Container">
       <div className="header-hero-dynamic-container">
         <Header />
-        <HeroSection {...homeData} />;
+        <HeroSection {...homeData} />
       </div>
       <div className="contact-container">
         <div className="contact-heading">
