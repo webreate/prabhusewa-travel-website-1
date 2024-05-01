@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate()
   const [showNavbar, setShowNavbar] = useState(true);
+  const [activePage, setActivePage] = useState("");
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -32,6 +33,29 @@ const Header = () => {
     };
   }, []);
 
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    switch (currentPath) {
+      case "/":
+        setActivePage("HOME");
+        break;
+      case "/AboutUs":
+        setActivePage("AboutUs");
+        break;
+      case "/Allpackeges":
+        setActivePage("Allpackeges");
+        break;
+      case "/Gallery":
+        setActivePage("Gallery");
+        break;
+      case "/contactus":
+        setActivePage("contactus");
+        break;
+      default:
+        setActivePage("");
+    }
+  }, []);
 
 
   const [form, setform] = useState(false);
@@ -62,28 +86,73 @@ const Header = () => {
         <div className="Header-link-button">
 
           <ul className="ul-header">
-            <li onClick={()=>navigate("/")}>
-              <Link to="/" className="a" onClick={() => scrollToTop()}>
+            <li onClick={() => {
+              navigate("/");
+              setActivePage("HOME");
+
+            }}>
+              <Link to="/" className="a" style={{
+                color:
+                  activePage === "HOME"
+                    ? "#ffc436"
+                    : "",
+              }} onClick={() => scrollToTop()}>
                 Home
               </Link>
             </li>
-            <li onClick={()=>navigate("/AboutUs")}>
-              <Link to="/AboutUs" className="a" onClick={() => scrollToTop()}>
+            <li onClick={() => {
+              navigate("/AboutUs");
+              setActivePage("AboutUs");
+
+            }}>
+              <Link to="/AboutUs" className="a" style={{
+                color:
+                  activePage === "AboutUs"
+                    ? "#ffc436"
+                    : "",
+              }} onClick={() => scrollToTop()}>
                 About us
               </Link>
             </li>
-            <li onClick={()=>navigate("/Allpackeges")}>
-              <Link to="/Allpackeges" className="a" onClick={() => scrollToTop()}>
+            <li onClick={() => {
+              navigate("/Allpackeges");
+              setActivePage("Allpackeges");
+
+            }}>
+              <Link to="/Allpackeges" className="a" style={{
+                color:
+                  activePage === "Allpackeges"
+                    ? "#ffc436"
+                    : "",
+              }} onClick={() => scrollToTop()}>
                 Packages
               </Link>
             </li>
-            <li onClick={()=>navigate("/Gallery")}>
-              <Link to="/Gallery" className="a" onClick={() => scrollToTop()}>
+            <li onClick={() => {
+              navigate("/Gallery");
+              setActivePage("Gallery");
+
+            }}>
+              <Link to="/Gallery" className="a" style={{
+                color:
+                  activePage === "Gallery"
+                    ? "#ffc436"
+                    : "",
+              }} onClick={() => scrollToTop()}>
                 Gallery
               </Link>
             </li>
-            <li onClick={()=>navigate("/contactus")}>
-              <Link to="/contactus" className="a" onClick={() => scrollToTop()}>
+            <li onClick={() => {
+              navigate("/contactus");
+              setActivePage("contactus");
+
+            }}>
+              <Link to="/contactus" className="a" style={{
+                color:
+                  activePage === "contactus"
+                    ? "#ffc436"
+                    : "",
+              }} onClick={() => scrollToTop()}>
                 Contact Us
               </Link>
             </li>

@@ -29,7 +29,7 @@ const Homebestvalue = () => {
                   </div>
                   <p className="card-heading">Amazing Service</p>
                   <p className="para-card">
-                  Explore our exceptional range of services tailored to create a personalized and worry-free travel experience. Our travel website provides customized itineraries crafted to match individual preferences and styles, supported by round-the-clock concierge assistance for any trip-related needs. Immerse yourself in local cultures with unique experiences, indulge in luxury accommodations, and opt for eco-friendly travel options. Count on us for seamless transportation arrangements and assistance with travel insurance for added security. Our goal is to ensure your travel experience is comfortable, enriching, and stress-free, enabling you to explore your destination with confidence.
+                  Explore our exceptional range of services tailored to create a personalized and worry-free travel experience. Our travel website provides customized itineraries crafted to match individual preferences and styles, supported by round-the-clock concierge assistance for any trip-related needs. Immerse yourself in local cultures with unique experiences, indulge in luxury accommodations, and opt for eco-friendly travel options. Count on us for seamless transportation arrangements and assistance with travel insurance for added security.
                   </p>
                 </div>
               </Slide>

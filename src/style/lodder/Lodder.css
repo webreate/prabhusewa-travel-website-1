@@ -5,7 +5,7 @@
     background: transparent
     linear-gradient(319deg, var(--primary-darkBlue) 0%, #03080d73 42%, #112742 100%) 0% 0%
     no-repeat padding-box;
-    position: absolute;
+    position: fixed;
     z-index: 9999999999;
     top: 0;
     display: flex;

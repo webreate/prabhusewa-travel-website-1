@@ -6,9 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
-
   z-index: 9999;
 }
 .hide {
@@ -112,7 +110,7 @@
     transition-duration: 0.25s;
   }
   .toggle {
-    top: 5.3vh;
+    top: 5vh;
   }
   .Header-link-button ul li {
     width: 95%;

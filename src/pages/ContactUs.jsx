@@ -34,17 +34,6 @@ const ContactPage = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const emailRegex = /^([^\s@]+@(gmail|yahoo)\.com)$/;
-    // Check if email is valid
-    // const email = event.target.value;
-    console.log("data.email::::", data.email);
-    if (!emailRegex.test(data.email)) {
-      notify(
-        "Form not submitted. Please enter a valid Gmail or Yahoo email address."
-      );
-      setData({ email: "" });
-      return;
-    }
     Axios.post("https://parbhusewa-travel.onrender.com/user/contactus", data)
       .then((res) => {
         console.log(res);
@@ -63,7 +52,7 @@ const ContactPage = () => {
     const email = event.target.value;
     const emailRegex = /^([^\s@]+@[gmail|yahoo]+\.com)$/;
     const isValid = emailRegex.test(email);
-    setData({ ...data, email: email });
+    setData({ ...data.email });
     if (!isValid) {
       setPlaceholder(" *Please enter a valid Gmail or Yahoo email address.");
     } else {
@@ -95,7 +84,7 @@ const ContactPage = () => {
     <div className="Globle-Container">
       <div className="header-hero-dynamic-container">
         <Header />
-        <HeroSection {...homeData} />
+        <HeroSection {...homeData} />;
       </div>
       <div className="contact-container">
         <div className="contact-heading">
@@ -143,7 +132,7 @@ const ContactPage = () => {
                 maxlength="10"
                 pattern="[0-9]{10}"
                 autoComplete="off"
-                className="contactFormPageInp phoneNo"
+                className="contactFormPageInp"
                 required
               />
               <label htmlFor="email">Email Address</label>
@@ -157,7 +146,6 @@ const ContactPage = () => {
                 placeholder={placeholder}
                 autoComplete="off"
                 pattern="^([^\s@]+@[gmail|yahoo]+\.com)$"
-                title="*Please enter a valid Gmail or Yahoo email address."
                 className="contactFormPageInp"
               />
               <label htmlFor="message">Comment/Questions</label>

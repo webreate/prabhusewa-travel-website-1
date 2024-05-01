@@ -6,9 +6,9 @@ import { fetchProducts } from "../../store/features/Apicallpackages";
 // import { FaStar } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import Lodder from "../lodder/Lodder";
-
+import { useNavigate } from "react-router-dom";
 const Homepackages = () => {
-
+  const navigate = useNavigate();
   const dispatch = useDispatch()
   const selectedProduct = useSelector((state) => state.product.productData);
   const selectstatus = useSelector((state) => state.product.status);
@@ -172,7 +172,7 @@ const Homepackages = () => {
                       </div>
                       <div className="tar-btn">
 
-                        <button className="btn">Book Now</button>
+                        <button className="btn" onClick={() => navigate(`/packages/${res._id}`)}>Book Now</button>
                       </div>
                     </div>
                   </div>

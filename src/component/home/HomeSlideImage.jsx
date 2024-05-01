@@ -1,66 +1,87 @@
 import React from "react";
 import "../../style/home/HomeSlideImage.css";
 import Slider from "react-slick";
+import Im1 from "../../Images/im1.png"
+import Im2 from "../../Images/im2.png"
+import Im3 from "../../Images/im3.png"
+import Im4 from "../../Images/im4.png"
+import Im5 from "../../Images/im5.png"
+// import Im6 from "../../Images/im6.png"
+import Im7 from "../../Images/im7 (2).png"
+import Im8 from "../../Images/im8.png"
+import Im9 from "../../Images/im9.png"
+import Im10 from "../../Images/im10.png"
+import Im18 from "../../Images/im18.png"
+import Im11 from "../../Images/im11.png"
+import Im12 from "../../Images/im12.png"
+import Im13 from "../../Images/im13.png"
+import Im14 from "../../Images/im14.png"
+import Im15 from "../../Images/im15.png"
+import Im16 from "../../Images/im16.png"
+import Im17 from "../../Images/im17.png"
+import Im19 from "../../Images/im19.png"
+import Im20 from "../../Images/im20.png"
 
 const HomeSlideImage = () => {
   const images = [
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im1,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1490077476659-095159692ab5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D",
+      Image:Im2,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D",
+      Image:Im3,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im4,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im5,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im7,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1606298855672-3efb63017be8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D",
+      Image:Im8,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im9,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im10,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im11,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im12,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im13,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im14,
     },
     {
-      Image:
-        "https://images.unsplash.com/photo-1612438214708-f428a707dd4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a2VkYXJuYXRofGVufDB8fDB8fHww",
+      Image:Im15,
     },
-  ];
+    {
+      Image:Im16,
+    },
+    {
+      Image:Im17,
+    },
+    {
+      Image:Im18,
+    },
+    {
+      Image:Im19,
+    },
+    {
+      Image:Im20,
+    },
+  ]
 
   let settings = {
     dots: false,
