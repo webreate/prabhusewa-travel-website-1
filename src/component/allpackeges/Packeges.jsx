@@ -64,13 +64,13 @@ const Packeges = () => {
             <div className="package-des">
               <div className="round"></div>
               <hr className="hr" />
-              <div className="round"></div>
+              <div className="round1-round"></div>
             </div>
 
             <div className="package-des1">
               <div className="round1"></div>
               <hr className="hr1" />
-              <div className="round1"></div>
+              <div className="round1-round"></div>
             </div>
           </div>
 

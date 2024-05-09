@@ -45,7 +45,7 @@ const Hometestimonials = () => {
       Name: "Deepak Pal",
       Member: "Member of the PrabhuSewa",
       Testimonials:
-      "An enriching experience in Badrinath, all thanks to [Travel Company]. Their local guides provided insights into the temple's significance, enhancing the spiritual journey.",
+      "An enriching experience in Badrinath, all thanks to Prabhu Sewa. Their local guides provided insights into the temple's significance, enhancing the spiritual journey.",
       star: 5,
     },
     {

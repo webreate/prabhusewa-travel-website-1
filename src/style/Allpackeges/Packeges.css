@@ -69,6 +69,16 @@
   /* UI Properties */
   background: var(--primary-yellow) 0% 0% no-repeat padding-box;
   opacity: 1;
+  margin-left: 10px;
+}
+.round1-round{
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 100%;
+  /* UI Properties */
+  background: var(--primary-yellow) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-left: -36px;
 }
 .round {
   width: 1.25rem;
@@ -77,6 +87,7 @@
   /* UI Properties */
   background: var(--primary-yellow) 0% 0% no-repeat padding-box;
   opacity: 1;
+  margin-left: 10px;
 }
 .hr1 {
   width: 91%;
@@ -230,13 +241,22 @@
   .package-des1 {
     width: 70%;
   }
-  .round ,.round1{
+  .round1,.round1-round{
     width: 1rem;
     height: 1rem;
     border-radius: 100%;
     /* UI Properties */
     background: var(--primary-yellow) 0% 0% no-repeat padding-box;
     opacity: 1;
+  }
+  .round{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    /* UI Properties */
+    background: var(--primary-yellow) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 20px;
   }
   .Packages-card-container {
     width: 95%;

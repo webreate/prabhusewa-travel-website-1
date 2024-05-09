@@ -157,7 +157,7 @@ const Footer = () => {
           </div>
 
           <div className="container-sub">
-            <h3 className="subscrib-text">Subscribe News Latter</h3>
+            <h3 className="subscrib-text">Subscribe News Letter</h3>
             <div className="inpute-box-new-latter">
               <div className="in-b">
                 <input id="email" className="input-new-latter" type="email" placeholder="Enter you Email " onChange={(e) => setInputdata(e.target.value)} />
